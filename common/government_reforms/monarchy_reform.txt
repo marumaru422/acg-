@@ -391,6 +391,18 @@ half_demon_based = {
 		custom_tooltip = IYS_can_change_tradegood_livestock_tt
 		hidden_effect = {
 			set_country_flag = IYS_can_change_tradegood_livestock
+			every_owned_province = {
+				limit = {
+					trade_goods = livestock
+					NOT = {
+						has_province_modifier = half_demon_goverment_life_modifier
+					}
+				}
+				add_province_modifier = {
+					name = "half_demon_goverment_life_modifier"
+					duration = -1
+				}
+			}
 		}
 	}
 }
@@ -413,6 +425,22 @@ IYS_based = { 	#犬夜叉威权
 		reform_progress_growth = 0.1
 		core_creation = -0.1
 		all_estate_loyalty_equilibrium = -0.05
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = Inuyasha
+					NOT = {
+						has_province_modifier = IYS_culture_province
+					}
+				}
+				add_province_modifier = {
+					name = "IYS_culture_province"
+					duration = -1
+				}
+			}
+		}
 	}
 }
 Harem_series_reform = {

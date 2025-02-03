@@ -1,0 +1,14 @@
+on_province_owner_change_government_effect = {
+	if = {
+		limit = {
+			trade_goods = livestock
+			owner = {
+				has_government_attribute = half_demon_goverment_life
+			}
+		}
+		add_province_modifier = { 
+			name = half_demon_goverment_life_modifier
+			duration = -1
+		}
+	}
+}
