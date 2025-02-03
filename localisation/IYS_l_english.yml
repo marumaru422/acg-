@@ -1,0 +1,254 @@
+l_english:
+ mechanic_half_demon_goverment_yes:1 "bìNvÁxYrSO(WbeÜw)RöeN­eïy>tÏu"
+ mechanic_half_demon_goverment_no:0 ""
+ IYS_ADJ:0 "¬rYÉS"
+ half_demon:0 "JSY?e^"
+ Inuyasha:0 "¬rYÉS"
+ IYS_ideas:0 "¬rYÉS"
+ IYS:0 "¬rYÉS"
+ IYS_ideas_start:0 "JSY/Oßu"
+ IYS_ideas_bonus:0 "JSYÎÃV"
+ IYS_first:0 "kp/Ø"
+ IYS_first_desc:0 "¬rYÉS«zv¢urcg>fwQ	gYRvkp/Øÿ>fNöN(W«JeûQöewQ	g2¡VRÿ×S0Rnc³RTØïSåNê¨RîOYvcgÿuóýw2RQRIRzåNÊS4vl0"
+ IYS_second:0 "upõVàs"
+ IYS_second_desc:0 "upõVàs>fN*NNèGOO¬rYÉSÌ>N¨RvõVàs0"
+ IYS_third:0 "ÁxYr"
+ IYS_third_desc:0 "¬rYÉSv6r²N¬r'YSYuÙu?QPRvfkhVÿ>fRRe(u¬r'YSv`sYrObSb/v3NbQRKNN0	g0³bºNKNRÁxYrÿN%cKNNïSmpvLe0vðy|TÿN)YuYr0NNYrv^ðy)YN8SKN	NQRÿRnN>fRirÿnND	gÓuLu0"
+ IYS_fourth:0 "ceBÁ*r"
+ IYS_fourth_desc:0 "Ñ«debýw0)R(uS)Rv*rPRÿôv¥cdÂLeºNÿN,vBgxY*`8^ýýwã³Q0"
+ IYS_fifth:0 "¯uwvJSY"
+ IYS_fifth_desc:0 "¬rYÉS>fN*NýwINgËS3NwÒcRÿIN1rºNØNúQuTÿ¯uwïS1rwÈSÎNNgvUoJSYÿ©ºNâeU1rÈSÃV¼uÿåb	gN*g«N×OalÓgvdPRKNÃVÿsSOm×SQYvèx¾ÿnNÎN*g9eØS0"
+ IYS_sixth:0 "Y*`KNO"
+ IYS_sixth_desc:0 "åb	gO'YY*`6r²NåNÊS)nÔgºN|Ík²NvJSYÿN	gOwSP'`ØIVRRvDQùR³QwV0R6r²NObWYuvYr0"
+ IYS_seventh:0 "ÛVBKNs"
+ IYS_seventh_desc:0 "R>f1uNMORRØIVvëTsYàPRTàepeY*`eN-NÿbêñTTY*`ìNvupBTwbÿ>fNupRVIV'YvupRs0"
+ IYS_new_ideas:0 "¬rYÉS"
+ IYS_new_ideas_start:0 "JSY/Oßu"
+ IYS_new_ideas_bonus:0 "JSYÎÃV"
+ IYS_new_first:0 "kp/Ø"
+ IYS_new_first_desc:0 "¬rYÉS«zv¢urcg>fwQ	gYRvkp/Øÿ>fNöN(W«JeûQöewQ	g2¡VRÿ×S0Rnc³RTØïSåNê¨RîOYvcgÿuóýw2RQRIRzåNÊS4vl0"
+ IYS_new_second:0 "upõVàs"
+ IYS_new_second_desc:0 "upõVàs>fN*NNèGOO¬rYÉSÌ>N¨RvõVàs0"
+ IYS_new_third:0 "¥QSÁxYr"
+ IYS_new_third_desc:0 "ÁxYrO(u)YuYr¥QSYRvyrkbV`ÿ¥QS*gSbVöekg4xOS¥cævNØSbZàe0yr'`>fSir(lbcINZàe0"
+ IYS_new_fourth:0 "¥QSkg4x"
+ IYS_new_fourth_desc:0 "R«ØSbÑrÿSbúQRtevWgbVÿSLeºNV¥QLuÿFOWgv^N>fdkÛbpevÈugbV`0(WgTv³Qb-Nÿ¬rYÉSbRSbúQN¥QSkg4xvÈugbV`àepeag¥QSkgÞwúQÿRxHYLv«SOv^SvQV¥QLuÿ«ðyIN©eR¥QS0"
+ IYS_new_fifth:0 "¯uwvJSY"
+ IYS_new_fifth_desc:0 "¬rYÉS>fN*NýwINgËS3NwÒcRÿIN1rºNØNúQuTÿ¯uwïS1rwÈSÎNNgvUoJSYÿ©ºNâeU1rÈSÃV¼uÿåb	gN*g«N×OalÓgvdPRKNÃVÿsSOm×SQYvèx¾ÿnNÎN*g9eØS0"
+ IYS_new_sixth:0 "Y*`KNO"
+ IYS_new_sixth_desc:0 "åb	gO'YY*`6r²NåNÊS)nÔgºN|Ík²NvJSYÿN	gOwSP'`ØIVRRvDQùR³QwV0R6r²NObWYuvYr0"
+ IYS_new_seventh:0 "ÛVBKNs"
+ IYS_new_seventh_desc:0 "R>f1uNMORRØIVvëTsYàPRTàepeY*`eN-NÿbêñTTY*`ìNvupBTwbÿ>fNupRVIV'YvupRs0"
+ IYS_event.1.t:0 "êñTbébMvP"
+ IYS_event.1.ds:0 "÷©s¶RêñTbébêñTvMvP"
+ IYS_event.1.a:0 "Thh"
+ IYS_event.1.b:0 "b"
+ IYS_won_with_LXA_5_tt:0 "(WNo¶lvbN-NÿbÜwùRb10!kÿ§RèlaÿêS	g(WRbcELeºNûN¡RTÿMb¡pe§!"
+ IYS_won_with_AYU_5_tt:0 "(WN?²wO6wvbN-NÿbÜwùRb10!kÿ§RèlaÿêS	g(WRbcELeºNûN¡RTÿMb¡pe§!"
+ IYS_Tetsusaiga_frist_level:0 "§BYgb(WRbûN¡RöeÿòTÏu>f¢urÁxYrÿbìNS·V§!"
+ IYS_Tetsusaiga_30_level_TT:0 "§BYgbìN(WRbûN¡RöeÿÁxYr>t¡Ïu0R¾30ÿbìNS·V§!"
+ IYS_burma.TT:0 "»lNOb	g8u0WISwýNýS·V"
+ IYS_event.2.t:0 "ÑRówÁxYr"
+ IYS_event.2.ds:0 "OwbìNV^0WVgN8u0WISÿbìNvÁxYrßz6qØSbNÑRówÁxYrÿYrROubÑRówÿÙÅVSObìNôf RIV'YÿObINbìNKNTvÕRówbTÿ©bìNíbîvåNV0"
+ IYS_event.2.a:0 "ObIN(WÙKNTbìNv,rN*NºNLeºNbTÿ"
+ IYS_WILL_dragon_tetsuaiga_TT:0 "bìNv¢urÁxYrØSbNÑRówÁxYrÿ§R(WÙKNTÿYgbìNbÜwN)YPRÿv^NÿÁxYr>t¡beÏu¾0R50ÿbìNvÁxYrSOGS¶uINYrÁxYr§!\n§Tèlaÿ÷ÿR(WÁxYrØSbYrÁxYrKNMRIYÖS)YT.§!"
+ IYS_has_red_tetsuaiga__tt:0 "YgbìNvÁxYròTÏu>f¢urÁxYr,bìNSæÑS"
+ IYS_event.3.t:0 "YrÁxYr"
+ IYS_event.3.ds:0 "OwèT«bìNûQ%ÿbìNvÁxYr8T6eNegêèTvRÏÿÎNwØSbNYrÁxYrÿÙbRòTÏuV^v¼dNNLu0"
+ IYS_event.3.a:0 "eg'T"
+ IYS_use_cb_tt:0 ">T(u²Rbt1u§Y¬rYeQµO§!SVbìNv²Rbt1u>fvQöeÿ(WbìN`SN*NwýNöeÿYgbìN¡l	gåwýNv8lEN²RðyÿbìNSO·VÙWW0Wv8lEN²Rðy0"
+ cb_IYS_invasions:0 "¬rYeQµO"
+ cb_IYS_invasions_desc:0 "Ob	gvýV¶RýSãgNbìN"
+ IYS_one_technology_tt:0 "YgbìNåNvQ-NNyÑybHQNöeãNÿbìNS·V"
+ IYS_three_technology_tt:0 "YgbìNv	NyÑybýHQNöeãNÿbìNS·V"
+ IYS_techonology_flag_tt:0 "SVbìNGS¶uÑyböeÿSO·V1R°e¦^T10Ye÷^qVÍTR,åR°e¦^òTÏu¾0R100ÿR·V50	NyTJN¹ppe"
+ mechanic_half_demon_goverment_life_yes:0 "bìNObåb	gvwýNSVvQ¶NirINrrkuöeÿýS·V-2ÛSqN¦^T500SV0WºNR"
+ mechanic_half_demon_goverment_life_no:0 ""
+ IYS_can_change_tradegood_livestock_tt:0 "bìN°s(Wýw(WwýNLubO(u0§MY*`RES§!0ÿSåwýNFUÁTôf9eINrrku0v^NbìNãNN*N°evY*`yrCg"
+ IYS_CAN_change_tradegood_tt:0 "bìNýwYôf9e¶Nir"
+ estate_demon:0 "Y*`"
+ IYS_horse_breeding_decision_ct:0 "'Y¦u±9§Y10§!t^eg­Ãu¬rY\n\n­ÃuvÓugÖS³QNYNv§GàV/t§!ÿ\nÿ­Ãu¦^\nÿuQkObýwR\nÿûy¨R¦^\nÿ»lNúQ¶N0§Yrrku§!08fÁTvwýNpeÏ"
+ IYS_based_on_our_movement_speed_tt:0 "sQN¦^ÿbìNv¬rY­ÃuÓugYNÿ"
+ IYS_very_swift_horses_tt:0 "¬rY°s(W0§MåeLCSÌ§!0"
+ IYS_nimble_horses_tt:0 "¬rY°s(W0§MDô	NûR§!0"
+ IYS_fast_horses_tt:0 "¬rY°s(W0§MÅN8^l§!0"
+ IYS_based_on_our_discipline_tt:0 "sQNªuVÿbìNv¬rY­ÃuÓugYNÿ"
+ IYS_iron_discipline_horses_tt:0 "¬rY°s(W0§MäNLybk§!0"
+ IYS_disciplined_horses_tt:0 "¬rY°s(W0§M­Ãu	g/t§!0"
+ IYS_based_on_horse_provinces_tt:0 "sQN¬rYpeÏÿbìNv¬rY¥bJTÓugYNÿ"
+ IYS_blooming_abundance_of_horses_tt:0 "¬rY°s(W0§MpeÏgY§!0"
+ IYS_abundance_of_horses_tt:0 "¬rY°s(W0§MpeÏVY§!0"
+ IYS_horse_population_steady_increase_tt:0 "¬rY°s(W0§M3zekX§!0"
+ IYS_based_on_cav_combat_ability_tt:0 "sQNbeRÿbìNv¬rY¥bJTYNÿ"
+ IYS_expanded_use_of_fire_arms_tt:0 "¬rY°s(W0§M¿RNïSSV§!0"
+ IYS_partial_use_of_fire_arms_tt:0 "¬rY°s(W0§MObTàeLe§!0"
+ IYS_event.4.t:0 "­Ãu¬rY"
+ IYS_event.4.ds:0 "t^>tgùRbýVv¬rYv­ÃuÈuN	gNbgÿÏuÇÙ!kv­ÃuÿbìNýV¶RvbRÅVSôfNNBS|iÿ>föeP©vQÖNýV¶RÁÆbìNvQ0"
+ IYS_event.4.a:0 "©bìNegww­ÃuÓug'T"
+ estate_demon_horse_responsibilities:0 "Y*`ªuV"
+ estate_demon_horse_responsibilities_desc:0 "¬rY>fY*`SV-Ng	gbeRvuQ0àVdkÿcNÖNìN¡rt¬rYvAuk0­ÃuTÅYvyrCgÿ>fVtObSV6q0"
+ IYS_we_has_train_demon_tt:0 "bìNòTÏu­ÃuRN¬rY"
+ IYS_dragon_tetsuaiga_up_tt:0 "bìNvÁxYróS>fÑRówbV`"
+ tetsuaiga_count_tt:0 "bìNSVMRåb	gv§RIVó§!peÏIN:[ROOT.Tetsusaiga.GetValue]"
+ tetsuaiga_count:0 "[ROOT.Tetsusaiga.GetValue]"
+ IYS_change_tradegood_button:0 "¬rYRES"
+ IYS_tradergood_change_flag_tt:0 "°s(WbìNO(u0§MY*`RES§!0SOX RåwýNz6e0u¶N0ºNRTN¹p0"
+ IYS_change_livestock_tt:0 "0§MY*`RES§!0"
+ IYS_livestock:0 "Y*`RES"
+ IYS_we_choose_queen_tt:0 "bìNVOSNöN	ébvMvPÍN6qXRJm"
+ IYS_overrun_1_tt:0 "SVbìNhQ|kLeºNöeÿbìNS·V33QN¹ppeT0.05LwN¦^"
+ IYS_modifier_1:0 "bìNSTw"
+ IYS_won_LXA_with_warscore:0 "fR`N¡rt"
+ IYS_won_LXA_with_war:0 "fR`Nb"
+ IYS_won_LXA_complete:0 "NaKNýV"
+ IYS_won_AYU_with_warscore:0 "NãSV0W"
+ IYS_won_AYU_with_war:0 "NãkOb"
+ IYS_WON_AYU:0 "'YÎWsgvm¡N"
+ red_tetsuaiga:0 "¢urÁxYr"
+ IYS_Angkor:0 ")R(u4TåTz"
+ IYS_2373:0 "m«RzS"
+ IYS_HUE:0 "zSªuõVx"
+ IYS_burma_province:0 "¬rYvßu»l"
+ IYS_Adamant_Barrage:0 "ÑRówÁxYr"
+ IYS_dragon_tetsuaiga:0 "YrÁxYr"
+ IYS_trade:0 "^ÞT8f"
+ IYS_wolf:0 "-NWS¬rY"
+ IYS_culture:0 "eSAuc"
+ IYS_pearl_of_khorasan:0 "NSLNÍsàs"
+ half_demon_goverment_life_modifier:0 "Y*`RES"
+ IYS_10_1:0 "3zRýV¶R"
+ IYS_swift_horses_modifier:0 "Åwc¬rY"
+ IYS_swift_horses2_modifier:0 "Å¬rY"
+ IYS_swift_horses3_modifier:0 "ëV¬rY"
+ IYS_mount_discipline_modifier:0 "Á¬rªuV"
+ IYS_mount_discipline2_modifier:0 "¬rYµb¡V"
+ IYS_horse_population_boom_modifier:0 "¬rYAuY"
+ IYS_horse_population_boom2_modifier:0 "¬rYEQ³"
+ IYS_horse_population_boom4_modifier:0 "¬rY3zRX"
+ IYS_firearm_charge_modifier:0 "¬rYbR´fX"
+ IYS_firearm_charge2_modifier:0 "¬rYbR3zX"
+ IYS_train:0 "¬rY­ÃuRÕk"
+ IYS_black_tetsuaiga:0 "¥QSYR"
+ IYS_Vajra_Blast_Stream:0 "ÑRrAm4x"
+ IYS_horse_breeding_decision_title:0 "­Ãu¬rY"
+ IYS_horse_breeding_decision_desc:0 "¬rY>fNÍybRIVÿûy¨R¦^ÅwcvY*`ÿYgbìNýwYSvQ'YÏbeQ0RbIWNO(uÿÙÅVSO>fN!kO'YvSÕ0"
+ IYS_horse_breeding_decision_at:0 "å³Q®AQ¸INbýV­Ãu¬rYÿ\n§YêSýwRbN!k0§!"
+ unlock_decision_IYS_horse_breeding_decision_tt:0 ">T(u0§Y­Ãu¬rY§!0³Q®0"
+ lock_decision_IYS_horse_breeding_decision_tt:0 "y(u0§Y­Ãu¬rY§!0³Q®0"
+ has_unlocked_decision_horse_breeding_decision_tt:0 "òT>T(u0§Y­Ãu¬rY§!0³Q®0"
+ IYS_based:0 "¬rYÉSZCg"
+ IYS_based_desc:0 "bìNv?e^^å>fåN¬rYÉSINJNv?e^0¬rYÉSv¡rtSOÙuýV¶R&^eg¿O)RÿFOTöenNOÀow6BSvNánÿbìN^ås^aYÙvQ-NvsQû|0"
+ half_demon_based:0 "Y*`INJN"
+ half_demon_based_desc:0 "bìNvýV¶R,geg1S>f1uY*`INJNOb¡rtOwÿObåNnxRåNY*`INJNv?eVr>fTNNÅ`tv0"
+ half_demon_desc:0 "¬rYÉSêúQu1S>fJSYÿJSYvOßuÙuÖN&^egNRÏvTöenN&^egNNNN¿O'`0"
+ IYS_missions_10_4_title:0 "ÑRrAm4x"
+ IYS_missions_10_5_title:0 "¥QSÁxYr"
+ IYS_missions_10_3_title:0 "ÑS%cÙNY*`"
+ IYS_missions_10_2_title:0 "RY*`"
+ IYS_missions_9_2_title:0 "ÍÆ[Root.Capital.GetCapitalName]Ye²w"
+ IYS_missions_8_3_title:0 "cIQKNÎW"
+ IYS_missions_8_1_title:0 "ÑSUS[Root.Capital.GetCapitalName]"
+ IYS_missions_6_6_title:0 "¥c¡r^ÞT"
+ IYS_missions_6_5_title:0 "T-NýVÛÑS"
+ IYS_missions_6_4_title:0 "ÛJe'Y"
+ IYS_missions_5_4_title:0 "s^ØÉh"
+ IYS_missions_5_3_title:0 "ÈuÓuo¶l"
+ IYS_missions_5_2_title:0 "²QûQo¶l"
+ IYS_missions_4_4_title:0 "TlmQ2uÛÑS"
+ IYS_missions_4_3_title:0 "?ktO6wvmp"
+ IYS_missions_4_2_title:0 "cb?ktO6w"
+ IYS_missions_4_1_title:0 "cELeºN"
+ IYS_missions_3_5_title:0 "Ä-NWS"
+ IYS_missions_2_2_title:0 "ÈuÓuÃRúV"
+ IYS_missions_2_1_title:0 "ÆRÃRúV"
+ IYS_missions_1_4_title:0 "ßuN8u"
+ IYS_missions_1_3_title:0 "ÈuÓu?æt"
+ IYS_missions_1_5_title:0 "eQµOnR RÉb"
+ IYS_missions_1_6_title:0 "ßuNnR RÉb"
+ IYS_missions_1_7_title:0 ")YOvhL"
+ IYS_missions_3_6_title:0 "ndNÅ>y"
+ IYS_missions_3_7_title:0 "pS¦^¯efW'Ynm"
+ IYS_missions_3_8_title:0 "*jkbpS¦^è"
+ IYS_missions_2_7_title:0 " ôTküf<Ssg"
+ IYS_missions_1_8_title:0 "ûQ%×kbY6w²LOW"
+ IYS_insulted_LXA:0 "o¶l«bìN0W®O±N"
+ IYS_insulted_AYU:0 "?ktO6w«bìN0W®O±N"
+ IYS_warscore_AYU_tt:0 "SVbìNùR?ktO6wvbNRpeóSIN75öeÿbìNS"
+ IYS_war_5_AYU_tt:0 "SVbìN(WN?ktO6wvbN-NÿbÜwùR¹e10!kÿbìNS"
+ IYS_warscore_LXA_tt:0 "SVbìNùRo¶lvbNRpeóSIN75öeÿbìNS"
+ IYS_war_5_LXA_tt:0 "SVbìN(WNo¶lvbN-NÿbÜwùR¹e10!kÿbìNS"
+ IYS_religious_unity:0 "^y2WýV¦^"
+ IYS_missions_9_3_title:0 "ÝOcRYeßuN"
+ IYS_50_tetsuaiga_up_tt:0 "bìNòTÏu>t¡Üw)RN50IWbN"
+ IYS_100_tetsuaiga_up_tt:0 "bìNòTÏu>t¡Üw)RN100IWbN"
+ IYS_technology_develop: "Ye²w^©R"
+ mechanic_IYS_culture_goverment_yes:0 "bìN»lN¬rYÉSeSwýNýS·V0.3SV0WFUÁTu¶NúQÄ!jT0.1SV0WAuc¦^X"
+ IYS_culture_province:0 "eSêáO"
+ estate_witches:0 "ëTsY"
+ unlock_privilege_IYS_estate_church_Jade_Resonance_tt:0 "ã[Root.GetChurchOrFallbackName]6BSyrCg0§YsKNqQ2§!00"
+ IYS_estate_church_Jade_Resonance:0 "sKNqQ2"
+ IYS_estate_church_Jade_Resonance_desc:0 "ÛVBKNsNbìN¶NuqQ2ÿbìN^åÀQSRÿ©vQïSåNôf RRhQvINbìNOb(u0"
+ IYS_dragon_tetsuaiga_tt:0 "bìNvÁxYr>fYrbV`"
+ IYS_event.5.t:0 "VßWvsKNqQ2"
+ IYS_event.5.ds:0 "nR RÉbnípvcRÎùcOwjNPöSvlo`ÿ cÇ¬rYÉS°eÖzËzvQ%×e^0ÛVBKNsv^IQ(WR`³l>eAmv4lbNåå°sÿÿNjON³l^lawväSw^yupNOíqQ20\nñmYÿ<PYvëXuQ,TÁ³l4l-N/Oeg<OºN^ºNvÀTLkÿgIQNßz	gJSºNJS|vqVPR(W¦ÇN-N8nV0Ìåeÿ¾aSÎWYvJz0uÌÑS°sN«8Tr^O²mvwjr8SSOÿ3OãSkYuOwYVv+trgIQ0FZWèmyøSìNZwÆ(W^y^MRqçpæliöSÿØ|TÙ>f0V¦ªs0æ`NR³bR`³lvÍk^yuLO0w«gKNQgQëTsYtSaåw0RÿÙGrW0WñmYck	gÀNHNN*jZ0W.T8TOwÛVBKNsvupR&&\n0ÙÌvW0WTåe,gNN7hÿ0[Root.Consort.GetName]ác'tV­rÿgOw³lbGSwvþÿ0ÛVBKNsvâl¨R&&ÏP>f(WTÐgÍyôf^'Y0ôfäSwvNNøvTlV00¬rYÉSvÁxYr³ÿRRNnm°súQÎN*gÁÇvµheJRÕu0"
+ IYS_event.5.a:0 "NFZWè¾bQY¦u"
+ IYS_event.5.b:0 ">mcbú^Ëz°sãNfR!h"
+ IYS_bengal_Brahman:0 "W9Rs"
+ IYS_bengal_higurashi:0 "R`³lt'`fRO"
+ IYS_garjat_recruitment:0 "nR RÉbvgÎN"
+ IYS_integrating_garjati_vassals:0 "teTnR RÉb"
+ IYS_event.6.a:0 "(ufkRteTÖNìN"
+ IYS_event.6.b:0 "(uöeôteTÖNìN"
+ IYS_event.6.c:0 "©ÖNìNINbìNOb(u"
+ IYS_event.6.t:0 "nR RÉb0WISvVg"
+ IYS_event.6.ds:0 "OwbìNvÁ²QeQÙGr0WISÿÖNìNÈuN>eNNfkhVÿTbìN²RNÖNìNvbM0nR RÉb0WISòTÏuRhQLeQbìNvKb-NÿbìN	gCg	ébÙGrW0WåNTvRV¿R0"
+ IYS_riches_of_golconda_modifier:0 "bSTR¾v1ÌR"
+ IYS_angel:0 ")YOvhL"
+ IYS_event.7.t:0 "ùRpS¦^¯efWv²QûQ"
+ IYS_event.7.ds:0 "Thhv4xT­rSeQR`³l9R²ÿ³l^ÂV2úQ0NRVKNîh0vYh9hÛVBKNsßzNh3NCSt^v04gÙNÁ09hû|øvÞÿØLvéÐcöSNnm°súQàPRëTsYväSwfJT0"
+ IYS_age_tree:0 "öeãNhQÜu"
+ IYS_event.7.a:0 "ÓuºNhqQuKNQY"
+ IYS_Kabushikigaisha:0 "JewNÅ>y"
+ IYS_event.8.t:0 "ùRÈTüfêSúRvYt"
+ IYS_event.8.ds:0 "SV¬rYÉSvÁxYrRVÈTüfêSúRvÄÑyzvöeÿ!KQYe2WxQ0äS·<hpQyr·(^kS0vfNuz6qSkONCSÑrÞþ0ÙNÞþQbTÛVBKNsxGrÿ(WgIQNÝQÓub	N4YmQÂvfkëX^qVÙck>f!KQYeRãNN^²³uKQ«YSv0^y'`kõV0ÿ\núR^vvsðS6núQÑrO²mÿ[Root.Consort.GetName]ÑS°s²NO²mßz(WµhexJRNübQúQbýVeWRÿ0dk^2W0WÿCNY¢Q00[Root.Consort.GetName]v4xT­rcT0W^ÿ²Ì/OegNv³YYTnv¨RSegÈTüfêSúRv0WúWÿßzú^(WpS¦^³leföeãNvNYklQWKNNÿ"
+ IYS_event.8.a:0 "(uÁxYr8T6e"
+ IYS_event.8.b:0 "©ThhYt"
+ IYS_event.8.c:0 "©bYt"
+ IYS_Harmandir_Temple:0 "ÁxYr·^y¸8T6e"
+ IYS_Higurashi_Kagome_Harmandir_Temple:0 "ÑyfRÀQS"
+ IYS_kikyo_Harmandir_Temple:0 "Vuµh1U"
+ IYS_rajputana:0 "W9Rs­^vÙppS"
+ IYS_Gujarat_trade_share_tt:0 "YgbìN(WäS	TÉbyrwm¸Sv8fÞzNR¾0R50%ÿbìNS·V"
+ IYS_event.9.t:0 "·Vr^s	vÉ"
+ IYS_event.9.ds:0 "SVôTküf<SgTv!XWwLöeÿ·Vr^ØSvsfk©S0WBSz6qÂÿ2úQñmËW0WNvèT'YsÓÿw	0ÙNceÑS^ÝIQvvfSOßzNÛVBxGr¶NuqQ2ÿSÏò>m2WXvWvÓgbbýV^y>yv1g¢ur0bvÀhKmêN>fIyÿÿw	-Nm¨RvýwÏNß¨KNNvöezzâl¨RRhQNôÿw[Root.Consort.GetName]v4xT­ra^0R0W^ñmY	g|<OàPRëTsYväSwSpS50x^XRvÏòîOëXz6qê0WØ|TÿV¦vsKNRÿMb>fwJN¸úvs|ÈTOSÿ^yKNbëX	ÿÿ"
+ IYS_event.9.c:0 "©b9e/ÙÌ"
+ IYS_event.9.b:0 "©ThhYt"
+ IYS_missions_2_7_modifier_kikyo:0 "2WÔlu"
+ IYS_missions_2_7_modifier_Higurashi_Kagome:0 "·Vr^åTN"
+ IYS_missions_2_7_modifier_common:0 "ôTküf<SÏ9NýVvhL"
+ IYS_mission_1_8_modifier:0 "ºNYqQ»lvÄÑöeãN"
+ IYS_missions_3_9_title:0 "pS¦^'YßuN"
+ IYS_event.10.t:0 "pS¦^^ysv RQ"
+ IYS_event.10.ds:0 "SVÁxYrvRIQgTN!k cÇ·Vr^ØSvsfk©S^y^öeÿte*N!k'YFvmyøSNfRwìNPZw¨NÔkÎW0ÛVBKNsv^IQxmNKQÌ^³u³lvâlmÿFZWèw(WR`³l4l-Nw0RNnFZN^SætvZqVÖNìNKbcÁxYrN4xT­rÿTêÜbvNCSáOO®Vr0\n0ÙN>fVgÿ>f^yavÞVRVÿ0ôuåg6w³uLOS^ýVv«R÷^×ºNØ1ULkÿ0/TOÏuxQéeòTÿSVN¹eöÑS^ysM4NÿYRSSIN0NvKNèÿ0aYrklwvkpªg(WYSäMRÑTkpÿäS	TÉbyrvÉhQÑS°sÛVBxGrýw©¯gvÉhÃÍu01SÞg?vúWcwYe/OYeëXnNwPwP(WASWR¶gNÕJRsKN¹uàz!k'YFvÏkN|x>xý(W1k|T°esvÞu0"
+ IYS_event.10.a:0 "Î¥cbìNvöeãN'T"
+ IYS_IYS_event_10_modifier_1:0 "ln2WsvêNV"
+ IYS_event.11.t:0 ")YN8SKNQR"
+ IYS_event.11.ds:0 "bìN°s(W	gIgO	éb>f&TÛL)YN8SKNQRNöN,YgbìNTaÛLÙ*NNöNÿSOIgN*NRIV·V§RNNYr§!îOckÿYgbìNbÜwN9eýV¶RSO·VdkîOckv1VSHr"
+ IYS_event.11.a:0 "¡lÅV"
+ IYS_event.11.b:0 "VËY'T"
+ IYS_event.12.t:0 ")YN8SKNQR"
+ IYS_event.12.ds:0 "4NÆR^vñmYÿýVX¿uYvqNlSz6qÂVNSñmn0PLgv8SlùcOw)s¢u÷IQ²Q)YwwÿNÄg/ÕuÑZqVvYRGSwck>f/Oô-NTlVÇvMOTJNv0NNYr0ÿRÄgNv<îv³6qAwVÿlÑTvNOíÍTVsýÿ\nêN'Tÿ|&&(uvNuB.smyÿ>TSPllq)YKN`ÿ\n¡V¶^MRvÛVBxGrgRÈp³ÿbv4xT­rS*g-d&V¿OêL)Tx0¬rYÉSvÁxYrÑSúQfJTv²`2ÿw¹XvëXuQìNòTVËYN×S¶c6R0WêÜb&&"
+ IYS_event.12.a:0 "©bìN¥c×SÙ¡wRÏ'T"
+ IYS_event.13.t:0 "IYÞVNNYr"
+ IYS_event.13.ds:0 "SVÁxYrveYIN0ÑRªg4x0>zLeýVTJNøwv¬wôÿNNYrz6q2c1¿RJN¯SOÿùcOwvN¡NBvÀTV¬`nmNbIWNzz0R«Nv<îvøÑSúQOrIQñgÿ¬rYÉSvöÑS(WYÎ-NÂrÿbv4xT­rßz«ZSbQ|0\n0JSY&&llvah`ÿÔk²N|sTCSPÿ0\nNNYrvNOíôv¥cIReQ¨Óÿ¬rYÉS<wMRêÇASmQY«ÈpkpTlVv^a0ÁxYrgRÈp³OwÑSúQfJTÿwOgu8Nv)YuYròTRúQ¥QSkg4xFOÂ-NmúQvßz>fbýVöeãN«NNYr`S.bv(`up'YQÿ"
+ IYS_india_king:0 "pS¦^s"
+ estate_burgher_spice_monster_tt:0 "»lNOb	gu¶N§Ye§!wýN·VYNHegÿ"
+ estate_burgher_spice_monster_modifier:0 "Y"
+ estate_burgher_spice_monster_rt:0 "§YY§!îOckSÎNbìNOb	gwýNûyd0"
+ unlock_privilege_burgher_spice_monster_tt:0 "ã[Root.GetBurghersOrFallbackName]6BSyrCg0§YY8f^ýV§!00"
+ burgher_spice_monster:0 "Y8f^ýV"
+ burgher_spice_monster_desc:0 "(W¬rYÉSvßu»lNÿpS¦^!k'YFve8f«V^ÍQX0ÛVBKNsxGrN·Vr^ØSvkpqSWäXÓuTÿ¬PSúQTIN0Y0vØSVkOiráwigR-NÝQÓuOwOrvf8hÿFJZQ7)Owlawv®VWY*`0ÙNkOir(W!k'YFvÍyiíV-N¯uÿbIN'k2m5Ïe0-NNFUâVCNóNNsgNIYv0ê6qlx'00"
+ IYS_Gujarat_trade:0 "äS	TÉbyr8f"
+ IYS_congyunya_modifier:0 "NNYr"
+ IYS_congyunya_modifier_weaken:0 "NNYr"
+ 

@@ -1,0 +1,24 @@
+custom_button = {
+    name = IYS_change_tradegood_button
+    potential = {
+        FROM = { tag = IYS }
+	    ROOT = { owned_by = FROM }
+        FROM = {
+            has_country_flag = IYS_can_change_tradegood_livestock
+        }
+    }
+    trigger = {
+        owner = {
+            dip_power = 30
+            is_at_war = no
+        }
+        NOT = { trade_goods = livestock }
+    }
+    effect = {
+        change_trade_goods = livestock
+        owner = {
+            add_dip_power = -30
+        }
+    }
+    tooltip = IYS_change_livestock_tt
+}

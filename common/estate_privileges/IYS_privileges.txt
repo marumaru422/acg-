@@ -1,0 +1,170 @@
+estate_demon_horse_responsibilities = {
+	icon = horse
+	land_share = 0
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.05
+	loyalty = 0.1
+	is_valid = {
+		has_country_flag = IYS_can_change_tradegood_livestock
+	}
+	can_select = {
+	}
+	on_granted = {
+		if = {
+			limit = { NOT = { has_country_flag = bred_a_new_war_steed } }
+			unlock_decision = {
+				type = IYS_horse_breeding_decision
+				custom_tooltip = IYS_horse_breeding_decision_at
+			}
+		}
+	}
+	on_revoked = {
+		if = {
+			limit = { NOT = { has_country_flag = bred_a_new_war_steed } }
+			lock_decision = { type = IYS_horse_breeding_decision }
+		}
+	}
+	on_invalid = {
+		if = {
+			limit = { NOT = { has_country_flag = bred_a_new_war_steed } }
+			lock_decision = { type = IYS_horse_breeding_decision }
+		}
+	}
+    influence_scaled_conditional_modifier = {
+		trigger = {
+			estate_loyalty = { estate = estate_nobles loyalty = 60 }
+		}
+		modifier = {
+			cavalry_power = 0.1
+		}
+	}
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			estate_loyalty = { estate = estate_nobles loyalty = 30 }
+			NOT = { estate_loyalty = { estate = estate_nobles loyalty = 60 } }
+		}
+		modifier = {
+			cavalry_power = 0.05
+		}
+	}
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			NOT = { estate_loyalty = { estate = estate_nobles loyalty = 30 } }
+		}
+		modifier = {
+			cavalry_power = 0
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+	}
+	benefits = {
+		cavalry_cost = -0.1
+	}
+	mechanics = {
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+IYS_estate_church_Jade_Resonance = {
+	icon = IYS_privileges
+	land_share = 0
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.05
+	loyalty = 0.1
+	is_valid = {
+		has_unlocked_estate_privilege = {
+			estate_privilege = IYS_estate_church_Jade_Resonance
+		}
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+	}
+	benefits = {
+		religious_unity = 0.1
+		province_warscore_cost = -0.05
+		legitimacy = 0.5
+		meritocracy = 0.5
+	}
+	mechanics = {
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+burgher_spice_monster = {
+	icon = privilege_goods_produced
+	land_share = 0
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.05
+	loyalty = 0.1
+	is_valid = {
+		has_unlocked_estate_privilege = {
+			estate_privilege = burgher_spice_monster
+		}
+	}
+	can_select = {
+		any_owned_province = {
+			trade_goods = spices
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_burgher_spice_monster_tt
+		tooltip = {
+			add_province_modifier = {
+				name = estate_burgher_spice_monster_modifier
+				duration = -1
+				desc = UNTIL_PRIVILEGE_REVOKED
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_burgher_spice_monster_rt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				trade_goods = spices
+			}
+			add_province_modifier = {
+				name = estate_burgher_spice_monster_modifier
+				duration = -1
+			}
+		}
+	}
+	on_invalid = {
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = estate_burgher_spice_monster_modifier }
+			remove_province_modifier = estate_burgher_spice_monster_modifier
+		}
+	}
+	benefits = {
+		trade_steering = 0.1
+		global_own_trade_power = 0.1
+	}
+	mechanics = {
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}

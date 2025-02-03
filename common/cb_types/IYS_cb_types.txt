@@ -1,0 +1,14 @@
+cb_IYS_invasions = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		has_country_flag = IYS_add_permanent_claim_CB
+		is_revolutionary = no
+	}
+
+	prerequisites = {
+		is_neighbor_of = FROM
+	}
+
+	war_goal = superiority_world_crusade
+}

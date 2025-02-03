@@ -1,0 +1,152 @@
+namespace = Flavor_Random
+country_event = {   #博丽神社的沦陷
+	id = Flavor_Random.118
+	title = Flavor_Random.118.t
+	desc = Flavor_Random.118.desc
+	picture = HKR_1
+	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		capital_scope = {
+            OR = {
+			    continent = europe
+                continent = africa
+            }
+		}
+	}
+	goto = 118
+	trigger = {
+		has_dlc = "Domination"
+		NOT = { has_global_flag = The_Fall_of_Hakurei_Shrine }
+		118 = {
+			owner = {
+                OR = { 
+                    AND = { 
+				        NOT = {
+                            religion = Gensokyo_reg
+                        }
+                        religion_group = Anime
+                    }
+                    overlord = {
+                        NOT = {
+                            religion = Gensokyo_reg
+                        }
+                        religion_group = Anime
+                    }
+			    }
+            }
+		}
+	}
+	
+	option = {
+		name = Flavor_Random.118.a
+		118 = {
+			add_loot_from_rich_province_general_effect = {
+				LOOTER = controller
+			}
+		}
+		118 = { 
+			owner = {
+				add_prestige_or_monarch_power = {
+					amount = 50
+				}
+				add_country_modifier = {
+					name = Advance_to_Hakurei_Shrine
+					duration = 9125
+				}
+			}
+		}
+		custom_tooltip = Flavor_Random.118.a.tt
+		hidden_effect = {
+			set_global_flag = The_Fall_of_Hakurei_Shrine
+			every_known_country = {
+				limit = {
+					religion = Gensokyo_reg
+				}
+				country_event = {
+					id = flavor_random.119
+				}
+			}
+		}
+	}
+}
+country_event = {   #异端带来的恐慌
+	id = Flavor_Random.119
+	title = flavor_random.119.t
+	desc = flavor_random.119.desc
+	picture = HKR_1
+	is_triggered_only = yes
+	trigger = {
+		has_dlc = "Domination"
+	}
+	
+	option = {
+		name = flavor_random.119.a
+		reduce_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = The_Panic_of_Heretic_Advancement
+			duration = 9125
+		}
+	}
+}
+
+country_event = {   #收复博丽神社
+	id = Flavor_Random.120
+	title = Flavor_Random.120.t
+	desc = Flavor_Random.120.desc
+	picture = Youmu_1
+	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		capital_scope = {
+            OR = {
+			    continent = europe
+                continent = africa
+            }
+		}
+	}
+	goto = 118
+	trigger = {
+		has_dlc = "Domination"
+        has_global_flag = The_Fall_of_Hakurei_Shrine 
+		118 = {
+			owner = {
+                OR = {  
+                    religion = Gensokyo_reg
+                    overlord = {
+                        religion = Gensokyo_reg
+                    }
+                }
+			}
+        }
+	}
+	
+	option = {
+		name = Flavor_Random.120.a
+        tooltip = {
+            custom_tooltip = Flavor_Random.120_TT
+            add_country_modifier = {
+                name = An_inspiring_victory
+                duration = 1650
+            }
+        }
+        add_prestige_or_monarch_power = {
+			amount = 80
+		}
+		add_country_modifier = {
+			name = Recovering_Hakurei_Shrine
+			duration = 9125
+		}
+        hidden_effect = {
+            every_country = {
+                limit = {
+                    religion = Gensokyo_reg
+                }
+                add_country_modifier = {
+                    name = An_inspiring_victory
+                    duration = 1650
+                }
+            }
+        }
+    }
+}

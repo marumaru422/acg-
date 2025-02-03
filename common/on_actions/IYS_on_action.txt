@@ -1,0 +1,160 @@
+on_startup = {
+	IYS = { 
+		country_event = {
+			id = IYS_event.1
+		}
+	}
+}
+on_battle_won_unit = {
+    if = {
+		limit = {
+			unit_owner = {
+				has_government_attribute = half_demon_goverment
+		 	} 
+		}
+		unit_owner = { 
+			change_variable = {
+				which = Tetsusaiga
+				value = 1
+			}
+		}
+	}
+}
+on_battle_won_country = { 
+	if = { 
+		limit = {
+			ROOT = { 
+				TAG = IYS
+			}
+			FROM = { 
+				TAG = LXA
+			}
+		}
+		ROOT = { 
+			change_variable = {
+				which = IYS_num_of_wars_won_var_with_LXA
+				value = 1
+			}
+		}
+	}
+	if = { 
+		limit = {
+			ROOT = { 
+				TAG = IYS
+			}
+			FROM = { 
+				TAG = AYU
+			}
+		}
+		ROOT = { 
+			change_variable = {
+				which = IYS_num_of_wars_won_var_with_AYU
+				value = 1
+			}
+		}
+	}
+}
+on_war_won = {
+	if = {
+		limit = { 
+			ROOT = { 
+				TAG = IYS
+				has_country_modifier = IYS_Adamant_Barrage
+				NOT = { 
+					has_country_flag = IYS_DRAGON_WON_FLAG
+				}
+			}
+			FROM = { 
+				is_emperor_of_china = yes
+			} 
+		}
+		country_event = {
+			id = IYS_event.3
+		}
+	}
+	if = { 
+		limit = { 
+			ROOT = { 
+				TAG = IYS
+			}
+			FROM = { 
+				has_country_modifier = IYS_congyunya_modifier
+			}
+		}
+		country_event = {
+			id = IYS_event.13
+		}
+	}
+}
+on_siege_won_province = { 
+	if = {
+		limit = {
+			controller = {
+				has_country_flag = IYS_add_permanent_claim_CB
+				OR = {
+					is_in_war = {
+						attacker_leader = this
+						casus_belli = cb_IYS_invasions
+					}
+					is_in_war = {
+						defender_leader = this
+						casus_belli = cb_IYS_invasions
+					}
+				}
+				NOT = { is_permanent_claim = ROOT }
+			}
+		}
+		controller = { 
+			add_permanent_claim = ROOT
+		}
+	}
+}
+on_tech_taken = { 
+	if = {
+		limit = {
+			has_country_flag = IYS_techonology_flag
+		}
+		add_papal_influence = 10
+		if = {
+			limit = {
+				NOT = {
+					innovativeness = 100
+				}
+			}
+			change_innovativeness = 1
+		}
+		else = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+}
+on_trade_good_changed = {
+	on_trade_good_changed_estate_privileges_effect = yes
+	on_trade_good_changed_government_effect = yes
+	ROOT = {
+		if = {
+			limit = { 
+				trade_goods = livestock 
+				FROM = { has_country_flag = IYS_tradergood_change_flag }
+			}
+			add_base_tax = 1
+			add_base_production = 1 
+			add_base_manpower = 1
+		}
+	} 
+}
+on_overrun = { #ROOT - winner, FROM - loser, on stackwipe
+	if = {
+		limit = {
+			ROOT = {
+				has_country_flag = IYS_overrun_1_flag
+			}
+		}
+		ROOT = {
+			add_army_professionalism = 0.05
+			add_mil_power = 33
+		}
+	}
+}

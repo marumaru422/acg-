@@ -1,0 +1,243 @@
+IYS_modifier_1 = { #我们将崛起
+    core_creation = -0.1
+    land_morale = 0.1
+}
+IYS_won_LXA_with_warscore ={    #学习管理
+    core_creation = -0.1
+    warscore_cost_vs_other_religion = -0.15
+}
+IYS_won_LXA_with_war = {    #学习骑战
+    cavalry_power = 0.1
+    cavalry_cost = -0.1
+}
+IYS_won_LXA_complete = {    #万象之国
+    cavalry_power = 0.1
+    land_forcelimit_modifier = 0.2
+}
+IYS_won_AYU_with_warscore = {   #了解当地
+    years_of_nationalism = -5
+    stability_cost_modifier = -0.1
+}
+IYS_won_AYU_with_war = { #了解作战
+    land_attrition = -0.1
+    leader_cost = -0.1
+}
+IYS_WON_AYU = {     #大城王朝的消亡
+    trade_efficiency = 0.1
+    center_of_trade_upgrade_cost = -0.2
+    governing_capacity = 20
+}
+red_tetsuaiga = {   #红色铁碎牙
+    discipline = 0.025
+    land_morale = 0.05
+}
+IYS_Angkor = {  #利用吴哥窟
+    technology_cost = -0.05
+    global_missionary_strength = 0.02
+}
+IYS_2373 = {    #洗劫顺化
+    local_monthly_devastation = 0.1
+    local_tax_modifier = -0.1
+}
+IYS_HUE = {     #顺化纪念碑
+    prestige = 1
+    state_governing_cost = -0.1
+    governing_capacity = 20
+}
+IYS_burma_province = {   #犬妖的统治
+    local_autonomy = -0.05
+    local_culture_conversion_cost = -0.25
+    local_culture_conversion_time = -0.25
+}
+IYS_Adamant_Barrage = { #金刚石铁碎牙
+    discipline = 0.05
+    land_morale = 0.1
+}
+IYS_dragon_tetsuaiga = {    #龙牙铁碎牙
+    discipline = 0.05
+    land_morale = 0.1
+    cavalry_shock = 0.25
+}
+IYS_trade = {   #广州贸易
+    trade_steering = 0.1
+    global_own_trade_power = 0.1
+}
+IYS_wolf = {   #中南犬妖
+    core_creation = -0.15
+    all_power_cost = -0.05
+    governing_capacity = 200
+    manpower_recovery_speed = 0.15
+    global_manpower_modifier = 0.15
+}
+IYS_culture = {     #文化繁荣
+    advisor_cost = -0.15
+}
+IYS_pearl_of_khorasan = {   #[Root.Capital.GetCapitalName]珍珠
+    local_tax_modifier = 0.5
+    local_production_efficiency = 0.5
+    local_manpower = 0.5
+    local_prosperity_growth = 1
+    institution_growth = 10
+}
+half_demon_goverment_life_modifier = {  #妖怪定居
+    local_unrest = -2
+    local_manpower = 0.5
+}
+IYS_10_1 = { #稳定国家
+    stability_cost_modifier = -0.1
+    all_estate_loyalty_equilibrium = 0.1 
+}
+IYS_swift_horses_modifier = {   #迅捷犬妖
+    movement_speed = 0.15
+}
+IYS_swift_horses2_modifier = {  #迅犬妖
+    movement_speed = 0.1
+}
+IYS_swift_horses3_modifier = {  #快犬妖
+    movement_speed = 0.05
+}
+IYS_mount_discipline_modifier = {   #铁犬纪律
+    fire_damage_received = -0.05
+}
+IYS_mount_discipline2_modifier = {  #犬妖抵御
+    fire_damage_received = -0.025
+}
+IYS_horse_population_boom_modifier = {  #犬妖繁多
+    cav_to_inf_ratio = 0.35
+    cavalry_cost = -0.15
+}
+IYS_horse_population_boom2_modifier = { #犬妖充足
+    cav_to_inf_ratio = 0.25
+    cavalry_cost = -0.1
+}
+IYS_horse_population_boom4_modifier = { #犬妖稳定增长
+    cav_to_inf_ratio = 0.2
+    cavalry_cost = -0.05
+}
+IYS_firearm_charge_modifier = {     #犬妖战力暴增
+    cavalry_shock = 0.15
+    cavalry_fire = 0.2
+}
+IYS_firearm_charge2_modifier = {    #犬妖战力稳增
+    cavalry_shock = 0.1
+    cavalry_fire = 0.15
+}
+IYS_train = {   #犬妖训练完毕
+    discipline = 0.05
+    reinforce_speed = 0.15
+}
+IYS_black_tetsuaiga = { #冥道妖力
+    land_morale = 0.1
+    fire_damage = 0.1
+    shock_damage = 0.1
+}
+IYS_Vajra_Blast_Stream = {  #金刚爆流破
+    fire_damage = 0.1
+    shock_damage = 0.1
+    leader_land_fire = 1
+    leader_land_shock = 1
+    max_general_fire = 1
+    max_general_shock = 1
+}
+IYS_religious_unity = {     #神圣国度
+    missionaries = 1
+    warscore_cost_vs_other_religion = -0.1
+    church_privilege_slots = 1
+}
+IYS_technology_develop = { 
+    prestige = 1
+    idea_cost = -0.1
+    technology_cost = -0.1
+}
+IYS_culture_province = {    #文化自信
+    local_prosperity_growth = 0.1
+    trade_goods_size = 0.3
+}
+IYS_bengal_Brahman = { #罗刹王
+    global_missionary_strength = 0.02 
+    tolerance_own = 1
+}
+IYS_bengal_higurashi = {    #恒河理性学会
+    technology_cost = -0.1
+    global_institution_spread = 0.1
+}
+IYS_garjat_recruitment = { #孟加拉的服从
+    reinforce_speed = 0.1
+    reinforce_cost_modifier = -0.1
+}
+IYS_integrating_garjati_vassals = { #整合孟加拉
+    diplomatic_reputation = 2
+}
+IYS_riches_of_golconda_modifier = { #戈尔孔达的财富
+    global_trade_goods_size_modifier = 0.1
+    global_prov_trade_power_modifier = 0.1
+}
+IYS_angel = { #天使的陨落
+    years_of_nationalism = -5
+    monthly_splendor = 1
+}
+IYS_age_tree = {    #时代树网络
+    movement_speed = 0.1
+    global_spy_defence = 0.1
+}
+IYS_Kabushikigaisha = { #攻陷一迅社
+    idea_cost = -0.1
+    innovativeness_gain = 0.5
+}
+IYS_Harmandir_Temple = { #铁碎牙·神骸吸收
+    defensiveness = 0.2
+    siege_ability = 0.1
+}
+IYS_kikyo_Harmandir_Temple = { #往生梵唱
+    global_heathen_missionary_strength = 0.02
+    tolerance_own = 1
+}
+IYS_Higurashi_Kagome_Harmandir_Temple = {   #科学净化
+    global_unrest = -2 
+    stability_cost_modifier = -0.1
+}
+IYS_rajputana = { #罗刹王庭的烙印
+    discipline = 0.05
+    fort_maintenance_modifier = -0.15
+}
+IYS_Gujarat_trade = {   #古吉拉特贸易
+    merchants = 1
+    trade_efficiency = 0.1
+}
+IYS_missions_2_7_modifier_kikyo = { #圣裔转生
+    religious_unity = 0.2
+    missionary_maintenance_cost = -0.25
+}
+IYS_missions_2_7_modifier_Higurashi_Kagome = {  #德干工业
+    production_efficiency = 0.1
+}
+IYS_missions_2_7_modifier_common = { #巴赫曼尼苏丹国的陨落
+    governing_capacity = 100
+    army_tradition = 0.5
+}
+IYS_mission_1_8_modifier = {    #人妖共治的黄金时代 
+    province_warscore_cost = -0.15
+    manpower_in_true_faith_provinces = 0.15
+}
+IYS_IYS_event_10_modifier_1 = { #转轮圣王的仪式
+    administrative_efficiency = 0.05
+    possible_policy = 1
+    free_policy = 1
+    core_creation = -0.1
+}
+IYS_congyunya_modifier = { #丛云牙
+    discipline = 0.05
+    land_morale = 0.1
+    fire_damage = 0.1
+    shock_damage = 0.1
+    global_attacker_dice_roll_bonus = 1	
+    war_taxes_cost_modifier = -1
+}
+IYS_congyunya_modifier_weaken = { #丛云牙
+    discipline = 0.05
+    land_morale = 0.05
+    war_taxes_cost_modifier = -1
+}
+estate_burgher_spice_monster_modifier = {   #妖香
+    trade_goods_size_modifier = 0.15
+}

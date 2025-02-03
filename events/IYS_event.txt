@@ -1,0 +1,596 @@
+namespace = IYS_event
+country_event = { #
+    id = IYS_event.1
+	title = "IYS_event.1.t"
+	desc = "IYS_event.1.ds"
+	picture = IYS_event_picture
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {  #桔梗
+		name = "IYS_event.1.a"
+		ai_chance = { factor = 50 }
+		define_consort = {
+            name = "Kikyo"
+            country_of_origin = IYS
+            dynasty = "IYS"
+            culture = ROOT
+            religion = ROOT 
+            adm = 5
+            dip = 4
+            mil = 5
+            age = 24
+            female = yes
+        }
+        hidden_effect = {
+            add_queen_personality = immortal_personality
+            set_consort_flag = IYS_consort_flag
+			set_country_flag = IYS_KIKYO
+        }
+	}
+	option = {  #戈薇
+		name = "IYS_event.1.b"
+		ai_chance = { factor = 50 }
+		define_consort = {
+            name = "Higurashi"
+            country_of_origin = IYS
+            dynasty = "Kagome"
+            culture = ROOT
+            religion = ROOT 
+            adm = 5
+            dip = 6
+            mil = 3
+            age = 24
+            female = yes
+        }
+        hidden_effect = {
+            add_queen_personality = immortal_personality
+            set_consort_flag = IYS_consort_flag
+			set_country_flag = IYS_Higurashi_Kagome
+        }
+	}
+}
+country_event = { #
+    id = IYS_event.2
+	title = "IYS_event.2.t"
+	desc = "IYS_event.2.ds"
+	picture = IYS_event_picture
+	is_triggered_only = yes
+	option = {  #
+		name = "IYS_event.2.a"
+		ai_chance = { factor = 100 }
+		add_country_modifier = { 
+            name = IYS_Adamant_Barrage
+            duration = -1
+        }
+        custom_tooltip = IYS_WILL_dragon_tetsuaiga_TT
+		hidden_effect = {
+			remove_country_modifier = red_tetsuaiga
+		}
+	}
+}
+country_event = { #龙牙铁碎牙
+    id = IYS_event.3
+	title = "IYS_event.3.t"
+	desc = "IYS_event.3.ds"
+	picture = IYS_event_picture
+	is_triggered_only = yes
+    major = yes
+	option = {  #
+		name = "IYS_event.3.a"
+		ai_chance = { factor = 100 }
+		add_country_modifier = { 
+            name = IYS_dragon_tetsuaiga
+            duration = -1
+        }
+		hidden_effect = {
+			set_country_flag = IYS_DRAGON_WON_FLAG
+			remove_country_modifier = IYS_Adamant_Barrage
+		}
+	}
+}
+country_event = { #训练犬妖
+    id = IYS_event.4
+	title = "IYS_event.4.t"
+	desc = "IYS_event.4.ds"
+	picture = IYS_event_picture
+	is_triggered_only = yes
+    major = yes
+	option = {  #
+		name = "IYS_event.4.a"
+		ai_chance = { factor = 100 }
+		custom_tooltip = IYS_based_on_our_movement_speed_tt
+		if = {
+			limit = {
+				has_global_modifier_value = {
+					which = movement_speed   
+					value = 0.3
+				}
+			}
+			custom_tooltip = IYS_very_swift_horses_tt
+			hidden_effect = { 
+				add_country_modifier = {
+					name = IYS_swift_horses_modifier 
+					duration = -1 
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_modifier_value = {
+					which = movement_speed   
+					value = 0.15
+				}
+			}
+			custom_tooltip = IYS_nimble_horses_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = IYS_swift_horses2_modifier 
+					duration = -1 
+				}
+			}
+		}
+		else = { 
+			custom_tooltip = IYS_fast_horses_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = IYS_swift_horses3_modifier 
+					duration = -1 
+				}
+			}
+		}
+		custom_tooltip = IYS_based_on_our_discipline_tt
+		if = {
+			limit = {
+				has_global_modifier_value = {
+					which = discipline    
+					value = 0.30
+				}
+			}
+			custom_tooltip = IYS_iron_discipline_horses_tt 
+			hidden_effect = {
+				add_country_modifier = {
+					name = IYS_mount_discipline_modifier 
+					duration = -1 
+				}
+			}
+		}
+		else = { 
+			custom_tooltip = IYS_disciplined_horses_tt 
+			hidden_effect = {
+				add_country_modifier = {
+					name = IYS_mount_discipline2_modifier 
+					duration = -1 
+				}
+			}
+		}
+		custom_tooltip = IYS_based_on_horse_provinces_tt
+		if = {
+			limit = { 
+				num_of_owned_provinces_with = {
+					trade_goods = livestock 
+					value = 4 
+				}
+				trading_bonus = {
+					trade_goods = livestock
+					value = yes
+				}
+			}
+			custom_tooltip = IYS_blooming_abundance_of_horses_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = IYS_horse_population_boom_modifier 
+					duration = -1 
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				num_of_owned_provinces_with = {
+					trade_goods = livestock 
+					value = 3
+				}
+			}
+			custom_tooltip = IYS_abundance_of_horses_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = IYS_horse_population_boom2_modifier 
+					duration = -1 
+				}
+			}
+		}
+		else = {
+			custom_tooltip = IYS_horse_population_steady_increase_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = IYS_horse_population_boom4_modifier 
+					duration = -1 
+				}
+			}
+		}
+		custom_tooltip = IYS_based_on_cav_combat_ability_tt
+		if = {
+			limit = {
+				has_global_modifier_value = {
+					which = cavalry_power    
+					value = 0.6
+				}
+			}
+			custom_tooltip = IYS_expanded_use_of_fire_arms_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = IYS_firearm_charge_modifier 
+					duration = -1 
+				}
+			}
+		}
+		else = {
+			custom_tooltip = IYS_partial_use_of_fire_arms_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = IYS_firearm_charge2_modifier 
+					duration = -1 
+				}
+			}
+		}
+        hidden_effect = {
+            set_country_flag = IYS_has_train_demon_flag
+        }
+	}
+}
+country_event = { #异域的玉之共鸣
+    id = IYS_event.5
+	title = "IYS_event.5.t"
+	desc = "IYS_event.5.ds"
+	picture = IYS_event_picture
+	is_triggered_only = yes
+	option = {  #
+		name = "IYS_event.5.a"
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+			name = IYS_bengal_Brahman 
+			duration = -1
+		}
+	}
+
+	option = {  #
+		name = "IYS_event.5.b"
+		ai_chance = { factor = 50 }
+		trigger = { has_country_flag = IYS_Higurashi_Kagome }
+		add_country_modifier = {
+			name = IYS_bengal_higurashi
+			duration = -1
+		}
+	}
+} 
+country_event = { #孟加拉地区的征服
+    id = IYS_event.6
+	title = "IYS_event.6.t"
+	desc = "IYS_event.6.ds"
+	picture = IYS_event_picture
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			random_province = {
+				limit = {
+					OR = {
+						area = jharkhand_area
+						area = orissa_area
+						area = upper_mahanadi_area
+						area = garjat_area
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				save_event_target_as = IYS_target
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						area = jharkhand_area
+						area = orissa_area
+						area = upper_mahanadi_area
+						area = garjat_area
+					}
+				}
+				save_event_target_as = IYS_target
+			}
+		}
+	}
+	
+	
+	option = {
+		name = "IYS_event.6.a"
+		ai_chance = { factor = 50 }
+		custom_tooltip = MUG_required_provinces_lose_nationalism
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = jharkhand_area
+						area = orissa_area
+						area = upper_mahanadi_area
+						area = garjat_area
+					}
+				}
+				add_nationalism = -10
+			}
+		}
+		
+		custom_tooltip = " "
+		
+		add_adm_power = 100
+	}
+	
+	option = {
+		name = "IYS_event.6.b"
+		ai_chance = { factor = 20 }
+		add_country_modifier = {
+			name = IYS_integrating_garjati_vassals
+			duration = 10950
+		}
+		
+		add_dip_power = 50
+	}
+	
+	option = {
+		name = "IYS_event.6.c"
+		ai_chance = { factor = 30 }
+		event_target:IYS_target = {
+			add_base_manpower = 2
+		}
+		
+		custom_tooltip = " "
+		
+		add_country_modifier = {
+			name = IYS_garjat_recruitment
+			duration = 7300
+		}
+	}
+} 
+country_event = { #对印度斯坦的冲击
+    id = IYS_event.7
+	title = "IYS_event.7.t"
+	desc = "IYS_event.7.ds"
+	picture = IYS_event_picture
+	is_triggered_only = yes
+	option = {
+		name = "IYS_event.7.a"
+		ai_chance = { factor = 100 }
+		add_country_modifier = {
+			name = IYS_age_tree
+			duration = -1
+		}
+	}
+}
+country_event = { #对哈曼迪尔寺的处理
+    id = IYS_event.8
+	title = "IYS_event.8.t"
+	desc = "IYS_event.8.ds"
+	picture = IYS_event_picture
+	is_triggered_only = yes
+	option = {
+		name = "IYS_event.8.a"
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+			name = IYS_Harmandir_Temple
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "IYS_event.8.b"
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_country_flag = IYS_KIKYO
+		}
+		add_country_modifier = {
+			name = IYS_kikyo_Harmandir_Temple
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "IYS_event.8.c"
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_country_flag = IYS_Higurashi_Kagome
+		}
+		add_country_modifier = {
+			name = IYS_Higurashi_Kagome_Harmandir_Temple
+			duration = -1
+		}
+	}
+}
+country_event = { #德干玉脉的觉醒
+    id = IYS_event.9
+	title = "IYS_event.9.t"
+	desc = "IYS_event.9.ds"
+	picture = IYS_event_picture
+	is_triggered_only = yes
+	option = {
+		name = "IYS_event.9.b"
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_country_flag = IYS_KIKYO
+		}
+		add_country_modifier = {
+			name = IYS_missions_2_7_modifier_kikyo
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "IYS_event.9.c"
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_country_flag = IYS_Higurashi_Kagome
+		}
+		add_country_modifier = {
+			name = IYS_missions_2_7_modifier_Higurashi_Kagome
+			duration = -1
+		}
+	}
+}
+country_event = { #印度神王的加冕
+    id = IYS_event.10
+	title = "IYS_event.10.t"
+	desc = "IYS_event.10.ds"
+	picture = IYS_event_picture
+	is_triggered_only = yes
+	option = {
+		name = "IYS_event.10.a"
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+			name = IYS_IYS_event_10_modifier_1
+			duration = -1
+		}
+		unlock_estate_privilege = {
+			estate_privilege = burgher_spice_monster
+		}
+		hidden_effect = {
+			country_event = {
+				id = IYS_event.11
+				days = 30
+			}
+		}
+	}
+}
+country_event = { #天下霸道之剑
+    id = IYS_event.11
+	title = "IYS_event.11.t"
+	desc = "IYS_event.11.ds"
+	picture = congyunya_picture
+	is_triggered_only = yes
+	option = {
+		name = "IYS_event.11.a"
+		ai_chance = { factor = 80 }
+	} 
+
+	option = {
+		name = "IYS_event.11.b"
+		ai_chance = { factor = 20 }
+		hidden_effect = {
+			random_country = {
+				limit = { 
+					is_great_power = yes
+					ai = yes
+					NOT = {
+						TAG = IYS
+					}
+				}
+				country_event = { 
+					id = IYS_event.12
+				}
+			}
+		}
+	} 
+}
+country_event = { #天下霸道之剑
+    id = IYS_event.12
+	title = "IYS_event.12.t"
+	desc = "IYS_event.12.ds"
+	picture = congyunya_picture
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = "IYS_event.12.a"
+		ai_chance = { factor = 100 }
+		add_country_modifier = {
+			name = IYS_congyunya_modifier
+			duration = -1
+		}
+		hidden_effect = {
+			save_global_event_target_as = IYS_target_congyunya
+		}
+	}
+}
+country_event = { #天下霸道之剑
+    id = IYS_event.13
+	title = "IYS_event.13.t"
+	desc = "IYS_event.13.ds"
+	picture = congyunya_picture
+	is_triggered_only = yes
+	option = {
+		name = "IYS_event.13.a"
+		ai_chance = {
+			factor = 100
+		}
+		add_country_modifier = {
+			name = IYS_congyunya_modifier_weaken
+			duration = -1
+		}
+		hidden_effect = {
+			event_target:IYS_target_congyunya = { 
+				remove_country_modifier = IYS_congyunya_modifier
+				clear_global_event_targets = IYS_target_congyunya
+			}
+		}
+	}
+}
+country_event = {
+	id = IYS_event.108	#妖怪定居后台事件
+	title = "IYS_event.108.T"
+	desc = "IYS_event.108.DS"
+	picture = HRE_eventPicture
+	hidden = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		has_government_attribute = half_demon_goverment_life
+		any_owned_province = {
+			trade_goods = livestock
+			NOT = {
+				has_province_modifier = half_demon_goverment_life_modifier
+			}
+		}
+	}
+	option = {
+		name = "government_attribute.15.a"
+		every_owned_province = {
+			limit = {
+				trade_goods = livestock
+				NOT = {
+					has_province_modifier = half_demon_goverment_life_modifier
+				}
+			}
+			add_province_modifier = {
+				name = "half_demon_goverment_life_modifier"
+				duration = -1
+			}
+		}
+	}
+}
+country_event = {
+	id = IYS_event.110	#文化自信后台事件
+	title = "IYS_event.108.T"
+	desc = "IYS_event.108.DS"
+	picture = HRE_eventPicture
+	hidden = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		has_government_attribute = IYS_culture_goverment
+		any_owned_province = {
+			culture = Inuyasha
+			NOT = {
+				has_province_modifier = IYS_culture_province
+			}
+		}
+	}
+	option = {
+		name = "government_attribute.15.a"
+		every_owned_province = {
+			limit = {
+				culture = Inuyasha
+				NOT = {
+					has_province_modifier = IYS_culture_province
+				}
+			}
+			add_province_modifier = {
+				name = "IYS_culture_province"
+				duration = -1
+			}
+		}
+	}
+}

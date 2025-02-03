@@ -1,0 +1,7318 @@
+acg_mechanic = {
+	monarchy = yes
+	heir = yes
+	queen = no
+	basic_reform = yes	# = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	is_eligible_for_hre_emperor = yes
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	rulers_can_be_generals = no
+	government_abilities = {
+		idol_religion_mechanic_1
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
+	}
+}
+
+#第一层 Regime: 政体
+acg_universal_government_reform_1 = {
+	#异次元之治
+	icon = "acg_universal_government_reform_1"
+	allow_normal_conversion = yes
+	legacy_equivalent = Acg_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		stability_cost_modifier = -0.15
+		prestige = 1
+	}
+}
+
+acg_universal_government_reform_2 = {
+	#异次元集权制
+	icon = "acg_universal_government_reform_2"
+	allow_normal_conversion = yes
+	legacy_equivalent = Acg_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		unjustified_demands = -0.15
+		yearly_absolutism = 1
+	}
+}
+
+Fgo_government_reform = {
+	#英灵政体
+	icon = "Fgo_government_reform"
+	potential = {
+		OR = {
+			culture_group = FGO
+			tag = ODA
+		}
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = Fgo_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_fgo_customs = yes		#机制：英灵召唤 可以花费一定魔法值开启英灵召唤模式，大幅增加将领花费的同时大幅度提升征召将领的属性与属性上限
+	}
+	modifiers = {
+		global_unrest = -1
+		global_manpower_modifier = 0.1
+		magician_privilege_slots = 1
+	}
+}
+
+Idol_government_reform = {
+	#偶像政体
+	icon = "Idol_government_reform"
+	potential = {
+		culture_group = Idol
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = Idol_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_idol_customs = yes		#机制：偶像荣耀 提升发展度有20%的概率获得少量的对应奖励（具体可参照阶级任务）
+	}
+	modifiers = {
+		development_cost = -0.1
+		improve_relation_modifier = 0.15
+	}
+}
+
+Index_Librorum_Prohibitorum_government_reform = {
+	#学园都市
+	icon = "Index_Librorum_Prohibitorum_government_reform"
+	potential = {
+		OR = {
+			tag = INX
+			tag = MSK
+			tag = SHI
+		}
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = Magical_girl_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_index_customs = yes		#机制：创新发展 提升科技的时候会增加2点创新度
+	}
+	modifiers = {
+		technology_cost = -0.05
+		yearly_innovativeness = 0.5
+	}
+}
+
+Magical_girl_government_reform = {
+	#魔法少女政府
+	icon = "Magical_girl_government_reform"
+	potential = {
+		culture_group = MadokaMagica
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = Magical_girl_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_magic_girl_customs = yes		#机制：狩猎经验 战斗胜利时额外获得1点陆军传统
+	}
+	modifiers = {
+		army_tradition_decay = -0.01
+		infantry_power = 0.1
+	}
+}
+
+GUP_reform = {
+	#战车学院制
+	icon = "GUP_reform"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	potential = {
+		tag = MIH
+	}
+	custom_attributes = {
+		enables_gup_customs = yes		#机制：战车，前进！ 对敌人宣战时获得2年的移动速度，士气打击，围城效率加成
+	}
+	modifiers = {
+		cavalry_power = 0.2
+		cavalry_cost = 0.33
+		cav_to_inf_ratio = 0.5
+	}
+}
+
+Kirara_goverment_reform = {
+	#芳文政府
+	icon = "Kirara_goverment_reform"
+	potential = {
+		culture_group = Manga_Time_Kirara
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Zafkiel_goverment
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_kirara_customs = yes #机制 我们时代的和平：和别的国家结盟时获得5年的生产效率和税收加成
+	}
+	modifiers = {
+		improve_relation_modifier = 0.15
+		diplomatic_upkeep = 1
+		female_advisor_chance = 0.5
+	}
+}
+
+RML_Feudalism = {	#初期红魔馆政府
+	icon = Koumakan_trade_gr
+	potential = {
+		tag = RML 
+	}
+	lock_level_when_selected = yes
+	queen = NO 
+	heir = yes
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	heirs_can_be_generals = NO
+	rulers_can_be_generals = NO
+	custom_attributes = {
+		enables_RML_DEVIL_customs = yes #机制 血色冲击：每10个省份将提供0.01冲击伤害，最高0.1
+	}
+	modifiers = {
+		province_warscore_cost = -0.1
+		unjustified_demands = -0.1
+		max_absolutism = -20
+		yearly_corruption = -0.1
+	}
+}
+
+RML_Absolutist = {	#现代红魔馆政府
+	icon = Koumakan_trade_gr
+	potential = {
+		tag = KMK
+	}
+	lock_level_when_selected = yes
+	queen = NO 
+	heir = yes
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	heirs_can_be_generals = NO
+	rulers_can_be_generals = NO
+	custom_attributes = {
+		enables_RML_DEVIL_customs = yes #机制 红雾：
+	}
+	modifiers = {
+		province_warscore_cost = -0.15
+		unjustified_demands = -0.15
+		max_absolutism = +20
+		yearly_corruption = -0.15
+	}
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		government_abilities = {
+			RML_Venice_mechanic
+		}
+	}
+}
+
+RML_monster_led = {	#妖怪主导
+	icon = Koumakan_trade_gr
+	potential = {
+		OR = {
+			tag = RML
+			tag = KMK
+		}
+	}
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_DF_project_province_customs = yes #机制 幻想乡世界：所有幻想乡省份都将获得buff
+	}
+	modifiers = {
+		culture_conversion_cost = -0.25
+		culture_conversion_time = -0.1
+		relation_with_same_culture_group = 20
+	}
+}
+
+RML_DF_religion = {	#幻想乡之剑
+	icon = Koumakan_trade_gr
+	potential = {
+		OR = {
+			tag = RML
+			tag = KMK
+		}
+	}
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_DFsword_province_customs = yes #机制 幻想乡之剑：当我们是信仰守护者时第一次与其他宗教开战将获得5%士气加强和每月厌战-0.1修正
+	}
+	modifiers = {
+		global_missionary_strength = 0.02
+		missionaries = 1
+		tolerance_own = 2
+	}
+}
+
+RML_BLOOD_corp = {	#血军团防御
+	icon = per_recruit_the_qizilbash
+	potential = {
+		OR = {
+			tag = RML
+			tag = KMK
+		}
+	}
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_qizilbash_customs = yes #机制 血军团强化：将根据血军团数量来获得修正
+	}
+	modifiers = {
+		shock_damage_received = -0.05
+		fire_damage_received = -0.05
+		is_qizilbash_modifier = yes
+	}
+}
+
+RML_Economy_TRADE = {	#威尼斯-热那亚贸易
+	icon = mission_control_venice
+	potential = {
+		OR = {
+			tag = RML
+			tag = KMK
+		}
+	}
+	lock_level_when_selected = yes
+	modifiers = {
+		trade_efficiency = 0.1
+		global_trade_power = 0.15
+		trade_steering = 0.15
+	}
+}
+
+RML_Modern_Roman_law = {	#现代罗马法
+	icon = Koumakan_trade_gr
+	potential = {
+		OR = {
+			tag = RML
+			tag = KMK
+		}
+	}
+	lock_level_when_selected = yes
+	modifiers = {
+		administrative_efficiency = 0.075
+		possible_policy = 1
+		free_policy = 1
+	}
+}
+half_demon = { 
+	#半妖政府
+	icon = "half_demon"
+	lock_level_when_selected = yes
+	queen = yes 
+	heir = yes
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	heirs_can_be_generals = NO
+	rulers_can_be_generals = NO
+	potential = {
+		TAG = IYS
+	}
+	trigger = {
+		tag = IYS
+	}
+	custom_attributes = {
+		half_demon_goverment = yes
+	}
+	modifiers = {
+		cav_to_inf_ratio = 0.1
+		cavalry_power = 0.1
+	}
+	effect = {
+		hidden_effect = { 
+			set_variable = {
+				which = Tetsusaiga
+				value = 0
+			}
+		}
+	}
+}
+half_demon_based = { 
+	#妖怪为主
+	icon = "IYS_government1"
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+	potential = {
+		TAG = IYS
+	}
+	trigger = {
+		has_reform = half_demon
+	}
+	custom_attributes = {
+		half_demon_goverment_life = yes
+	}
+	modifiers = {
+		culture_conversion_cost = -0.1
+		global_missionary_strength = 0.02
+	}
+	effect = {
+		custom_tooltip = IYS_can_change_tradegood_livestock_tt
+		hidden_effect = {
+			set_country_flag = IYS_can_change_tradegood_livestock
+		}
+	}
+}
+IYS_based = { 	#犬夜叉威权
+	icon = "IYS_government1"
+	lock_level_when_selected = yes
+	nation_designer_cost = 0
+	potential = {
+		TAG = IYS
+	}
+	trigger = {
+		has_reform = half_demon_based
+	}
+	custom_attributes = {
+		enables_horde_idea_group = yes
+		enables_aristocratic_idea_group = no
+		IYS_culture_goverment = yes
+	}
+	modifiers = {
+		reform_progress_growth = 0.1
+		core_creation = -0.1
+		all_estate_loyalty_equilibrium = -0.05
+	}
+}
+Harem_series_reform = {
+	#后宫系
+	icon = "Harem_series_gr"
+	allow_normal_conversion = yes
+	legacy_equivalent = Acg_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	allow_vassal_war = yes
+	allow_vassal_alliance = yes
+	potential = {
+		OR = {
+			tag = MRS
+		}
+	}
+	trigger = {
+		OR = {
+			tag = MRS
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	modifiers = {
+		governing_capacity_modifier = 0.2
+		diplomats = 1
+		improve_relation_modifier = 0.1
+	}
+}
+
+Warm_blood_series_reform = {
+	#热血系
+	icon = "Warm_blood_series_gr"
+	allow_normal_conversion = yes
+	legacy_equivalent = Acg_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		leader_land_shock = 1
+		war_exhaustion = -0.05
+	}
+}
+
+Combat_series_reform = {
+	#战斗系
+	icon = "Combat_series_gr"
+	allow_normal_conversion = yes
+	legacy_equivalent = Acg_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		infantry_power = 0.1
+		global_manpower_modifier = 0.1
+	}
+}
+
+Nasalik_government_reform = {
+	#纳萨力克军团
+	icon = "Nasalik_gr"
+	potential = {
+		culture_group = Yggdrasil
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = Nasalik_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		land_maintenance_modifier = -0.1
+		drill_gain_modifier = 0.1
+	}
+	custom_attributes = {
+		manpower_from_defeating_armies = yes		#绿营吸血，感受清妖王之怒吧！
+	}
+}
+
+Reo_government_reform = {
+	#异世界贵族政体
+	icon = "Reo_gr"
+	potential = {
+		tag = EMT
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = Reo_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		cavalry_power = 0.1
+		cavalry_cost = -0.05
+	}
+}
+
+#Ghoul_government_reform = { #喰种政府
+#	icon = "Ghoul_gr"
+#							potential = {
+#	culture_group = TokyoGhoul
+#	}
+#	allow_normal_conversion = yes
+#	legacy_equivalent = Ghoul_government
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 0
+#	heir = yes
+#	queen = no
+#	maintain_dynasty = yes
+#	heirs_can_be_generals = no
+#	modifiers = {
+#		global_autonomy = -0.05
+#		harsh_treatment_cost = -0.1
+#	}
+#}
+
+Saber_government_reform = {
+	#圆桌会议
+	icon = "Saber_gr"
+	potential = {
+		OR = {
+			tag = ATR
+			tag = DTR
+		}
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = Saber_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_round_table_customs = yes		#机制：圆桌会议 当一个议案通过时，+10陆军传统，+10正统性
+	}
+	modifiers = {
+		core_creation = -0.1
+		ae_impact = -0.1
+		leader_land_shock = 1
+	}
+	has_parliament = yes
+}
+
+
+HAE_government_reform = {
+	#皇帝
+	icon = "HAE_gr"
+	potential = {
+		is_emperor = yes
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = HAE_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	#effect = {#改革为此项无惩罚
+	#	hidden_effect = {
+	#	add_adm_power = 100
+	#	add_corruption = -1
+	#	}
+	#	custom_tooltip = HAE_government_tooltip
+	#}
+	modifiers = {
+		imperial_authority_value = 0.2
+		infantry_power = 0.1
+	}
+}
+
+Nasalik_master_government_reform = {
+	#纳萨力克无上至尊
+	icon = "Nasalik_master_gr"
+	potential = {
+		OR = {
+			tag = AOG
+			tag = NSL
+		}
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Nasalik_master_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	conditional = {
+		allow = { 
+			has_dlc = "Domination"
+			has_country_flag = Early_industrialization_missions_flag
+		 }
+		government_abilities = {
+			nasalik_government_authority_mechanic_1
+		}
+	}
+	modifiers = {
+		land_forcelimit_modifier = 0.3
+		reduced_liberty_desire = 15
+	}
+	custom_attributes = {
+		manpower_from_defeating_armies = yes		#绿营吸血，感受清妖王之怒吧！
+	}
+}
+
+Predators_government_reform = {
+	#捕食者
+	icon = "Predators_gr"
+	allow_normal_conversion = no
+	potential = {
+		tag = SLM
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+	lock_level_when_selected = yes
+	legacy_equivalent = Predators_government
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		global_institution_spread = 0.33
+		embracement_cost = -0.1
+	}
+	assimilation_cultures = {
+		Yggdrasil = {
+			land_forcelimit_modifier = 0.2
+		}
+		Wonderfulworld = {
+			missionary_maintenance_cost = -0.15
+		}
+		JianNiang = {
+			heavy_ship_power = 0.1
+		}
+		IndexLibrorumProhibitorum = {
+			adm_tech_cost_modifier = -0.2
+		}
+		MadokaMagica = {
+			fire_damage = 0.05
+		}
+		ReZero = {
+			cavalry_cost = -0.2
+		}
+		#TokyoGhoul = {
+		#	infantry_cost = -0.2
+		#}
+		Idol = {
+			recover_army_morale_speed = 0.1
+		}
+		#Mascot = {
+		#	prestige = 1
+		#}
+		SAO = {
+			infantry_power = 0.1
+		}
+		FGO = {
+			discipline = 0.05
+		}
+		DF_Project = {
+			development_cost = -0.1
+		}
+		#HOK_with_GFT = {
+		#	leader_land_fire = 1
+		#}
+	}
+}
+
+Jeand_government_reform = {
+	#法兰西统一运动
+	icon = "Jeand_gr"
+	potential = {
+		primary_culture = Jeand
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Jeand_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		cav_to_inf_ratio = 0.25
+		cavalry_power = 0.15
+	}
+}
+
+Nero_government_reform = {
+	#罗马光复者
+	icon = "Nero_gr"
+	potential = {
+		primary_culture = Nero
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Nero_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		province_warscore_cost = -0.1
+		legitimacy = 1
+		land_morale = 0.05
+	}
+}
+
+Zafkiel_goverment_reform = {
+	#狂三政府
+	icon = "Zafkiel_gr"
+	potential = {
+		tag = TSK
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Zafkiel_goverment
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		infantry_fire = 0.1
+		infantry_cost = -0.2
+		land_forcelimit_modifier = 0.25
+		reform_progress_growth = -0.1
+	}
+	government_abilities = {
+		russian_mechanic
+	}
+}
+
+amir_vakif_goverment_reform = {
+	#瓦克夫-埃米尔执政联盟
+	icon = "waqf_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+		NOT = {
+			has_country_flag = break_the_amir_vakif_flag
+		}
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Zafkiel_goverment
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_amir_vakif_customs = yes		#机制：瓦克夫-埃米尔联盟 所有文化不属于芳文文化组但是属于芳文宗教的省份获得+33%最低自治度，-5叛乱，+50%转变文化的成本，所有不属于芳文宗教组的省份+3%传教力量
+	}
+	modifiers = {
+		global_manpower_modifier = 0.15
+		land_forcelimit_modifier = 0.15
+		tolerance_own = 3
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+chino_1_goverment_reform = {
+	#三巨头同盟联合执政
+	icon = "union_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+		has_country_flag = break_the_amir_vakif_flag
+		NOT = {
+			has_country_flag = win_the_election_flag
+		}
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Zafkiel_goverment
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_chino_1_customs = yes		#机制：新秩序联盟：所有芳文宗教+芳文文化的省份获得-2叛乱，+0.5商品产出，+25%贸易竞争力，+1陆军上限。
+	}
+	modifiers = {
+		governing_capacity_modifier = 0.25
+		tolerance_own = 3
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+chino_goverment_reform = {
+	#智乃与人民的联合帝国
+	icon = "chino_gr"
+	potential = {
+		OR = {
+			tag = CHN
+		}
+		has_country_flag = break_the_amir_vakif_flag
+		has_country_modifier = empress_chino
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Zafkiel_goverment
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_chino_customs = yes		#机制：兔屋皇冠上的明珠：所有黎凡特次大陆与北非次大陆的属于你的省份都将绑定芳文教+香风智乃文化。
+	}
+	modifiers = {
+		max_absolutism = 50
+		administrative_efficiency = 0.05
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+cocoa_goverment_reform = {
+	#心爱和她的千年乌托邦
+	icon = "cocoa_gr"
+	potential = {
+		OR = {
+			tag = HCA
+		}
+		has_country_flag = break_the_amir_vakif_flag
+		has_country_modifier = empress_cocoa
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Zafkiel_goverment
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_cocoa_customs = yes		#机制：心爱的超自然大冒险：完成了一个省份的传教以后，获得2魔法值，成功转化了一个省份的文化后，获得5魔法值。
+	}
+	modifiers = {
+		years_of_nationalism = -7.5
+		technology_cost = -0.1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+rize_goverment_reform = {
+	#科尔马复国政府
+	icon = "rize_gr"
+	potential = {
+		OR = {
+			tag = TRZ
+		}
+		has_country_flag = break_the_amir_vakif_flag
+		has_country_modifier = empress_rize
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Zafkiel_goverment
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_rize_customs = yes		#机制：势不可挡的力量：获得一场战斗的胜利以后，你将积累战术优势点数并且为你带来加成，最高积累10点，失去了一场战斗的胜利以后你将失去所有战术优势点数。
+	}
+	modifiers = {
+		discipline = 0.05
+		special_unit_forcelimit = 0.25
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+chiya_goverment_reform = {
+	#甘兔庵的主导地位
+	icon = "chiya_gr"
+	potential = {
+		OR = {
+			tag = UJC
+		}
+		has_country_flag = break_the_amir_vakif_flag
+		has_country_modifier = empress_chiya
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Zafkiel_goverment
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_chiya_customs = yes		#机制：她的真理正在前行！：高于7的每点正统信仰容忍都将为你额外带来1个传教士和1%传教力量，最高提供10层。
+	}
+	modifiers = {
+		tolerance_own = 3
+		missionaries = 1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+syaro_goverment_reform = {
+	#无产者们的统一战线
+	icon = "syaro_gr"
+	potential = {
+		OR = {
+			tag = KSR
+		}
+		has_country_flag = break_the_amir_vakif_flag
+		has_country_modifier = empress_syaro
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Zafkiel_goverment
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_syaro_customs = yes		#机制：统一战线之歌：花费点数提升发展度时，有25%的概率让首都也提升1点对应的发展度。
+	}
+	modifiers = {
+		development_cost = -0.15
+		global_manpower_modifier = 0.2
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+Ratatosk_government_reform = {
+	#拉塔托斯克
+	icon = "Ratatosk_gr"
+	potential = {
+		OR = {
+			tag = ITK
+			tag = SHZ
+			tag = MIO
+			tag = TOH
+		}
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Ratatosk_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_spirit_union_customs = yes		# 机制：精灵联盟 与其他精灵结盟或附庸时提供一些增益
+	}
+	modifiers = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 2
+		vassal_forcelimit_bonus = 1
+		province_warscore_cost = -0.1
+	}
+}
+
+Yukari_government_reform = {
+	#隙间妖怪
+	icon = "Yukari_gr"
+	potential = {
+		tag = YKR
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Yukari_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		land_morale = 0.1
+		unjustified_demands = -0.2
+	}
+}
+
+uuz_government_reform = {
+	#白玉楼
+	icon = "uuz_gr"
+	potential = {
+		OR = {
+			tag = YYK
+			tag = YOM
+		}
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Ratatosk_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		leader_land_shock = 1
+		global_manpower_modifier = 0.1
+		global_trade_power = 0.1
+	}
+}
+
+Magic_user_government_reform = {
+	#魔法使
+	icon = "mrs_gr"
+	potential = {
+		OR = {
+			tag = ALC
+			tag = MRS
+		}
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Ratatosk_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_magic_bombing_customs = yes		#机制：魔法轰击 招募将军时，获得+5陆军传统和持续10年的+10%围城效率修正
+	}
+	modifiers = {
+		army_tradition_decay = -0.01
+		global_naval_barrage_cost = -0.5
+		artillery_levels_available_vs_fort = 2
+	}
+}
+
+Wings_of_liberty_reform = {
+	#自由之翼
+	icon = "wol_gr"
+	potential = {
+		tag = WOI
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Ratatosk_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		governing_capacity_modifier = 0.15
+		max_absolutism = 5
+		leader_land_shock = 1
+	}
+	conditional = {
+		allow = { 
+			has_dlc =  "Domination" 
+		}
+		has_pashas = yes
+		has_janissaries = yes
+	}
+}
+
+Chireiden_reform = {
+	#地灵殿
+	icon = "Chireiden_gr"
+	potential = {
+		OR = {
+			tag = KMJ
+			tag = KML
+			tag = MJL
+		}
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Ratatosk_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		global_foreign_trade_power = -0.1
+		trade_steering = -0.1
+		core_creation = -0.1
+		ae_impact = -0.1
+	}
+}
+
+TES_heaven_reform = {
+	#天界
+	icon = "TES_gr"
+	potential = {
+		tag = TES
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Ratatosk_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		fire_damage = 0.1
+		global_naval_engagement_modifier = 0.1
+		infantry_fire = 0.1
+	}
+}
+
+TES_heaven_parliaments_reform = {
+	#天界议会制
+	icon = "TES_gr"
+	potential = {
+		tag = TES
+		mission_completed = TES_missions_2_6
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Ratatosk_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	has_parliament = yes
+	modifiers = {
+		fire_damage = 0.1
+		global_naval_engagement_modifier = 0.1
+		artillery_fire = 0.1
+		parliament_backing_chance = 0.15
+		num_of_parliament_issues = 2
+	}
+}
+
+TES_artillery_attack_reform = {	#天界火力压制
+	icon = "TES_gr"
+	potential = {
+		tag = TES
+	}
+	lock_level_when_selected = yes
+	modifiers = {
+		artillery_power = 0.1
+		artillery_level_modifier = 0.2
+		artillery_levels_available_vs_fort = 1
+	}
+	custom_attributes = {
+		manpower_from_defeating_armies = yes		#10% of the defeated troops join the Green Standard Army
+	}
+}
+
+Sunflower_field_reform = {
+	#太阳花田
+	icon = "Sunflower_gr"
+	potential = {
+		tag = YUK
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Ratatosk_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		global_manpower_modifier = 0.33
+		global_autonomy = -0.10
+        min_autonomy_in_territories = -0.1
+        siege_ability = 0.15
+	}
+}
+
+Yongyuanting_reform = {
+	#永远亭
+	icon = "YYT_gr"
+	potential = {
+		OR = {
+			tag = KGY
+			tag = EIR
+			tag = RES
+		}
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Ratatosk_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		local_hostile_movement_speed = -0.2
+		defensiveness = 0.2
+		liberty_desire = -10
+	}
+}
+
+Elzia_government_reform = {  #一级改革
+	#艾尔齐亚联邦制
+	icon = "ELZ_ngnl_gr"
+	potential = {
+		tag = ELZ
+	}
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	lock_level_when_selected = yes
+	nation_designer_cost = 60
+	heir = no
+	queen = no
+	rulers_can_be_generals = no
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_Elzia_ruler_customs = yes		#机制：1.游戏法则：战争分数分别位于+33和-33之间，低于-33分，高于33分时获得不同修正。
+	}
+	modifiers = {
+		governing_capacity_modifier = 0.2
+		max_absolutism = 20
+		yearly_absolutism = 1
+        reform_progress_growth = 0.1
+	}
+}
+
+CTL_reform = {
+	#chtholly
+	icon = "acg_gr"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	legacy_equivalent = Acg_government
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	potential = {
+		tag = CTL
+	}
+	modifiers = {
+		land_morale = 0.1
+		manpower_recovery_speed = 0.2
+		global_tax_modifier = 0.1
+	}
+}
+
+Tosaka_reform_1 = {
+	#远坂家系
+	icon = "Rin_1"
+	potential = {
+		tag = RIN
+		tag = IST
+		tag = ELE
+		tag = ATD
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = Ratatosk_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_keyin_customs = yes		#机制：刻印传承 刻印传承 君主可以挑选一项修正，直至死亡。下一代保留弱化版为永久国家修正。
+	}
+	modifiers = {
+		monarch_lifespan = -0.1
+		monarch_military_power = 1
+	}
+}
+
+muse_reform_1 = {
+	#果皇式集权
+	potential = {
+		OR = {
+			tag = LLF
+			tag = HME
+		}
+		has_reform = muse_reform_1
+	}
+	icon = "muse1_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_idol_prestige_customs = yes		#机制：偶像威望 每有20点正威望便提供-0.5叛乱与2%全点数花费
+	}
+	factions = {
+		Lovelive_3rd_factions
+		Lovelive_2nd_factions
+		Lovelive_1st_factions
+	}
+	modifiers = {
+		administrative_efficiency = 0.05
+		prestige = 1
+		discipline = 0.025
+	}
+}
+
+TYA_military_government_reform = {
+	icon = "tya_2_gr"
+                potential = {
+                     OR = {
+                       tag = TYA
+                       tag = TAS
+                               }
+                                   }
+	allow_normal_conversion = yes
+	legacy_equivalent = TYA_military_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	heirs_can_be_generals = no
+                fixed_rank = 2
+	custom_attributes = {
+	           struggle_between_freedom_and_autocracy = yes #机制：启用民主与专制之争，后续改革将在民主与专制之间抉择，并最终影响成立帝国时的政体
+	}
+	modifiers = {
+                    yearly_army_professionalism = 0.005
+                    possible_condottieri = 1
+                    state_maintenance_modifier = 0.2
+                    max_absolutism = -20
+	}
+
+}
+
+TYA_Reich_konstitutionelle_Monarchie_reform = {
+	icon = "tya_1_gr"
+                potential = {
+                     OR = {
+                       tag = TYA
+                       tag = TAS
+                               }
+                                   }
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = TYA_military_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+                fixed_rank = 3
+	modifiers = {
+                    monarch_military_power = 3
+                    monthly_militarized_society = 0.05
+                    min_autonomy_in_territories = -0.1
+                    may_recruit_female_generals = yes
+	}
+                militarised_society = yes
+
+}
+
+TYA_Reich_autokratische_Monarchie_reform = {
+	icon = "tya_2_gr"
+                potential = {
+                     OR = {
+                       tag = TYA
+                       tag = TAS
+                               }
+                                   }
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = TYA_military_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+                fixed_rank = 3
+	modifiers = {
+                    monarch_military_power = 3
+                    monthly_militarized_society = 0.05
+                    max_absolutism = 20
+                    may_recruit_female_generals = yes
+	}
+                militarised_society = yes
+
+}
+
+huh_reform = {
+	# 红魔村
+	icon = "acg_gr"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	legacy_equivalent = Acg_government
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	rulers_can_be_generals = no
+	heirs_can_be_generals = no
+	heir = yes
+	queen = no
+	potential = {
+		culture_group = Wonderfulworld
+	}
+	# states_general_mechanic = {
+	# 	youyoupai = { # 悠悠派
+	# 		development_cost = -0.15
+	# 		technology_cost = -0.15
+	# 		all_power_cost = -0.1
+	# 	}
+	# 	huihuipai = { # 惠惠派
+	# 		drill_decay_modifier = -0.66
+	# 		artillery_power = 0.15
+	# 		backrow_artillery_damage = 0.15
+	# 	}
+	# }
+	modifiers = {
+		land_morale = 0.1
+		missionaries = 1
+		tolerance_own = 1
+		claim_states = yes
+	}
+}
+
+huh_dnk_reform = {
+	# 抖M骑士国
+	icon = "acg_gr"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	legacy_equivalent = Acg_government
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	rulers_can_be_generals = no
+	heirs_can_be_generals = no
+	heir = yes
+	queen = no
+	potential = {
+		culture_group = Wonderfulworld
+	}
+	modifiers = {
+		fire_damage_received = -0.05
+		shock_damage_received = -0.05
+		different_religion_acceptance = 20
+		different_religion_group_acceptance = 20
+		accept_vassalization_reasons = 50
+		relation_with_heretics = 60
+		transfer_trade_power_reasons = 100
+	}
+}
+
+huh_aky_reform = {
+	# 阿库西斯海贼团
+	icon = "acg_gr"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	legacy_equivalent = Acg_government
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	rulers_can_be_generals = no
+	heirs_can_be_generals = no
+	heir = yes
+	queen = no
+	potential = {
+		culture_group = Wonderfulworld
+	}
+	modifiers = {
+		may_perform_slave_raid = yes
+		max_absolutism = -20
+		prestige_decay = -0.01
+	}
+}
+
+huh_rst_reform = {
+	# 统一神界
+	icon = "MRY_gr"
+	potential = {
+		culture_group = Wonderfulworld
+	}
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	legacy_equivalent = Acg_government
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	rulers_can_be_generals = no
+	heirs_can_be_generals = no
+	heir = yes
+	queen = no
+	potential = {
+		culture_group = Wonderfulworld
+	}
+	modifiers = {
+		monthly_piety = 0.005
+		tolerance_heretic = 3
+		tolerance_heathen = 4
+		cb_on_religious_enemies = yes
+	}
+}
+
+yureyuri_reform = {
+	#摇曳百合众
+	icon = "yureyuri_gr_1"
+	allow_normal_conversion = no
+	valid_for_nation_designer = no
+	legacy_equivalent = Acg_government
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	potential = {
+		OR = {
+			tag = TKK
+			tag = AKR
+			tag = FNY
+			tag = YKC
+		}
+	}
+	modifiers = {
+		technology_cost = -0.075
+		idea_cost = -0.075
+		global_institution_spread = 0.25
+		advisor_cost = -0.25
+	}
+}
+
+Neko_government_reform = {
+	#六花特色中二病政府
+	icon = "RIK_lhual_gr"
+	potential = {
+		tag = RIK
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = Magical_girl_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		global_foreign_trade_power = -0.2
+		#国外贸易竞争力减20%
+		ae_impact = -0.15
+		#ae减20%
+		leader_siege = 1
+		#将领攻城加一
+		max_absolutism = -20
+		#最大专制-20	
+	}
+}
+
+
+RIN_government_reform = {
+    icon = "ATE_gr"
+	potential = {
+		OR = {
+		tag = RIN
+		tag = IST
+		tag = ELE
+		tag = ATD
+	}
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = Ratatosk_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	has_parliament = yes
+	queen = no
+	duration = 1
+	rulers_can_be_generals = yes
+	modifiers = {
+		tolerance_own = 2
+		church_power_modifier = 0.5
+		innovativeness_gain = 0.5
+	}
+	custom_attributes = {
+		parliament_magic_power_customs = yes #机制：协商议会 完成一个议题时，获得10点魔法值
+	}
+	government_abilities = {
+			feudal_theocracy_mechanic
+		}
+}
+
+
+#基沃托斯普适政体
+kivotos_reform = {
+	icon = "acg_universal_government_reform_1"
+	allow_normal_conversion = no
+	valid_for_nation_designer = no
+	legacy_equivalent = Acg_government
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	heirs_can_be_generals = yes
+	potential = {
+		OR = {
+			tag = ABY
+			tag = MLN
+			tag = SRT
+			tag = VKR
+			tag = GHN
+			tag = RWF
+			tag = TRG
+			tag = ARU
+			tag = HKY
+		}
+	}
+	modifiers = {
+		max_absolutism = -20
+		army_tradition = 0.5
+		infantry_power = 0.10
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.1
+	}
+}
+
+#山海经君主制
+shanhaijing_monarch_reform = {
+	icon = "acg_universal_government_reform_1"
+	allow_normal_conversion = no
+	valid_for_nation_designer = no
+	legacy_equivalent = Acg_government
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	heirs_can_be_generals = yes
+	potential = {
+		tag = SHJ
+	}
+	modifiers = {
+		max_absolutism = 20
+		global_autonomy = -0.1
+		min_autonomy_in_territories = -0.1
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.25
+		no_stability_loss_on_monarch_death = yes
+	}
+}
+
+
+# 二层：racial_policy: 种族政策
+
+respect_politic_consensus_reform = {
+	#尊重政治共识
+	icon = "respect_politic_consensus_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_respect_politic_consensus_customs = yes		#机制：社会共识的力量 未接纳文化的省份+25%税收
+	}
+	modifiers = {
+		global_unrest = -1
+		promote_culture_cost = -0.15
+	}
+}
+
+assimilate_others_reform = {
+	#种族融合
+	icon = "assimilate_others_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_assimilate_others_customs = yes		#机制：皈依者狂热 转化省份的文化将会使该省份获得生产效率+10%修正
+	}
+	modifiers = {
+		culture_conversion_cost = -0.1
+		culture_conversion_time = -0.15
+	}
+}
+
+ignore_difference_reform = {
+	#搁置差异
+	icon = "ignore_difference_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_ignore_difference_customs = yes		#机制：共同发展 州权力集中化会为该区域所有省份提供+10%的当地人力修正
+	}
+	modifiers = {
+		years_of_nationalism = -5
+	}
+}
+
+to_be_or_not_to_be_reform = {
+	#臣服或者是……
+	icon = "to_be_or_not_to_be_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_to_be_or_not_to_be_customs = yes		#机制：无法拒绝的提议 集中发展度会使被集中发展度的省份在一定时间内降低2点叛乱度。
+	}
+	modifiers = {
+		harsh_treatment_cost = -0.2
+		global_rebel_suppression_efficiency = 0.5
+	}
+}
+
+Assimilation_human_reform = {
+	#同化人类
+	icon = "Assimilation_human_gr"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_assimilation_human_customs = yes		#机制：感化人类 非二次元文化组省份获得+15%人力
+	}
+	modifiers = {
+		culture_conversion_cost = -0.1
+	}
+}
+
+Co_prosperity_reform = {
+	#次元共荣
+	icon = "Co_prosperity_gr"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_co_prosperity_customs = yes		#机制：容忍人类 非二次元文化省份获得+10%税收
+	}
+	modifiers = {
+		production_efficiency = 0.1
+	}
+}
+
+Oppression_human_reform = {
+	#压迫人类
+	icon = "Oppression_human_gr"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			OR = {
+				tag = CHN
+				tag = HCA
+				tag = TRZ
+				tag = UJC
+				tag = KSR
+			}
+		}
+	}
+	custom_attributes = {
+		enables_oppression_human_customs = yes		#机制：压制人类 非二次元文化省份获得-2叛乱
+	}
+	modifiers = {
+		harsh_treatment_cost = -0.15
+	}
+}
+
+nero_Roma_first_reform = {
+	#罗马优先
+	icon = "nero_Roma_first_reform_gr"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_nero_Roma_first_customs = yes		#机制：罗马利益：尼禄文化的省份+15%生产效率，罗马正教的省份+25%人力
+	}
+	potential = {
+		primary_culture = Nero
+	}
+	modifiers = {
+		global_unrest = -2
+	}
+}
+
+Midas_touch_reform = {
+	#点石成金
+	icon = "Yuri_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = KDE
+	}
+	custom_attributes = {
+		enables_Midas_touch_customs = yes		#机制：点石成金 所有立华奏文化省份+15%商品产出
+	}
+	modifiers = {
+		land_maintenance_modifier = -0.1
+	}
+}
+
+Invite_monsters_reform = {
+	#邀请妖怪加入
+	icon = "Yukari_gr"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = DF_Project
+	}
+	custom_attributes = {
+		enables_Invite_monsters_customs = yes		#机制：妖怪内阁 东方文化省份+10%生产效率，-2叛乱
+	}
+	modifiers = {
+		free_leader_pool = 1
+	}
+}
+
+
+Elzia_union_reform = {  #二级改革
+	#联邦同化
+	icon = "ELZ_union_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = ELZ
+	}
+	custom_attributes = {
+		enables_Elzia_union_customs = yes		#机制：非核心省份-10%造核花费
+	}
+	trigger = {
+		has_reform = Elzia_government_reform
+	}
+	modifiers = {
+		years_of_nationalism = -5
+        province_warscore_cost = -0.1
+	}
+}
+
+magic_girls_modern_city = {
+	#魔法少女现代都市
+	icon = "magic_girls_modern_city"
+	potential = {
+		tag = MTM
+	}
+	lock_level_when_selected = yes
+	modifiers = {
+		global_unrest = -2
+	}
+}
+
+all_race_harmony_reform = {
+	#多种族和谐
+	icon = "acg_gr"
+	allow_normal_conversion = no
+	potential = {
+		tag = CTL
+	}
+	custom_attributes = {
+		enables_race_equal = yes		#机制：种族平等，所有被接受文化的省份获得buff
+	}
+	modifiers = {
+		global_unrest = -1
+		promote_culture_cost = -0.5
+		num_accepted_cultures = 2
+	}
+}
+
+chino_2_reform = {
+	#新语言共同体
+	icon = "chino_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 2
+		}
+		change_variable = {
+			which = resistance_v
+			value = 1
+		}
+		change_variable = {
+			which = chino_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_chino_2_customs = yes		#机制：黎凡特语言共同体：所有黎凡特次大陆的省份为你提供额外的+1部队上限
+	}
+	modifiers = {
+		num_accepted_cultures = 2
+		promote_culture_cost = -0.15
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+cocoa_2_reform = {
+	#瓦克夫制度的世俗化监管
+	icon = "cocoa_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = resistance_v
+			value = 1
+		}
+		change_variable = {
+			which = cocoa_influence
+			value = 1
+		}
+		change_variable = {
+			which = reforming_level_1
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_cocoa_2_customs = yes		#机制：世俗化的第一步：允许你使用特权 受到监管的瓦克夫制度
+	}
+	modifiers = {
+		global_tax_modifier = 0.15
+		max_absolutism = 10
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+rize_2_reform = {
+	#阿拉比亚与贝都因大和解
+	icon = "rize_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = resistance_v
+			value = 1
+		}
+		change_variable = {
+			which = rize_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_rize_2_customs = yes		#机制：与贝都因进行和解：所有贝都因文化的省份获得+1+1+1，并且获得 大和解 buff。
+	}
+	modifiers = {
+		cav_to_inf_ratio = 0.25
+		cavalry_power = 0.1
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+chiya_2_reform = {
+	#阿克苏姆希吉拉试行区
+	icon = "chiya_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = chiya_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_chiya_2_customs = yes		#机制：略微领先时代的希吉拉制度：所有库希特文化组的省份在被控制时会自动转化为芳文宗教
+	}
+	modifiers = {
+		num_accepted_cultures = 1
+		global_missionary_strength = 0.02
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+syaro_2_reform = {
+	#阿拉比卡联合公会
+	icon = "syaro_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = resistance_v
+			value = 1
+		}
+		change_variable = {
+			which = syaro_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_syaro_2_customs = yes		#机制：阿拉比卡商会：穆哈获得 阿拉比卡联合公会 buff
+	}
+	modifiers = {
+		global_trade_goods_size_modifier = 0.1
+		production_efficiency = 0.05
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+Tosaka_reform_2 = {
+	#魔术中心
+	icon = "Rin_2"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = RIN
+			tag = IST
+			tag = ELE
+			tag = ATD
+		}
+	}
+	custom_attributes = {
+		enables_magic_center_customs = yes		#机制：魔术平等 控制伦敦时产出额外魔法值且关系友好的国家都可以获得额外魔法值，与你交战的国家-10%火力伤害
+	}
+	modifiers = {
+		prestige = 1
+	}
+}
+
+Gleiche_Rechte_reform = {
+	icon = "tya_1_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = demokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		demokratisch_2_customs = yes		#机制：未接纳文化的省份+20%税收、+2%传教力量、-1叛乱
+	}
+	modifiers = {
+		unjustified_demands = -0.15
+		global_spy_defence = 0.5
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+Der_schreckliche_Riese_reform = {
+	icon = "tya_2_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = autokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		autokratisch_2_customs = yes		#机制：未接纳文化的省份+20%人力、+20%水手、-1叛乱
+	}
+	modifiers = {
+		infantry_power = 0.1
+		yearly_absolutism = 0.5
+	}
+	ai = {
+		factor = 90
+	}
+}
+
+Magical_gir2_government_reform = {
+	#魔法少女二级政府
+	icon = "Magical_gir2_gr"
+	potential = {
+		culture_group = MadokaMagica
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		discipline = 0.05
+		#5训练
+		drill_decay_modifier = -0.5
+		#50操练失去
+	}
+}
+
+yureyuri_reform_2 = {
+	#文化同化
+	icon = "yureyuri_gr_2"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = TKK
+			tag = AKR
+			tag = FNY
+			tag = YKC
+		}
+	}
+	custom_attributes = {
+		enables_yureyuri_culture = yes		#机制：文化浸染：所有yureyuri文化的省份+5%商品产出，+10%税收，+15%人力
+	}
+	modifiers = {
+		num_accepted_cultures = 3
+		culture_conversion_cost = -0.25
+	}
+}
+
+muse_reform_2 = {
+	#第一号命令
+	potential = {
+		OR = {
+			tag = LLF
+			tag = HME
+		}
+		has_reform = muse_reform_1
+		NOT = {
+			has_reform = muse_reform_2_1
+		}
+	}
+	icon = "muse2_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_school_idol_project_customs = yes		#机制：学园偶像计划：每一个缪斯文化省份＋0.75上限；偶像卫队建设等级达到5后变为1.5
+	}
+	modifiers = {
+		manpower_in_true_faith_provinces = 0.15
+	}
+}
+
+muse_reform_2_1 = {
+	#深化第一号命令
+	potential = {
+		OR = {
+			tag = LLF
+			tag = HME
+		}
+		is_year = 1540
+		has_reform = muse_reform_1
+	}
+	icon = "muse2_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	militarised_society = yes
+	custom_attributes = {
+		enables_school_idol_project_customs = yes		#机制：学园偶像计划：每一个缪斯文化省份＋0.75上限；偶像卫队建设等级达到5后变为1.5
+	}
+	modifiers = {
+		manpower_in_true_faith_provinces = 0.25
+	}
+}
+
+#山海经
+#华夷之辩
+shj_reform_2 = {
+	potential = {
+		tag = SHJ
+	}
+	icon = "acg_universal_government_reform_1"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_shj_culture_conv_ability = yes #机制：夷入华者则华之：被成功转化为主流文化的省份获得三种发展度各2点，并永久获得-2叛乱，20%商品产出
+	}
+	modifiers = {
+		culture_conversion_time = -0.25
+		culture_conversion_cost = -0.25
+	}
+}
+
+# 三层：Power_structure: 行政官僚倾向
+
+average_opportunity_reform = {
+	#机会均等
+	icon = "average_opportunity_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_average_opportunity_customs = yes		#机制：权力平衡 召开议事会将额外增加所有阶级的忠诚度。
+	}
+	modifiers = {
+		min_autonomy_in_territories = -0.05
+		advisor_cost = -0.15
+	}
+}
+
+proteges_and_loyalists_reform = {
+	#亲信与效忠者
+	icon = "proteges_and_loyalists_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_proteges_and_loyalists_customs = yes		#机制：奖赏效忠者 雇佣一位顾问将会提升5点威望和5点辉煌点。
+	}
+	modifiers = {
+		reform_progress_growth = 0.15
+		all_estate_influence_modifier = -0.1
+	}
+}
+
+self_governing_reform = {
+	#地方自治
+	icon = "self_governing_reform"
+	allow_normal_conversion = yes
+	has_parliament = yes
+	modifiers = {
+		governing_capacity_modifier = 0.15
+		max_absolutism = -20
+	}
+}
+
+depend_on_estate_reform = {
+	#依托于阶层
+	icon = "depend_on_estate_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_depend_on_estate_customs = yes		#机制：央地博弈的中间路线 售卖王室领地获得的收入+20%
+	}
+	modifiers = {
+		all_estate_loyalty_equilibrium = 0.05
+		state_maintenance_modifier = -0.25
+	}
+}
+
+acg_meritocracy_reform = {
+	#选贤任能
+	icon = "acg_meritocracy_reform"
+	allow_normal_conversion = yes
+	trigger = {
+		OR = {
+			full_idea_group = education_ideas
+			full_idea_group = innovativeness_ideas
+			full_idea_group = court_ideas
+		}
+	}
+	custom_attributes = {
+		enables_acg_meritocracy_customs = yes		#机制：无话可说的公平 降低没收领地减少的忠诚度
+	}
+	modifiers = {
+		min_autonomy_in_territories = -0.1
+		advisor_cost = -0.15
+	}
+}
+
+Acg_Preferential_reform = {
+	#二次元优先
+	icon = "Acg_Preferential_gr"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_acg_preferential_customs = yes		#机制：文化优势 二次元文化省份获得-10%发展花费
+	}
+	modifiers = {
+		reform_progress_growth = 0.1
+		global_autonomy = -0.05
+	}
+}
+
+Human_Preferential_reform = {
+	#人类优先
+	icon = "Human_Preferential_gr"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_human_preferential_customs = yes		#机制：三次元总督 非二次元文化省份获得-0.5荒废度/月
+	}
+	modifiers = {
+		advisor_cost = -0.1
+		stability_cost_modifier = -0.1
+	}
+}
+
+Average_power_reform = {
+	#均分制
+	icon = "Average_power_gr"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_average_power_customs = yes		#机制：协商议会 完成一个议题时，基于政府等级给予威望与辉煌点数
+	}
+	modifiers = {
+		years_of_nationalism = -2.5
+	}
+	has_parliament = yes
+}
+
+Estates_General_reform = {
+	#三级会议
+	icon = "Estates_General_gr"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = JDA
+			tag = DJD
+			tag = STF
+		}
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = Rebuild_France_tax_system_tooltip
+			has_country_flag = Rebuild_France_tax_system_flag
+		}
+	}
+	modifiers = {
+		global_tax_modifier = 0.2
+		global_autonomy = -0.05
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+BDR_1_reform = {
+	#少女乐团议会
+	potential = {
+		tag = BDR
+	}
+	icon = "bdr_reform_1"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	has_parliament = yes
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		BDR_1_arsenal_customs = yes
+		allow_cawa = yes
+	}
+	government_abilities = {
+		bdr_government_mechanic_1
+	}
+	modifiers = {
+		advisor_cost = -0.15
+		improve_relation_modifier = 0.2
+	}
+}
+
+
+nero_first_member_reform = {
+	#第一公民
+	icon = "nero_first_member_reform_gr"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_nero_first_member_customs = yes		#机制：皇帝特权 每20年召开元老院会议，为领袖祈福
+	}
+	potential = {
+		primary_culture = Nero
+	}
+	modifiers = {
+		yearly_corruption = -0.05
+		diplomatic_reputation = 1
+	}
+}
+
+Shinda_Sekai_Sensen_reform = {
+	#死后世界战线
+	icon = "Shinda_Sekai_Sensen_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = KDE
+	}
+	custom_attributes = {
+		enables_Shinda_Sekai_Sensen_customs = yes		#机制：死者重生 所有立华奏文化省份+25%人力
+	}
+	modifiers = {
+		global_unrest = -1
+		fire_damage = 0.1
+	}
+}
+
+SJY_SANJIGAIGE = {
+	#是非曲直厅
+	icon = "SJY_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = SJY
+	}
+	trigger = {
+		mission_completed = SJY_ADM_4
+	}
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+	#            assimilation_cultures = { DF_Project = {#东方
+	#                            war_exhaustion = -0.02
+	#	global_unrest = -1
+	#	global_autonomy = -0.075
+	#	max_absolutism = -15
+	#                           core_creation = -0.05
+	#                          administrative_efficiency = 0.05
+	#	governing_capacity_modifier = 0.3
+	#
+	#}}
+	modifiers = {
+		war_exhaustion = -0.02
+		global_unrest = -1
+		global_autonomy = -0.075
+		max_absolutism = -15
+		core_creation = -0.05
+		administrative_efficiency = 0.05
+		governing_capacity_modifier = 0.3
+	}
+}
+
+#Drawcard_Committee_reform = { #抽卡委员会
+#	icon = "？"
+#	allow_normal_conversion = yes
+#	custom_attributes = {
+#		enables_Drawcard_Committee_customs = yes #机制：保底 前二时代若你没有将军冲击达到3，则+1将领冲击力；后二时代若你没有将军火力达到3，则+1将领火力
+#	}
+#	modifiers = {
+#		general_cost = -0.1
+#	}
+#}
+
+Elzia_power_reform = {  #三级改革
+	#绝对代表权
+	icon = "Elzia_power_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = ELZ
+	}
+	custom_attributes = {
+		diet_increases_not_influence = yes
+		seizing_land_no_rebels = yes
+		seizing_land_loyalty = yes
+		enables_Elzia_power_customs = yes		#机制：召开阶级议会额外增加10威望
+	}
+	trigger = {
+		has_reform = Elzia_union_reform
+	}
+	modifiers = {
+		yearly_corruption = -0.1
+        governing_cost = -0.1
+        advisor_cost = -0.2
+        all_estate_influence_modifier = -0.1
+	}
+}
+
+seperate_coordination = {
+	#分离的团体
+	icon = "seperate_coordination"
+	potential = {
+		tag = MTM
+	}
+	lock_level_when_selected = yes
+	modifiers = {
+		global_trade_goods_size_modifier = 0.15
+		global_autonomy = 0.05
+	}
+}
+
+union_govern_reform = {
+	#联合执政
+	icon = "acg_gr"
+	allow_normal_conversion = no
+	potential = {
+		tag = CTL
+	}
+	modifiers = {
+		global_tax_modifier = 0.15
+		production_efficiency = 0.15
+		state_maintenance_modifier = -0.3
+		administrative_efficiency = 0.05
+		governing_capacity_modifier = 0.2
+		advisor_cost = -0.3
+		advisor_pool = 1
+		max_absolutism = -45
+		church_influence_modifier = 0.1
+		nobles_influence_modifier = 0.1
+		burghers_influence_modifier = 0.1
+		church_loyalty_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
+		burghers_loyalty_modifier = 0.1
+	}
+}
+
+chino_3_reform = {
+	#十二人咨询委员会
+	icon = "chino_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = resistance_v
+			value = 1
+		}
+		change_variable = {
+			which = chino_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_chino_3_customs = yes		#机制：发展咨询委员会：所有发展度高于12的省份全部获得-15%最低自治度，+15%商品产出。
+	}
+	modifiers = {
+		advisor_cost = -0.15
+		prestige_decay = -0.01
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+cocoa_3_reform = {
+	#取缔贝克塔什苦修僧团
+	icon = "cocoa_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 1
+		}
+		change_variable = {
+			which = cocoa_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_cocoa_3_customs = yes		#机制：贝克塔什教团的终焉：所有人力高于5且没有 取缔贝克塔什教团 的省份减少1点人力，获得1点税基，1点生产，并且获得 取缔贝克塔什教团 buff。
+	}
+	modifiers = {
+		global_manpower_modifier = 0.1
+		infantry_power = 0.1
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+rize_3_reform = {
+	#策动拔刀队
+	icon = "rize_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	trigger = {
+		check_variable = {
+			which = preparation_of_the_army
+			value = 10
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		set_variable = {
+			which = waqf_influence
+			value = 0
+		}
+		set_variable = {
+			which = aimr_influence
+			value = 0
+		}
+		set_variable = {
+			which = bureaucratic_influence
+			value = 0
+		}
+		set_variable = {
+			which = resistance_v
+			value = 20
+		}
+		change_variable = {
+			which = rize_influence
+			value = 1
+		}
+		hidden_effect = {
+			set_global_flag = enable_batou_tai_flag
+		}
+	}
+	custom_attributes = {
+		enables_rize_3_customs = yes		#机制：拔刀队维新：启用《拔刀队》作为可用歌曲，并且将会立刻开展一场血腥的内战，但是将会彻底粉碎整个旧势力的一切残留。“警告，这场内战将会比一般的瓦克夫-埃米尔内战更加血腥”
+	}
+	modifiers = {
+		infantry_power = 0.15
+		shock_damage_received = -0.05
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+chiya_3_reform = {
+	#废除军事采邑制度
+	icon = "chiya_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = resistance_v
+			value = 1
+		}
+		change_variable = {
+			which = chiya_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_chiya_3_customs = yes		#机制：废除军事采邑制：所有瓦克夫-埃米尔执政联盟影响下的省份都会-15%最低自治度，-10%转变文化的成本。
+	}
+	modifiers = {
+		global_manpower_modifier = 0.15
+		years_of_nationalism = -5
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+syaro_3_reform = {
+	#行政部门的权力分化
+	icon = "syaro_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 2
+		}
+		change_variable = {
+			which = syaro_influence
+			value = 1
+		}
+		change_variable = {
+			which = reforming_level_2
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_syaro_3_customs = yes		#机制：瓦解旧官僚：允许你使用特权 早期司法权分立尝试
+	}
+	modifiers = {
+		administrative_efficiency = 0.05
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+Tosaka_reform_3 = {
+	#魔术贵族主义
+	icon = "Rin_3"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = RIN
+			tag = IST
+			tag = ELE
+			tag = ATD
+		}
+	}
+	has_parliament = yes
+	custom_attributes = {
+		enables_aristocratic_conflict_customs = yes		#机制：贵族主义冲突 增加四项特色贵族特权与二项议案
+	}
+	modifiers = {
+		nobles_influence_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
+		land_forcelimit_modifier = 0.25
+	}
+}
+
+ELN_government_reform_1 = {
+	#美梦国度的日记
+	icon = "ELN_gr_1"
+	allow_normal_conversion = yes
+	potential = {
+		tag = ELN
+	}
+	modifiers = {
+		church_loyalty_modifier = 0.1
+		advisor_cost = -0.1
+		reform_progress_growth = 0.2
+	}
+}
+
+Der_Beginn_der_Demokratie_reform = {
+	icon = "tya_1_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = demokratisch_influence
+			value = 1
+		}
+	}
+	has_parliament = yes	#机制：启用议会
+	modifiers = {
+		advisor_cost = -0.2
+		monthly_splendor = 3
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+Straffung_der_Exekutive_reform = {
+	icon = "tya_2_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = autokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		autokratisch_3_customs = yes		#机制：顾问将提供额外效果
+	}
+	modifiers = {
+		administrative_efficiency = 0.05
+		expand_administration_cost = -0.2
+	}
+	ai = {
+		factor = 90
+	}
+}
+
+Magical_gir3_government_reform = {
+	#魔法少女三级政府，qb传销
+	icon = "Magical_gir3_gr"
+	potential = {
+		culture_group = MadokaMagica
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		ae_impact = -0.15
+		#20%ae
+		manpower_in_true_faith_provinces = 0.25
+		#正统信仰省份提供的人力+25%
+	}
+}
+
+yureyuri_reform_3 = {
+	#阶级联盟
+	icon = "ctl_gr_3"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = TKK
+			tag = AKR
+			tag = FNY
+			tag = YKC
+		}
+	}
+	modifiers = {
+		global_own_trade_power = 0.15
+		manpower_recovery_speed = 0.15
+		stability_cost_modifier = -0.2
+		global_unrest = -1
+		church_influence_modifier = 0.1
+		nobles_influence_modifier = 0.1
+		burghers_influence_modifier = 0.1
+		church_loyalty_modifier = 0.05
+		nobles_loyalty_modifier = 0.05
+		burghers_loyalty_modifier = 0.05
+	}
+}
+
+muse_reform_3 = {
+	#第二号命令
+	potential = {
+		OR = {
+			tag = LLF
+			tag = HME
+		}
+		has_reform = muse_reform_1
+	}
+	icon = "muse3_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_dome_arsenal_customs = yes		#机制：巨蛋兵工厂：每有一个巨蛋+2%步战，最高20步战
+	}
+	modifiers = {
+		reform_progress_growth = 0.2
+	}
+}
+
+#山海经集权线
+shj_cen_reform_3 = {
+	potential = {
+		tag = SHJ
+	}
+	trigger = {
+		has_country_flag = SHJ_expanded_kisaki_power
+	}
+	icon = "acg_universal_government_reform_1"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_shj_supress_rebel_ability = yes #机制：高效君主集权：造核完毕的省份失去5年分离主义和20点自治度
+	}
+	modifiers = {
+		max_absolutism = 10
+		harsh_treatment_cost = -0.25
+		administrative_efficiency = 0.025
+		autonomy_change_time = -0.25
+	}
+}
+
+#山海经分权线
+shj_decen_reform_3 = {
+	potential = {
+		tag = SHJ
+	}
+	trigger = {
+		has_country_flag = SHJ_unexpanded_kisaki_power
+	}
+	icon = "acg_universal_government_reform_1"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_shj_parliament_bonus_ability = yes #机制：山海经代表大会：议会议程通过后，随机分配3点发展度到拥有议席的省份
+	}
+	has_parliament = yes
+	modifiers = {
+		max_absolutism = -20
+		parliament_backing_chance = 0.25
+		governing_cost = -0.1
+		global_unrest = -2
+		num_of_parliament_issues = 3
+	}
+}
+
+#四层：missionary_or_tolerate: 传教或容忍
+
+national_church_reform = {
+	#国立教会
+	icon = "national_church_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_national_church_customs = yes		#机制：受控的基层教会组织 每点正稳定提供1%传教力量
+	}
+	modifiers = {
+		tolerance_own = 2
+		religious_unity = 0.15
+		church_influence_modifier = -0.1
+	}
+}
+
+assistant_from_church_reform = {
+	#教士协助
+	icon = "assistant_from_church_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_assistant_from_church_customs = yes		#机制：分担行政压力 寺庙和大教堂减少10%的当地治理成本
+	}
+	modifiers = {
+		church_loyalty_modifier = 0.1
+		church_influence_modifier = 0.1
+		church_privilege_slots = 1
+	}
+}
+
+keep_balance_reform = {
+	#维持平衡
+	icon = "keep_balance_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		all_estate_loyalty_equilibrium = 0.1
+		all_estate_influence_modifier = 0.05
+		core_creation = -0.05
+	}
+}
+
+tolerance_acg_reform = {
+	#宗教容忍
+	icon = "tolerance_acg_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_tolerance_acg_customs = yes		#机制：宽容的社会 如果我们的异端容忍或者异教容忍高于3，则每满足一项，我们额外获得25%宗教统一。
+	}
+	modifiers = {
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+		tolerance_of_heretics_capacity = 2
+		tolerance_of_heathens_capacity = 2
+	}
+}
+
+contact_with_miku_reform = {
+	#与初音教廷保持联系
+	icon = "contact_with_miku_reform"
+	allow_normal_conversion = yes
+	potential = {
+		uses_papacy = yes
+		religion = acg
+		NOT = {
+			tag = HTS
+		}
+	}
+	custom_attributes = {
+		enables_contact_with_miku_customs = yes		#机制：我去，初音未来 启用一项创作倾向（即金玺诏书）会提高三种点数各30点，提高25点和初音未来的双向关系。
+	}
+	effect = {
+		add_opinion = {
+			who = HTS
+			modifier = contact_with_miku_modifier
+		}
+		HTS = {
+			add_opinion = {
+				who = ROOT
+				modifier = contact_with_miku_modifier
+			}
+		}
+	}
+	modifiers = {
+		global_missionary_strength = 0.01
+		papal_influence = 2
+		church_loyalty_modifier = 0.05
+		curia_powers_cost = -0.05
+	}
+}
+
+great_priest_reform = {
+	#至高领袖
+	icon = "great_priest_reform"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			uses_church_aspects = yes
+			uses_fervor = yes
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				is_defender_of_faith = yes
+			}
+			add_country_modifier = {
+				name = great_priest_reform_modifier
+				duration = -1
+			}
+		}
+	}
+	custom_attributes = {
+		enables_great_priest_customs = yes		#机制：精神的盔甲，物理的刀剑 成为信仰守护者会带来额外的10%士气防御，2点外交声誉，2点正统信仰容忍修正。
+	}
+	modifiers = {
+		church_power_modifier = 0.2
+		church_influence_modifier = -0.05
+		global_missionary_strength = 0.02
+		monthly_fervor_increase = 0.25
+	}
+}
+
+expand_oracle_reform = {
+	#扩大神使编制
+	icon = "expand_oracle_reform"
+	allow_normal_conversion = yes
+	potential = {
+		uses_religious_icons = yes
+	}
+	custom_attributes = {
+		enables_expand_oracle_customs = yes		#机制：神威 成为信仰守护者会带来额外的10%步兵作战能力，25%改善关系，15%全国人力
+	}
+	effect = {
+		if = {
+			limit = {
+				is_defender_of_faith = yes
+			}
+			add_country_modifier = {
+				name = expand_oracle_reform_modifier
+				duration = -1
+			}
+		}
+	}
+	modifiers = {
+		yearly_patriarch_authority = 0.01
+		church_loyalty_modifier = 0.1
+		church_influence_modifier = 0.1
+		missionaries = 1
+	}
+}
+
+reinforce_church_school_reform = {
+	#强化教会学校
+	icon = "reinforce_church_school_reform"
+	allow_normal_conversion = yes
+	potential = {
+		uses_blessings = yes
+	}
+	custom_attributes = {
+		enables_reinforce_church_school_customs = yes		#机制：教会学校的成果 每个激活的圣地都会带来+10%思潮传播和-5%接纳思潮花费
+	}
+	modifiers = {
+		global_missionary_strength = 0.01
+		technology_cost = -0.05
+		embracement_cost = -0.15
+		yearly_innovativeness = 0.2
+	}
+}
+
+Convert_orthodox_reform = {
+	#转变东正教
+	icon = "Convert_orthodox_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = AOG
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = Convert_orthodox_reform_tooltip
+			has_country_flag = Remould_Orthodox_missions_flag
+		}
+	}
+	modifiers = {
+		church_power_modifier = 0.2
+		religious_unity = 0.1
+		prestige_per_development_from_conversion = 0.1
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+Enseignants_missionnaire_reform = {
+	#教师传教
+	icon = "Enseignants_missionnaire_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = KDE
+	}
+	custom_attributes = {
+		enables_Enseignants_missionnaire_customs = yes		#机制：教师传教 所有非立华奏文化省份-15%文化花费，立华奏文化省份-10%发展成本
+	}
+	modifiers = {
+		global_missionary_strength = 0.03
+	}
+}
+
+Lovelive_religion_reform = {
+	#lovelive神教
+	icon = "LL_reg_gr"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = MUS
+			tag = AQO
+			tag = LLF
+			tag = HME
+		}
+		NOT = {
+			has_country_flag = abolish_religion_LL
+		}
+	}
+	modifiers = {
+		global_missionary_strength = 0.05
+		missionary_maintenance_cost = -0.2
+		religious_unity = -0.1
+		stability_cost_modifier = 0.25
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+Use_religion = {
+	#利用宗教
+	icon = Use_religion_gr
+	allow_normal_conversion = yes
+	potential = {
+		uses_church_aspects = yes
+	}
+	custom_attributes = {
+		enables_use_religion_customs = yes		#机制：教会支持 有信条机制时，当前每有一个信条，获得+15%改革进度与-5%顾问花费/没有信条机制时，使用教会能力时返还25%能力的花费
+	}
+	modifiers = {
+		church_power_modifier = 0.2
+	}
+}
+
+nero_religion_reform = {
+	#宗教扩张
+	icon = "nero_religion_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = Nero
+	}
+	effect = {
+		if = {
+			limit = {
+				religion = Fate_reg
+				NOT = {
+					has_country_flag = nero_religion_reform_bonus
+				}
+			}
+			add_patriarch_authority = 0.1
+			set_country_flag = nero_religion_reform_bonus
+		}
+	}
+	custom_attributes = {
+		enables_nero_religion_customs = yes		#机制：宗教之剑 每个罗马正教省份+0.3陆军上限
+	}
+	modifiers = {
+		warscore_cost_vs_other_religion = -0.2
+	}
+}
+
+
+Elzia_religion_1_reform = {  #四级改革1
+	#十六种族论
+	icon = "Elzia_religion_reform_1_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = ELZ
+	}
+	custom_attributes = {
+		enables_Elzia_religion_1_customs = yes		#机制：正统信仰省份+10%商品产出修正，非正统省份+10%税收
+	}
+	trigger = {
+		has_reform = Elzia_power_reform
+	}
+	modifiers = {
+		tolerance_own = 2
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+        religious_unity = 0.25
+	}
+}
+
+Elzia_religion_2_reform = {  #四级改革2
+	#盟约信仰
+	icon = "Elzia_religion_reform_2_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = ELZ
+	}
+	custom_attributes = {
+		enables_Elzia_religion_2_customs = yes		#机制：正统信仰省份+10%商品产出修正、+15%税收、当地省份占用的行政容量花费-10%，非正统省份+10%税收、当地传教力量+2%
+	}
+	trigger = {
+        religion = Elzia_reg 
+		has_reform = Elzia_power_reform
+	}
+	modifiers = {
+		missionaries = 1
+		global_missionary_strength = 0.02
+		tolerance_own = 2
+        warscore_cost_vs_other_religion = -0.2
+	}
+}
+
+magic_girl_social = {
+	#魔法少女社会
+	icon = "magic_girl_social"
+	potential = {
+		tag = MTM
+	}
+	lock_level_when_selected = yes
+	modifiers = {
+		female_advisor_chance = 1
+		tolerance_own = 3
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+		global_missionary_strength = -0.01
+	}
+}
+
+welcome_other_religions_reform = {
+	#欢迎其他宗教
+	icon = "acg_gr"
+	allow_normal_conversion = no
+	potential = {
+		tag = CTL
+	}
+	custom_attributes = {
+		enables_welcome_other_religions = yes		#机制：欢迎其他宗教，非国教省份获得加成
+	}
+	modifiers = {
+		global_missionary_strength = -0.03
+		religious_unity = 0.4
+		tolerance_own = 2
+		tolerance_heretic = 7
+		tolerance_heathen = 7
+		relation_with_heretics = 40
+	}
+}
+
+chino_4_reform = {
+	#最高司法委员会对瓦克夫与埃米尔制度的监察
+	icon = "chino_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 2
+		}
+		change_variable = {
+			which = resistance_v
+			value = 1
+		}
+		change_variable = {
+			which = chino_influence
+			value = 1
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = reforming_level_1
+					value = 1
+				}
+			}
+			subtract_variable = {
+				which = bureaucratic_influence
+				value = 2
+			}
+			add_adm_power = 200
+		}
+		hidden_effect = {
+			set_variable = {
+				which = reforming_level_1
+				value = 1
+			}
+		}
+	}
+	custom_attributes = {
+		enables_chino_4_customs = yes		#机制：司法委员会：若你已经采用了改革 瓦克夫制度的世俗化监管，则将额外减少2点官僚垄断度，并且获得200行政点，否则你将可以使用特权 受到监管的瓦克夫制度。
+	}
+	modifiers = {
+		missionary_maintenance_cost = -0.25
+		tolerance_own = 2
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+cocoa_4_reform = {
+	#教法分离的尝试
+	icon = "cocoa_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = resistance_v
+			value = 1
+		}
+		change_variable = {
+			which = cocoa_influence
+			value = 1
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = reforming_level_2
+					value = 1
+				}
+			}
+			subtract_variable = {
+				which = waqf_influence
+				value = 2
+			}
+			add_adm_power = 200
+		}
+		hidden_effect = {
+			set_variable = {
+				which = reforming_level_2
+				value = 1
+			}
+		}
+	}
+	custom_attributes = {
+		enables_cocoa_4_customs = yes		#机制：斩断宗教势力的触角：若你已经采用了改革 行政部门的权力分化，则将额外减少2点瓦克夫影响力，并且获得200行政点，否则你将可以使用特权 早期司法权分立尝试。
+	}
+	modifiers = {
+		core_creation = -0.15
+		years_of_nationalism = -2.5
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+rize_4_reform = {
+	#扩大国家政权的活动领域
+	icon = "rize_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 3
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 3
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 2
+		}
+		change_variable = {
+			which = resistance_v
+			value = 2
+		}
+		change_variable = {
+			which = rize_influence
+			value = 1
+		}
+		change_variable = {
+			which = reforming_level_3
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_rize_4_customs = yes		#机制：扩大政权影响范围：允许你使用特权 国家力量的存在性延伸。
+	}
+	modifiers = {
+		governing_capacity_modifier = 0.25
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+chiya_4_reform = {
+	#设立公共事务委员会
+	icon = "chiya_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = chiya_influence
+			value = 1
+		}
+		change_variable = {
+			which = reforming_level_3
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_chiya_4_customs = yes		#机制：公共事务委员会：允许你使用特权 公共事业与国家行动。
+	}
+	modifiers = {
+		tolerance_heretic = 2
+		build_cost = -0.15
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+syaro_4_reform = {
+	#初步保障国境内的宗教自由
+	icon = "syaro_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = syaro_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_syaro_4_customs = yes		#机制：向着天下大同前进：所有异端与异教省份获得-5分离主义
+	}
+	modifiers = {
+		tolerance_heretic = 3
+		tolerance_heathen = 3
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+Tosaka_reform_4 = {
+	#圣堂教会
+	icon = "Rin_4"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = RIN
+			tag = IST
+			tag = ELE
+			tag = ATD
+		}
+	}
+	custom_attributes = {
+		enables_church_of_the_church_customs = yes		#机制：圣堂教会 传教现在可以提供教会力量，且驱逐少数族裔可以转文化与宗教
+	}
+	has_parliament = yes
+	modifiers = {
+		prestige = 1
+	}
+}
+
+Forderung_der_Wahrheit_von_Empire_reform = {
+	icon = "tya_1_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = demokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		demokratisch_4_customs = yes		#机制：对相邻国家获得永久cb
+	}
+	modifiers = {
+		innovativeness_gain = 0.5
+		artillery_fire = 1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+Die_Gottlichkeit_der_Herrscher_reform = {
+	icon = "tya_2_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = autokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		autokratisch_4_customs = yes		#机制：焦点不同的点数时获得额外修正
+	}
+	modifiers = {
+		tolerance_own = 3
+		cavalry_shock = 1
+	}
+	ai = {
+		factor = 90
+	}
+}
+
+Magical_gir4_government_reform = {
+	#魔法少女四级政府，圆学家
+	icon = "Magical_gir4_gr"
+	potential = {
+		culture_group = MadokaMagica
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		tolerance_own = 2
+		#正统容忍2%
+		siege_ability = 0.15
+		#围城效率
+	}
+}
+
+yureyuri_reform_4 = {
+	#宗教扩张主义
+	icon = "yureyuri_gr_4"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = TKK
+			tag = AKR
+			tag = FNY
+			tag = YKC
+		}
+		has_country_flag = tkk_religon_press_enabled
+	}
+	modifiers = {
+		missionaries = 1
+		global_missionary_strength = 0.02
+		warscore_cost_vs_other_religion = -0.1
+		tolerance_own = 2
+		relation_with_heretics = -50
+		tolerance_heretic = -3
+		tolerance_heathen = -2
+	}
+}
+
+yryr_religion_tolerance = {
+	#宗教共存主义
+	icon = "ctl_gr_4"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = TKK
+			tag = AKR
+			tag = FNY
+			tag = YKC
+		}
+		has_country_flag = tkk_religon_tolerance_enabled
+	}
+	modifiers = {
+		religious_unity = 0.2
+		tolerance_own = -1
+		tolerance_heretic = 3
+		tolerance_heathen = 3
+	}
+}
+
+muse_reform_4 = {
+	#第三号命令
+	potential = {
+		OR = {
+			tag = LLF
+			tag = HME
+		}
+		has_reform = muse_reform_1
+	}
+	icon = "muse4_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_idol_army_construct_customs = yes		#机制：偶像之利剑：解锁偶像卫队建设的决议
+	}
+	modifiers = {
+		infantry_power = 0.1
+	}
+}
+
+#山海经宗教政策
+#不鼓励，不歧视
+shj_reform_4 = {
+	potential = {
+		tag = SHJ
+	}
+	icon = "acg_universal_government_reform_1"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	modifiers = {
+		religious_unity = 0.3
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+		yearly_harmony = 2
+	}
+}
+
+#五层：魔法系统
+sponsor_magic_material_reform = {
+	#赞助魔法素材提取
+	icon = "sponsor_magic_material_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_sponsor_magic_material_customs = yes		#机制：给魔术工坊拨款 前述特权不再降低专制度，且额外提供年度魔法值获取+3
+	}
+	modifiers = {
+		pulse_mana_get_modifier = 2
+		innovativeness_gain = 0.33
+	}
+}
+
+rely_on_magician_reform = {
+	#依赖法师
+	icon = "rely_on_magician_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		magician_privilege_slots = 1
+		magician_loyalty_modifier = 0.1
+		magician_influence_modifier = 0.1
+		magic_army_cost_decrease_modifier = 1
+	}
+}
+
+military_magic_reform = {
+	#军事化法术倾向
+	icon = "military_magic_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_military_magic_customs = yes		#机制：施法者军团 魔导部队获得+10%火力伤害，-10%受到的冲击伤害，裁撤改革时失效。
+	}
+	effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = military_magic_reform
+				duration = -1
+			}
+		}
+	}
+	modifiers = {
+		pulse_mana_get_modifier = 3
+		mil_tech_cost_modifier = -0.05
+	}
+}
+
+civilian_magic_reform = {
+	#生产法术研究
+	icon = "civilian_magic_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_civilian_magic_customs = yes		#机制：通用性生产魔法 所有魔法相关素材的省份获得+10%生产效率，若建造了魔术工房，则提升至20%。
+	}
+	modifiers = {
+		pulse_mana_get_modifier = 3
+		production_efficiency = 0.15
+	}
+}
+
+massive_magic_reform = {
+	#大规模魔导应用
+	icon = "massive_magic_reform"
+	allow_normal_conversion = yes
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = massive_magic_reform_tooltip
+			always = no
+		}
+	}
+	custom_attributes = {
+		enables_massive_magic_customs = yes		#机制：魔导生产 魔术工房将额外增加0.5的本地商品产出。
+	}
+	modifiers = {
+		allowed_rev_guard_fraction = 0.2
+		pulse_mana_get_modifier = 5
+		global_trade_goods_size_modifier = 0.1
+	}
+}
+
+Elzia_magic_reform = {  #五级改革
+	#高阶魔法研究
+	icon = "Elzia_magic_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = ELZ
+	}
+	custom_attributes = {
+		enables_Elzia_magic_customs = yes		#机制：魔法素材挖掘：可以转换特定条件省份商品至魔法素材，同时增加3商品产出。：商品为宝石、盐、玻璃，发展度至少20，拥有工厂，花费？？mana。
+	}
+	trigger = {
+        OR = {
+            has_reform = Elzia_religion_1_reform
+            has_reform = Elzia_religion_2_reform
+        }
+	}
+	modifiers = {
+		pulse_mana_get_modifier = 5
+        fire_damage = 0.05
+        allowed_rev_guard_fraction = 0.2
+        production_efficiency = 0.1
+	}
+}
+
+#六层：Cultural_policy: 文化，信仰，国家
+
+unify_language_reform = {
+	#统一语言体系
+	icon = "unify_language_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_unify_language_reform_customs = yes		#机制：高效办公 主流文化的省份-15%省份治理成本 
+	}
+	modifiers = {
+		culture_conversion_cost = -0.1
+		same_culture_advisor_cost = -0.1
+	}
+}
+
+use_religion_reform = {
+	#宗教社会
+	icon = "use_religion_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_use_religion_reform_customs = yes		#机制：信仰至上 转化省份的宗教会降低该省份5点分离主义
+	}
+	modifiers = {
+		tolerance_own = 2
+		global_missionary_strength = 0.01
+	}
+}
+
+cultural_harmony_reform = {
+	#文化和谐
+	icon = "cultural_harmony_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_cultural_harmony_reform_customs = yes		#机制：和谐社会 已接纳文化的省份获得+0.1商品产出，+1年度税收，+10%本地人力
+	}
+	modifiers = {
+		num_accepted_cultures = 2
+		promote_culture_cost = -0.33
+	}
+}
+
+tax_heretic_reform = {
+	#文化税收
+	icon = "tax_heretic_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_tax_heretic_reform_customs = yes		#机制：异文化税 对非主流文化的省份剥削税收有50%概率不损失发展度
+	}
+	modifiers = {
+		global_tax_modifier = 0.15
+		global_autonomy = -0.05
+	}
+}
+
+central_domination_reform = {
+	#中央统御
+	icon = "central_domination_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_central_domination_reform_customs = yes		#机制：统御天下 制造省份的核心会在一段时间内降低该省份2点叛乱度
+	}
+	modifiers = {
+		global_unrest = -1
+		max_absolutism_effect = 0.1
+		yearly_absolutism = 1
+	}
+}
+
+Liberte_egalite_fraternite_reform = {
+	#自由平等博爱
+	icon = "Liberte_egalite_fraternite_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = STF
+	}
+	trigger = {
+		adm_tech = 10
+		num_accepted_cultures = 5
+	}
+	modifiers = {
+		global_unrest = -2
+		global_institution_spread = 0.33
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+Fierte_culturelle_reform = {
+	#文化自豪
+	icon = "Fierte_culturelle_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = KDE
+	}
+	custom_attributes = {
+		enables_Fierte_culturelle_customs = yes		#机制：民族自豪 主流文化省份额外提供1个建筑格子
+	}
+	modifiers = {
+		culture_conversion_cost = -0.15
+	}
+}
+
+nero_cultural_reform = {
+	#包容文化
+	icon = "nero_cultural_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = Nero
+	}
+	custom_attributes = {
+		enables_nero_cultural_customs = yes		#机制：罗马的怀抱 根据接纳的文化数量提供修正
+	}
+	modifiers = {
+		innovativeness_gain = 0.33
+		global_institution_spread = 0.25
+	}
+}
+
+Monster_League_reform = {
+	#妖怪同盟
+	icon = "Yukari_gr"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_Monster_League_customs = yes		#机制：融合妖怪 东方文化省份-30%转文化花费，邻接东方省份的非东方省份-15%转文化花费
+	}
+	potential = {
+		culture_group = DF_Project
+	}
+	trigger = {
+		has_reform = Invite_monsters_reform
+	}
+	modifiers = {
+		diplomatic_upkeep = 1
+	}
+}
+
+Elzia_cultural_reform = {  #六级改革
+	#艾尔奇亚联邦认同
+	icon = "Elzia_cultural_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = ELZ
+	}
+	custom_attributes = {
+		enables_Elzia_cultural_customs = yes		#机制：NoGameNoLife主流文化省份+0.5商品产出、-15省份治理成本；非主流已接受文化省份+0.2商品产出、-10省份治理成本；未接受文化省份惩罚减半
+	}
+	trigger = {
+		has_reform = Elzia_magic_reform
+	}
+	modifiers = {
+		core_creation = -0.1
+		advisor_pool = 2
+		war_exhaustion = -0.1
+        num_accepted_cultures = 2
+	}
+}
+
+pluralism = {
+	#多元主义
+	icon = "pluralism"
+	potential = {
+		tag = MTM
+	}
+	lock_level_when_selected = yes
+	modifiers = {
+		global_institution_spread = 0.2
+		num_accepted_cultures = 2
+		promote_culture_cost = -0.5
+		max_absolutism = -10
+	}
+}
+
+different_scholors_in_university_reform = {
+	#大学里的多元文化学者
+	icon = "acg_gr"
+	allow_normal_conversion = no
+	potential = {
+		tag = CTL
+	}
+	trigger = {
+		num_accepted_cultures = 5
+	}
+	custom_attributes = {
+		enables_multiculture_university = yes		#机制：思想中心 建造了大学的省份会获得额外加成
+	}
+	modifiers = {
+		technology_cost = -0.05
+		idea_cost = -0.1
+		innovativeness_gain = 0.33
+		free_adm_policy = 1
+		possible_adm_policy = 1
+	}
+}
+
+chino_5_reform = {
+	#通用语言-民族体系
+	icon = "chino_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 2
+		}
+		change_variable = {
+			which = resistance_v
+			value = 1
+		}
+		change_variable = {
+			which = chino_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_chino_5_customs = yes		#机制：语言文化联盟：所有黎凡特次大陆和非洲之角地区的省份获得+0.2商品产出。
+	}
+	modifiers = {
+		governing_capacity_modifier = 0.15
+		years_of_nationalism = -5
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+cocoa_5_reform = {
+	#理性主义的教育
+	icon = "cocoa_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 2
+		}
+		change_variable = {
+			which = resistance_v
+			value = 2
+		}
+		change_variable = {
+			which = cocoa_influence
+			value = 1
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = reforming_level_3
+					value = 1
+				}
+			}
+			subtract_variable = {
+				which = resistance_v
+				value = 2
+			}
+			add_country_modifier = {
+				name = cocoa_5_reform_modifier
+				duration = -1
+			}
+		}
+		set_variable = {
+			which = reforming_level_3
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_cocoa_5_customs = yes		#机制：教育改革：若教育改革的等级等于1，则会添加永久修正 现代化教育体系的雏形，并且这次改革不会增加旧势力抵制度。
+	}
+	modifiers = {
+		technology_cost = -0.05
+		culture_conversion_cost = -0.15
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+rize_5_reform = {
+	#初期士官学校
+	icon = "rize_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = aimr_influence
+			value = 3
+		}
+		change_variable = {
+			which = resistance_v
+			value = 1
+		}
+		change_variable = {
+			which = rize_influence
+			value = 1
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = reforming_level_3
+					value = 1
+				}
+			}
+			add_army_professionalism = 0.25
+		}
+	}
+	custom_attributes = {
+		enables_rize_5_customs = yes		#机制：士官学校：你将在陆军职业度高于50%时获得的该政体加成翻倍，若你的教育改革等级为1，则额外增加25%陆军职业度。
+	}
+	modifiers = {
+		drill_decay_modifier = -0.25
+		army_tradition_decay = -0.01
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+chiya_5_reform = {
+	#全国邮政业务普及
+	icon = "chiya_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = chiya_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_chiya_5_customs = yes		#机制：邮政业务机构：所有地形不为冰川，山脉，高原的省份+1可用建筑位，+20%友方军队移动速度，+10%本地贸易力量，-10%本地税收。
+	}
+	modifiers = {
+		administrative_efficiency = 0.05
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+syaro_5_reform = {
+	#分离行政权力与司法权力
+	icon = "syaro_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 3
+		}
+		change_variable = {
+			which = syaro_influence
+			value = 1
+		}
+		change_variable = {
+			which = reforming_level_2
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_syaro_5_customs = yes		#机制：最高法院：若你已经采用了特权 早期司法权分立尝试，则允许你使用特权 三权分立的曙光，若没有，则允许你使用特权 早期司法权分立尝试。
+	}
+	modifiers = {
+		governing_capacity_modifier = 0.25
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+Tosaka_reform_5 = {
+	#调和新旧魔术矛盾
+	icon = "Rin_3"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = RIN
+			tag = IST
+			tag = ELE
+			tag = ATD
+		}
+	}
+	#states_general_mechanic = {
+	#		Democracy_lord = {
+	#			technology_cost = -0.05
+	#			development_cost = -0.05
+	#		}
+	#	
+	#		Aristocratism_lord = {
+	#			administrative_efficiency = 0.1
+	#		}
+	#}
+	modifiers = {
+		governing_capacity = 200
+		development_cost = -0.1
+	}
+}
+
+ELN_government_reform_2 = {
+	#唯一的文化
+	icon = "ELN_gr_3"
+	allow_normal_conversion = yes
+	potential = {
+		tag = ELN
+	}
+	custom_attributes = {
+		enables_Elaina_gr_2_customs = yes		#机制：伊蕾娜文化的省份每年有5%的几率增加一点税收 生产 人力
+	}
+	modifiers = {
+		culture_conversion_cost = -0.2
+	}
+}
+
+Imperiale_Identitat_reform = {
+	icon = "tya_1_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = demokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		demokratisch_5_customs = yes		#机制：接纳文化省份造核花费-20%
+	}
+	modifiers = {
+		promote_culture_cost = -0.5
+		num_accepted_cultures = 2
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+Der_echte_Deutsche_reform = {
+	icon = "tya_2_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = autokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		autokratisch_5_customs = yes		#机制：每个发展度超过25的谭雅文化省份将提供5陆军上限与0.1%训练度，非谭雅文化省份人力-50%
+	}
+	modifiers = {
+		culture_conversion_cost = -0.15
+		years_of_nationalism = -5
+	}
+	ai = {
+		factor = 90
+	}
+}
+
+yureyuri_reform_5 = {
+	#文化一统
+	icon = "ctl_gr_5"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = TKK
+			tag = AKR
+			tag = FNY
+			tag = YKC
+		}
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = yryr_must_choose_to_race_harmony
+			mission_completed = tkk_radicial_ways_p
+		}
+	}
+	modifiers = {
+		same_culture_advisor_cost = -0.33
+		global_unrest = -1
+		embracement_cost = -0.25
+		innovativeness_gain = 0.25
+	}
+}
+
+yureyuri_reform_5_2 = {
+	#强化种族隔离制度
+	icon = "ctl_gr_5"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = TKK
+			tag = AKR
+			tag = FNY
+			tag = YKC
+		}
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = yryr_must_choose_to_race_harmony
+			mission_completed = tkk_radicial_ways_p
+		}
+	}
+	modifiers = {
+		autonomy_change_time = -0.5
+		min_autonomy_in_territories = -0.2
+		culture_conversion_cost = -0.1
+	}
+}
+
+
+muse_reform_5 = {
+	#第四号命令
+	potential = {
+		OR = {
+			tag = LLF
+			tag = HME
+		}
+		has_reform = muse_reform_1
+	}
+	icon = "muse5_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_muse_diplomacy_customs = yes		#机制：缪斯式外交：每有1个外交官-5省份战争花费，上限8个
+	}
+	modifiers = {
+		diplomats = 1
+	}
+}
+
+#山海经文化政策
+#万方景仰的文化
+shj_reform_5 = {
+	potential = {
+		tag = SHJ
+	}
+	icon = "acg_universal_government_reform_1"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_shanhaijing_culture_change_customs = yes		#机制：文化皈依：治下省份将非常缓慢地被同化为山海经文化，高稳定、高发展度、高收入、成为帝国级别政府、成为列强、成为霸权、成为中国皇帝等都将加速转换过程
+	}
+	modifiers = {
+		promote_culture_cost = -0.25
+		culture_conversion_time = -0.2
+	}
+}
+
+#六层Tax_system: 经济事务
+
+uniform_taxing_reform = {
+	#规范征税法
+	icon = "uniform_taxing_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_uniform_taxing_customs = yes		#机制：唯税收与死亡不可避免 自治领地省份的税收额外+25%，反之则叛乱额外-1
+	}
+	modifiers = {
+		global_tax_modifier = 0.25
+		global_unrest = -1
+	}
+}
+
+change_taxing_form_reform = {
+	#向商业税转型
+	icon = "change_taxing_form_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_change_taxing_form_customs = yes		#机制：商业税 发展度高于12的省份额外获得5%本地商品产出，发展度高于24的再额外获得10%本地商品产出。
+	}
+	modifiers = {
+		production_efficiency = 0.1
+		trade_efficiency = 0.1
+	}
+}
+
+rely_on_burghers_reform = {
+	#委派市民
+	icon = "rely_on_burghers_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_rely_on_burghers_customs = yes		#机制：市民协助 升级贸易中心会使该省份获得额外的贸易力量加成
+	}
+	modifiers = {
+		trade_efficiency = 0.1
+		burghers_loyalty_modifier = 0.1
+		burghers_influence_modifier = 0.1
+	}
+}
+
+from_new_world_reform = {
+	#自新世界
+	icon = "from_new_world_reform"
+	allow_normal_conversion = yes
+	trigger = {
+		OR = {
+			full_idea_group = expansion_ideas
+			full_idea_group = exploration_ideas
+		}
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+				continent = africa
+			}
+		}
+	}
+	custom_attributes = {
+		enables_from_new_world_customs = yes		#机制：新世界开发 你拥有的所有的殖民领也获得该改革的加成。
+	}
+	modifiers = {
+		colonists = 1
+		global_colonial_growth = 15
+	}
+}
+
+develop_new_world_reform = {
+	#探索与开拓
+	icon = "develop_new_world_reform"
+	allow_normal_conversion = yes
+	trigger = {
+		OR = {
+			full_idea_group = expansion_ideas
+			full_idea_group = exploration_ideas
+		}
+		capital_scope = {
+			NOT = {
+				continent = europe
+				continent = asia
+				continent = africa
+			}
+		}
+	}
+	modifiers = {
+		colonists = 1
+		global_colonial_growth = 15
+		colony_development_boost = 1
+	}
+}
+
+focus_on_core_reform = {
+	#给与贸易公司更多自治权
+	icon = "focus_on_core_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_focus_on_core_reform_customs = yes		#机制：委任制度：将省份分配至贸易公司时，降低其20%的商品产出，但是也降低50%其治理成本。
+	}
+	modifiers = {
+		governing_capacity = 250
+		state_maintenance_modifier = -0.33
+	}
+}
+
+new_commercial_idea_reform = {
+	#新思路
+	icon = "new_commercial_idea_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_new_commercial_idea_customs = yes		#机制：双赢的成果 将省份分配至贸易公司时，会提高其10%的商品产出
+	}
+	modifiers = {
+		trade_company_governing_cost = -0.15
+		yearly_corruption = -0.1
+		burghers_influence_modifier = -0.05
+	}
+}
+
+
+Aog_tax_reform = {
+	#强化附属国征收
+	icon = "Aog_tax_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = AOG
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = Aog_tax_reform_tooltip
+			has_country_flag = Currency_unification_missions_flag
+		}
+	}
+	modifiers = {
+		vassal_income = 0.5
+		development_cost = -0.1
+	}
+	government_abilities = {
+		iqta_mechanic
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+Kanade_tax_reform = {
+	#中央统筹
+	icon = "kanade_tax_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = KDE
+	}
+	custom_attributes = {
+		enables_kanade_tax_customs = yes		#机制：中央统筹 当每月获得的行政点大于10时，自治省份获得15%最低自治度修正
+	}
+	trigger = {
+		has_reform = Enseignants_missionnaire_reform
+	}
+	modifiers = {
+		global_autonomy = -0.05
+		global_unrest = -2
+	}
+}
+
+nero_tax_reform = {
+	#保护民众
+	icon = "nero_tax_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = Nero
+	}
+	custom_attributes = {
+		enables_nero_tax_customs = yes		#机制：万民同心 稳定度高于0时有概率触发特殊事件，稳定度越高触发概率越高
+	}
+	modifiers = {
+		land_maintenance_modifier = -0.1
+		reinforce_speed = 0.15
+		stability_cost_modifier = 0.5
+	}
+}
+
+#RD_expenditure_reform = { #研发经费
+#	icon = "TOB_gr"
+#	allow_normal_conversion = yes
+#	potential = {
+#	culture_group = datealive
+#	}
+#	custom_attributes = {
+#		enables_RD_expenditure_customs = yes #机制：研究显现装置 启用开发显现装置的决议，完成后提供军事加成
+#	}
+#	modifiers = {
+#		global_tax_modifier = -0.25
+#	}
+#}
+Elzia_tax_reform = {  #七级改革
+	#土地拆分法
+	icon = "Elzia_tax_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = ELZ
+	}
+	custom_attributes = {
+		enables_Elzia_tax_customs = yes		#机制：阶级特权将不再产生专制度上限惩罚（暂无）；召开阶级议会额外获得10%税收修正
+	}
+	trigger = {
+		has_reform = Elzia_cultural_reform
+	}
+	modifiers = {
+		global_tax_modifier = 0.1
+        global_trade_goods_size_modifier = 0.05
+		global_autonomy = -0.05
+		min_autonomy_in_territories = -0.1
+	}
+}
+
+coordination_trade = {
+	#调整屋交易
+	icon = "coordination_trade"
+	potential = {
+		tag = MTM
+	}
+	lock_level_when_selected = yes
+	modifiers = {
+		global_foreign_trade_power = 0.5
+		trade_efficiency = 0.25
+		inflation_reduction = -0.05
+	}
+}
+
+flexible_tax_reform = {
+	#灵活征税制度
+	icon = "acg_gr"
+	allow_normal_conversion = no
+	potential = {
+		tag = CTL
+	}
+	modifiers = {
+		global_tax_modifier = 0.1
+		build_cost = -0.15
+		inflation_reduction = 0.2
+		global_trade_power = 0.2
+	}
+}
+
+chino_6_reform = {
+	#废除包税制
+	icon = "chino_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = aimr_influence
+			value = 3
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 2
+		}
+		change_variable = {
+			which = resistance_v
+			value = 2
+		}
+		change_variable = {
+			which = chino_influence
+			value = 1
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						check_variable = {
+							which = bureaucratic_influence
+							value = 1
+						}
+					}
+					NOT = {
+						check_variable = {
+							which = aimr_influence
+							value = 8
+						}
+					}
+				}
+				set_variable = {
+					which = waqf_influence
+					value = 0
+				}
+				set_variable = {
+					which = aimr_influence
+					value = 0
+				}
+				set_variable = {
+					which = bureaucratic_influence
+					value = 0
+				}
+				set_variable = {
+					which = resistance_v
+					value = 0
+				}
+			}
+		}
+	}
+	custom_attributes = {
+		enables_chino_6_customs = yes		#机制：粉碎旧势力：若此时官僚垄断度小于等于0，埃米尔影响力小于8，则立刻终结瓦克夫-埃米尔体系。
+	}
+	modifiers = {
+		global_tax_modifier = -0.05
+		production_efficiency = 0.15
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+cocoa_6_reform = {
+	#设立经济改革委员会
+	icon = "cocoa_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 2
+		}
+		change_variable = {
+			which = resistance_v
+			value = 1
+		}
+		change_variable = {
+			which = cocoa_influence
+			value = 1
+		}
+		change_variable = {
+			which = reforming_level_1
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_cocoa_6_customs = yes		#机制：经济改革委员会：若你已经可以使用特权 受到监管的瓦克夫制度，则允许你使用特权 经济改革委员会，若没有，则允许你使用特权 受到监管的瓦克夫制度。
+	}
+	modifiers = {
+		inflation_reduction = 0.1
+		advisor_cost = -0.15
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+rize_6_reform = {
+	#取消吉兹亚税
+	icon = "rize_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 3
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = resistance_v
+			value = 2
+		}
+		change_variable = {
+			which = rize_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_rize_6_customs = yes		#机制：主动放弃吉兹亚税：所有税基大于1的省份-1税基，+2人力并且获得 取消吉兹亚税。
+	}
+	modifiers = {
+		development_cost = -0.1
+		global_manpower_modifier = 0.15
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+chiya_6_reform = {
+	#废除余粮征收制
+	icon = "chiya_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = chiya_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_chiya_6_customs = yes		#机制：供需链条革新：所有产物为鱼类，牲畜，谷物，酒类的省份-20%税收，+0.5商品产出，+15%人力。
+	}
+	modifiers = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+syaro_6_reform = {
+	#加强瓦克夫审查制度
+	icon = "syaro_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 1
+		}
+		change_variable = {
+			which = syaro_influence
+			value = 1
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = reforming_level_1
+					value = 1
+				}
+			}
+			subtract_variable = {
+				which = waqf_influence
+				value = 5
+			}
+			subtract_variable = {
+				which = aimr_influence
+				value = 5
+			}
+		}
+	}
+	custom_attributes = {
+		enables_syaro_6_customs = yes		#机制：将教权关进牢笼：如果经济相关改革的等级为1，则额外减少5点埃米尔影响力，5点瓦克夫影响力。
+	}
+	modifiers = {
+		governing_capacity = 250
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+Tosaka_reform_6 = {
+	#魔术专利
+	icon = "Rin_6"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = RIN
+			tag = IST
+			tag = ELE
+			tag = ATD
+		}
+	}
+	custom_attributes = {
+		enables_magic_patent_customs = yes		#机制：专利收入 每8点创新度增加5%商品生产，至多+25%
+	}
+	modifiers = {
+		innovativeness_gain = 0.5
+		country_admin_power = 1
+	}
+}
+
+Parlamentarische_Besteuerung_reform = {
+	icon = "tya_1_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	trigger = {
+		has_reform = Der_Beginn_der_Demokratie_reform
+	}
+	effect = {
+		change_variable = {
+			which = demokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		demokratisch_6_customs = yes		#机制：议会完成议题时获得等同于5年的收入
+	}
+	modifiers = {
+		inflation_reduction = 0.1
+		diplomats = 1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+Der_Kaiser_erhebt_Steuern_reform = {
+	icon = "tya_2_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = autokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		autokratisch_6_customs = yes		#机制：专制度将影响国家收入
+	}
+	modifiers = {
+		interest = -2
+		merchants = 1
+	}
+	ai = {
+		factor = 90
+	}
+}
+
+yureyuri_reform_6 = {
+	#国有化
+	icon = "yureyuri_gr_6"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = TKK
+			tag = AKR
+			tag = FNY
+			tag = YKC
+		}
+	}
+	modifiers = {
+		global_tax_modifier = 0.15
+		max_absolutism = 25
+		governing_capacity_modifier = 0.25
+	}
+}
+
+muse_reform_6 = {
+	#第五号命令
+	potential = {
+		OR = {
+			tag = LLF
+			tag = HME
+		}
+		has_reform = muse_reform_1
+	}
+	icon = "muse6_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_idol_album_trade_customs = yes		#机制：建立专辑贸易网：碟片省份+30贸易价值，且每有两个碟片省份，+1商人团,上限5个，且解锁将谷物、咸鱼、酒类、牲畜换成碟片的决议
+	}
+	modifiers = {
+		merchants = 1
+		trade_efficiency = 0.2
+	}
+}
+
+#山海经经济政策
+#授权朱雀商会
+shj_reform_6 = {
+	potential = {
+		tag = SHJ
+	}
+	icon = "acg_universal_government_reform_1"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	modifiers = {
+    	burghers_loyalty_modifier = 0.2
+		burghers_influence_modifier = 0.2
+		diplomatic_reputation = 2
+		trade_range_modifier = 0.5
+		ae_impact = -0.1
+	}
+}
+
+#七层：Progressive_ideas: 思想革新
+Education_reform = {
+	#推动教育
+	icon = "Education_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_education_reform_customs = yes		#机制：教育改革 若采用该改革时完成了教育理念，则首都获得一所大学，且新建造的大学都将获得本地思潮增长+0.1
+	}
+	effect = {
+		if = {
+			limit = {
+				full_idea_group = education_ideas 
+			}
+			capital_scope = {
+				add_building = university
+			}
+			hidden_effect = {
+				set_country_flag = university_buff_flag
+			}
+		}
+	}
+	modifiers = {
+		monthly_splendor = 2
+		global_institution_spread = 0.2
+		embracement_cost = -0.1
+	}
+}
+
+Technology_reform = {
+	#发展科技
+	icon = "Technology_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_technology_reform_customs = yes		#机制：科学技术是第一生产力 提升科技的时候会带来10年的10%商品产出加成（三种不叠加）
+	}
+	modifiers = {
+		technology_cost = -0.05
+		yearly_innovativeness = 0.5
+		global_trade_goods_size_modifier = 0.05
+	}
+}
+
+Philosophy_reform = {
+	#加强思想交流
+	icon = "Philosophy_reform"
+	allow_normal_conversion = yes
+	effect = {
+		if = {
+			limit = {
+				has_institution = feudalism
+			}
+			add_country_modifier = {
+				name = Philosophy_reform_modifier_1
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				has_institution = renaissance
+			}
+			add_country_modifier = {
+				name = Philosophy_reform_modifier_2
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				has_institution = Basic_Laws_of_Magic
+			}
+			add_country_modifier = {
+				name = Philosophy_reform_modifier_3
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				has_institution = new_world_i
+			}
+			add_country_modifier = {
+				name = Philosophy_reform_modifier_4
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				has_institution = printing_press
+			}
+			add_country_modifier = {
+				name = Philosophy_reform_modifier_5
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				has_institution = New_Age
+			}
+			add_country_modifier = {
+				name = Philosophy_reform_modifier_6
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				has_institution = global_trade
+			}
+			add_country_modifier = {
+				name = Philosophy_reform_modifier_7
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				has_institution = manufactories
+			}
+			add_country_modifier = {
+				name = Philosophy_reform_modifier_8
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				has_institution = enlightenment
+			}
+			add_country_modifier = {
+				name = Philosophy_reform_modifier_9
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				has_institution = Alchemy
+			}
+			add_country_modifier = {
+				name = Philosophy_reform_modifier_10
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				has_institution = industrialization
+			}
+			add_country_modifier = {
+				name = Philosophy_reform_modifier_11
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+	custom_attributes = {
+		enables_philosophy_reform_customs = yes		#机制：思想碰撞的火花 采取该改革时接纳的每个思潮都会额外提供2%理念花费
+	}
+	modifiers = {
+		idea_cost = -0.1
+		prestige_decay = -0.01
+		advisor_cost = -0.1
+	}
+}
+
+parliament_reform = {
+	#调和主义
+	icon = "parliament_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_parliament_reform_customs = yes		#机制：调和矛盾 每通过一项议案，所有阶层获得+10忠诚度，如果选择该改革时已有议会，则额外获得10%的辩论支持概率
+	}
+	effect = {
+		if = {
+			limit = {
+				has_parliament = yes
+			}
+			add_country_modifier = {
+				name = parliament_reform_modifier
+				duration = -1
+			}
+		}
+	}
+	has_parliament = yes
+	modifiers = {
+		global_unrest = -1
+		all_estate_loyalty_equilibrium = 0.05
+		stability_cost_modifier = -0.15
+	}
+}
+
+magic_idea_reform = {
+	#魔法大发现
+	icon = "magic_idea_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_magic_idea_reform_customs = yes		#机制：融合路线 每个大学将提升0.1点周期性魔法值获得
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_building = university
+				}
+				add_province_modifier = {
+					name = magic_idea_reform_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	modifiers = {
+		magician_privilege_slots = 1
+		pulse_mana_get_modifier = 5
+	}
+}
+
+nero_Progressive_reform = {
+	#行政变革
+	icon = "nero_Progressive_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = Nero
+	}
+	effect = {
+		if = {
+			limit = {
+				religion = Fate_reg
+				NOT = {
+					has_country_flag = nero_Progressive_reform_bonus
+				}
+			}
+			change_variable = {
+				which = governor_title
+				value = 2
+			}
+			set_country_flag = nero_Progressive_reform_bonus
+		}
+	}
+	custom_attributes = {
+		enables_nero_Progressive_customs = yes		#机制：每有20个法院，提供5%行政容量；每有5个大法院，提供2.5%行政效率；以上至多4层
+	}
+	modifiers = {
+		governing_capacity_modifier = 0.2
+		state_maintenance_modifier = -0.2
+	}
+}
+
+Kanade_Education_reform = {
+	#基层教育
+	icon = "Kanade_Education_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = KDE
+	}
+	trigger = {
+		has_reform = Enseignants_missionnaire_reform
+	}
+	modifiers = {
+		governing_capacity_modifier = 0.2
+		state_maintenance_modifier = -0.2
+	}
+}
+
+Elzia_Progressive_reform = {  #八级改革
+	#两个世界的图书馆
+	icon = "Elzia_Progressive_reform_gr"	#gkd
+	allow_normal_conversion = yes
+	potential = {
+		tag = ELZ
+	}
+	custom_attributes = {
+		enables_Elzia_Progressive_customs = yes		#机制：大学省份数量提供加成
+	}
+	trigger = {
+		has_reform = Elzia_tax_reform
+	}
+	modifiers = {
+		all_power_cost = -0.05
+		possible_policy = 1
+		yearly_innovativeness = 0.25
+	}
+}
+
+magic_girl_revolution_ideaology = {
+	#魔法少女革命思潮
+	icon = "magic_girl_revolution_ideaology"
+	potential = {
+		tag = MTM
+	}
+	lock_level_when_selected = yes
+	modifiers = {
+		yearly_revolutionary_zeal = 5
+		max_revolutionary_zeal = 50
+	}
+}
+
+sustainable_development_reform = {
+	#可持续发展思想
+	icon = "acg_gr"
+	allow_normal_conversion = no
+	potential = {
+		tag = CTL
+	}
+	custom_attributes = {
+		enables_province_develoment = yes		#机制：持续发展 每五年一个省份获得三围+1
+	}
+	modifiers = {
+		governing_capacity = 100
+		governing_capacity_modifier = 0.25
+	}
+}
+
+chino_7_reform = {
+	#推动三权分立
+	icon = "chino_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 3
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 3
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 3
+		}
+		change_variable = {
+			which = resistance_v
+			value = 3
+		}
+		change_variable = {
+			which = chino_influence
+			value = 1
+		}
+		change_variable = {
+			which = reforming_level_2
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_chino_7_customs = yes		#机制：过于先进的权力分散制：增加1级权力分立改革等级，若你已经采用了全部这条路线的改革，则允许你使用特权 三权分立。
+	}
+	modifiers = {
+		years_of_nationalism = -5
+		idea_cost = -0.05
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+cocoa_7_reform = {
+	#完善教育系统
+	icon = "cocoa_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 3
+		}
+		change_variable = {
+			which = resistance_v
+			value = 2
+		}
+		change_variable = {
+			which = cocoa_influence
+			value = 1
+		}
+		if = {
+			limit = {
+				has_country_modifier = cocoa_5_reform_modifier
+			}
+			remove_country_modifier = cocoa_5_reform_modifier
+			add_country_modifier = {
+				name = cocoa_7_reform_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_country_modifier = cocoa_5_reform_modifier
+				}
+			}
+			add_country_modifier = {
+				name = cocoa_5_reform_modifier
+				duration = -1
+			}
+		}
+	}
+	custom_attributes = {
+		enables_cocoa_7_customs = yes		#机制：教育革新：若你拥有修正 现代化教育体系的雏形，则将其替换为现代化教育体系，若你没有该修正，则获得该修正。
+	}
+	modifiers = {
+		global_unrest = -2
+		adm_tech_cost_modifier = -0.1
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+rize_7_reform = {
+	#编纂民法典
+	icon = "rize_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 3
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 2
+		}
+		change_variable = {
+			which = resistance_v
+			value = 2
+		}
+		change_variable = {
+			which = rize_influence
+			value = 1
+		}
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = bureaucratic_influence
+						value = 1
+					}
+				}
+			}
+			set_variable = {
+				which = waqf_influence
+				value = 0
+			}
+			set_variable = {
+				which = aimr_influence
+				value = 0
+			}
+			set_variable = {
+				which = resistance_v
+				value = 0
+			}
+			add_country_modifier = {
+				name = rize_7_reform_modifier
+				duration = -1
+			}
+		}
+	}
+	custom_attributes = {
+		enables_rize_7_customs = yes		#机制：民法典：若当前官僚垄断度小于1，则立刻废除瓦克夫-埃米尔体制并且获得永久修正 比肩拿破仑的事业。
+	}
+	modifiers = {
+		yearly_corruption = -0.15
+		yearly_absolutism = 1
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+chiya_7_reform = {
+	#设立国营金融机构
+	icon = "syaro_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 3
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 2
+		}
+		change_variable = {
+			which = resistance_v
+			value = 2
+		}
+		change_variable = {
+			which = syaro_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_chiya_7_customs = yes		#机制：提前许久的凯恩斯主义：允许你使用特权 国营金融机构。
+	}
+	modifiers = {
+		inflation_reduction = 0.1
+		max_absolutism = 20
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+syaro_7_reform = {
+	#早期契约法律编纂
+	icon = "chiya_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 3
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 3
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 2
+		}
+		change_variable = {
+			which = resistance_v
+			value = 2
+		}
+		change_variable = {
+			which = chiya_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_syaro_7_customs = yes		#机制：不在奥地利的奥地利学派：允许你使用特权 商业法。
+	}
+	modifiers = {
+		inflation_reduction = 0.1
+		global_trade_goods_size_modifier = 0.1
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+ELN_government_reform_3 = {
+	#平平无奇的魔女日记
+	icon = "ELN_gr_4"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		tag = ELN
+	}
+	custom_attributes = {
+		enables_Elaina_gr_3_customs = yes		#机制：可用的理念槽+1
+	}
+	modifiers = {
+		innovativeness_gain = 0.25
+	}
+}
+
+Cafe_offnen_reform = {
+	icon = "tya_1_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = demokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		demokratisch_7_customs = yes		#机制：接纳的思潮会提供额外效果
+	}
+	modifiers = {
+		center_of_trade_upgrade_cost = -0.2
+		global_institution_spread = 0.33
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+Geheime_Polizei_reform = {
+	icon = "tya_2_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = autokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		autokratisch_7_customs = yes		#机制：叛乱度将产生额外效果
+	}
+	modifiers = {
+		harsh_treatment_cost = -0.1
+		spy_offence = 0.2
+	}
+	ai = {
+		factor = 90
+	}
+}
+
+yureyuri_reform_7 = {
+	#人本主义思想
+	icon = "yureyuri_gr_7"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = TKK
+			tag = AKR
+			tag = FNY
+			tag = YKC
+		}
+	}
+	modifiers = {
+		years_of_nationalism = -8
+		global_autonomy = -0.1
+		stability_cost_modifier = -0.25
+		core_creation = -0.1
+	}
+}
+
+
+muse_reform_7 = {
+	#第六号命令
+	potential = {
+		OR = {
+			tag = LLF
+			tag = HME
+		}
+		has_reform = muse_reform_1
+	}
+	icon = "muse7_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_muse_mana_medical_treatment_customs = yes		#机制：魔法医疗：解锁建立魔法医疗体系的决议
+	}
+	modifiers = {
+		land_attrition = -0.3
+		war_exhaustion = -0.1
+	}
+}
+
+
+
+#山海经教育政策
+#弘扬传统文化
+shj_tra_reform_7 = {
+	potential = {
+		tag = SHJ
+	}
+	trigger = { has_country_flag = SHJ_expanded_tradition_power }
+	icon = "acg_universal_government_reform_1"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_shj_culture_things_never_changed_customs = yes		#机制：致亘古不变之物：当你每次研发新科技的时候，获得三种点数各25点,25%的概率额外获得1稳定
+	}
+	modifiers = {
+    	enemy_core_creation = 0.2
+		same_culture_advisor_cost = -0.2
+		same_religion_advisor_cost = -0.2
+	}
+}
+
+#学习新思想
+shj_ino_reform_7 = {
+	potential = {
+		tag = SHJ
+	}
+	trigger = { has_country_flag = SHJ_expanded_innovation_power }
+	icon = "acg_gr"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_shj_culture_things_always_changed_customs = yes		#机制：致瞬息万变之物：当你每次研发新科技的时候，额外获得3创新度；当你接受新思潮时，获得三种点数各50点，获得一个增加全国生产效率25%的持续20年的buff
+	}
+	modifiers = {
+    	technology_cost = -0.1
+		global_institution_spread = 0.5
+		embracement_cost = -0.2
+	}
+}
+
+#八层：Military_policy: 军事政策
+Legion_reform = {
+	#扩大征兵
+	icon = "Legion_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_legion_reform_customs = yes		#机制：征兵法案 当你拥有1000陆军上限时，额外获得10%人力恢复
+	}
+	modifiers = {
+		land_forcelimit_modifier = 0.25
+		global_manpower_modifier = 0.15
+	}
+}
+
+infantry_attack_reform = {
+	#步兵战术
+	icon = "infantry_attack_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_infantry_attack_customs = yes		#机制：战场的主导者 若是霸权，则额外提供15%步兵作战能力
+	}
+	modifiers = {
+		infantry_power = 0.1
+		infantry_cost = -0.15
+	}
+}
+
+cavalry_attack_reform = {
+	#骑兵冲锋
+	icon = "cavalry_attack_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_cavalry_attack_customs = yes		#机制：战场的破坏者 若是霸权，则额外提供15%骑兵作战能力
+	}
+	modifiers = {
+		cav_to_inf_ratio = 0.25
+		cavalry_power = 0.15
+	}
+}
+
+artillery_attack_reform = {
+	#火力覆盖
+	icon = "artillery_attack_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_artillery_attack_customs = yes		#机制：战场的毁灭者 若是霸权，则额外提供10%炮兵作战能力
+	}
+	modifiers = {
+		artillery_power = 0.1
+		artillery_barrage_cost = -0.5
+	}
+}
+
+adventurer_reform = {
+	#委托冒险者
+	icon = "adventurer_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_adventurer_reform_customs = yes		#机制：最伟大的冒险 解锁数个独特佣兵团
+	}
+	modifiers = {
+		mercenary_discipline = 0.05
+		mercenary_manpower = 0.33
+	}
+}
+
+amphibious_reform = {
+	#两栖作战
+	icon = "amphibious_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_amphibious_customs = yes		#机制：加强海军陆战队 海军陆战队获得受到的冲击伤害-10%（以抵消debuff）与15%步兵作战能力
+	}
+	effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = amphibious_reform_modifier
+				duration = -1
+			}
+		}
+	}
+	modifiers = {
+		allowed_marine_fraction = 0.25
+		special_unit_manpower_cost_modifier = -0.25
+	}
+}
+
+magic_army_acg_reform = {
+	#扩充魔导部队
+	icon = "magic_army_acg_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		special_unit_forcelimit = 0.25
+		special_unit_cost_modifier = -0.15
+		magic_army_cost_decrease_modifier = 1
+	}
+}
+
+fortress_acg_reform = {
+	#静态作战
+	icon = "fortress_acg_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_fortress_acg_customs = yes		#机制：加强静态防御 军营及上位建筑会额外增加15%当地守军数量
+	}
+	modifiers = {
+		defensiveness = 0.15
+		hostile_attrition = 1
+	}
+}
+
+Navy_reform = {
+	#重视海洋
+	icon = "Navy_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_navy_reform_customs = yes		#机制：海权论 海军弹幕轰击会大幅加快围城进度，但若省份建有海岸炮台效果则会被削弱。
+	}
+	modifiers = {
+		ship_durability = 0.1
+		global_naval_engagement_modifier = 0.15
+	}
+}
+
+Rainstorm_reform = {
+	#暴雨
+	icon = "Rainstorm_gr"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			OR = {
+				tag = CHN
+				tag = HCA
+				tag = TRZ
+				tag = UJC
+				tag = KSR
+			}
+		}
+	}
+	modifiers = {
+		backrow_artillery_damage = 0.1
+		siege_ability = 0.1
+	}
+}
+
+BDR_2_reform = {
+	#联邦军事计划
+	potential = {
+		tag = BDR
+	}
+	icon = "bdr_reform_2"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	custom_attributes = {
+		BDR_2_arsenal_customs = yes
+	}
+	modifiers = {
+		special_unit_cost_modifier = -0.25
+		special_unit_forcelimit = 0.2
+	}
+}
+
+nero_Military_reform = {
+	#罗马军制
+	icon = "nero_Military_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = Nero
+	}
+	#custom_attributes = {
+	#enables_oppression_human_customs = yes #机制：罗马战术改良 启用罗马军事改革决议，花费改革进度提供修正
+	#}
+	modifiers = {
+		discipline = 0.05
+		free_leader_pool = 1
+	}
+}
+
+Elzia_Army_reform = {  #九级改革
+	#联邦种族军
+	icon = "Elzia_Army_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = ELZ
+	}
+	trigger = {
+		has_reform = Elzia_Progressive_reform
+	}
+	custom_attributes = {
+		enables_Elzia_Army_customs = yes		#机制：主流文化省份+1.5陆军上限、+20%人力；非主流已接受文化省份+1陆军上限、+15%人力；未接受文化省份+0.5陆军上限、+10%人力
+	}
+	modifiers = {
+		infantry_power = 0.1
+		cavalry_power = 0.1
+		artillery_power = 0.1
+	}
+}
+
+magic_girl_mercenary = {
+	#魔法少女雇佣兵
+	icon = "magic_girl_mercenary"
+	potential = {
+		tag = MTM
+	}
+	lock_level_when_selected = yes
+	modifiers = {
+		global_manpower_modifier = -5
+		manpower_recovery_speed = -5
+		land_forcelimit_modifier = 0.5
+		mercenary_cost = -0.5
+		merc_maintenance_modifier = -0.8
+		mercenary_manpower = 0.2
+		may_recruit_female_generals = yes
+	}
+}
+
+combine_army_reform = {
+	#混合军队
+	icon = "acg_gr"
+	allow_normal_conversion = no
+	potential = {
+		tag = CTL
+	}
+	modifiers = {
+		discipline = 0.05
+		land_morale = 0.1
+		naval_morale = 0.1
+		ship_durability = 0.2
+	}
+}
+
+chino_8_reform = {
+	#设立总参谋部
+	icon = "chino_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		set_variable = {
+			which = aimr_influence
+			value = 0
+		}
+		change_variable = {
+			which = resistance_v
+			value = 5
+		}
+		change_variable = {
+			which = chino_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_chino_8_customs = yes		#机制：总参谋部：每个陆军将领都将提供5%移动速度，10%增援效率，15%补给上限，5%特殊兵种上限，最多叠加十层。
+	}
+	modifiers = {
+		land_forcelimit_modifier = 0.25
+		free_leader_pool = 2
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+cocoa_8_reform = {
+	#军队政治委员会制
+	icon = "cocoa_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 3
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 3
+		}
+		change_variable = {
+			which = resistance_v
+			value = 2
+		}
+		change_variable = {
+			which = cocoa_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_cocoa_8_customs = yes		#机制：军事政治委员会：若瓦克夫-埃米尔体系已经解体，则额外获得-20%后备军士气打击。
+	}
+	modifiers = {
+		land_morale = 0.15
+		fire_damage_received = -0.05
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+rize_8_reform = {
+	#推动军队职业化
+	icon = "rize_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 1
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 5
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = resistance_v
+			value = 3
+		}
+		change_variable = {
+			which = rize_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_rize_8_customs = yes		#机制：职业化军队与职业军人：若陆军职业度为100%，则职业度带来的加成加倍。
+	}
+	modifiers = {
+		fire_damage = 0.1
+		artillery_levels_available_vs_fort = 1
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+chiya_8_reform = {
+	#建设兵团制
+	icon = "chiya_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 3
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = resistance_v
+			value = 2
+		}
+		change_variable = {
+			which = chiya_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_chiya_8_customs = yes		#机制：建设兵团：若军队达到上限的50%，则减少33%的建筑成本与50%的建筑时间。
+	}
+	modifiers = {
+		defensiveness = 0.25
+		global_manpower_modifier = 0.15
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+syaro_8_reform = {
+	#国防承包商制
+	icon = "syaro_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		subtract_variable = {
+			which = waqf_influence
+			value = 2
+		}
+		subtract_variable = {
+			which = aimr_influence
+			value = 3
+		}
+		subtract_variable = {
+			which = bureaucratic_influence
+			value = 1
+		}
+		change_variable = {
+			which = resistance_v
+			value = 2
+		}
+		change_variable = {
+			which = syaro_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		enables_syaro_8_customs = yes		#机制：军工复合体：所有建有武器厂或者海军装备厂的省份都获得-15%本地税收，+50%本地商品产出，+1陆军上限，-10%本地招募时间。
+	}
+	modifiers = {
+		global_regiment_cost = -0.1
+		land_maintenance_modifier = -0.1
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+Humanitare_Grundsatze_reform = {
+	icon = "tya_1_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = demokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		demokratisch_8_customs = yes		#机制：新近征服的土地荒废度与自治度将快速下降
+	}
+	modifiers = {
+		land_morale = -0.05
+		ae_impact = -0.1
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+Die_Starke_ist_die_Gerechtigkeit_reform = {
+	icon = "tya_2_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = autokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		autokratisch_8_customs = yes		#机制：与你交战的敌人获得陆军士气与战斗力减益
+	}
+	modifiers = {
+		siege_ability = -0.1
+		loot_amount = 1
+	}
+	ai = {
+		factor = 90
+	}
+}
+
+yureyuri_reform_8 = {
+	#职业化的雇佣军队
+	icon = "yureyuri_gr_8"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = TKK
+			tag = AKR
+			tag = FNY
+			tag = YKC
+		}
+	}
+	modifiers = {
+		mercenary_manpower = 0.25
+		merc_maintenance_modifier = -0.25
+		mercenary_cost = -0.25
+		mercenary_discipline = 0.1
+		land_morale = 0.05
+	}
+}
+
+
+muse_reform_8 = {
+	#第七号命令
+	potential = {
+		OR = {
+			tag = LLF
+			tag = HME
+		}
+		has_reform = muse_reform_1
+	}
+	icon = "muse8_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_muse_superior_firepower_customs = yes		#机制：优势火力学说：解锁几个新的炮兵兵种，分别在15、20、25级
+	}
+	modifiers = {
+		artillery_power = 0.15
+	}
+}
+
+#山海经军事政策
+#建立山海经新军
+shj_reform_8 = {
+	potential = {
+		tag = SHJ
+	}
+	trigger = { has_country_flag = SHJ_missions_allow_rank8_reform_flag }
+	icon = "acg_universal_government_reform_1"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_shj_general_buff_customs = yes		#机制：新军队，新将领：招募陆军将领时额外获得1%陆军职业度与5陆军传统
+	}
+	modifiers = {
+    	infantry_fire = 0.25
+		army_tradition = 0.5
+		artillery_fire = 0.25
+	}
+}
+
+#九层：Social_planning: 社会计划
+Developing_productivity_reform = {
+	#顺其自然
+	icon = "Developing_productivity_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_Developing_productivity_reform_customs = yes		#自然状态 和平时提升15%生产效率，战争时降低10%部队花费
+	}
+	modifiers = {
+		tolerance_own = 2
+		possible_policy = 1
+	}
+}
+
+Ease_contradictions_reform = {
+	#全速前进
+	icon = "Ease_contradictions_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_Ease_contradictions_reform_customs = yes		#更快更快更快 提升科技将会在20年内额外获得腐败-0.1
+	}
+	modifiers = {
+		production_efficiency = 0.2
+		governing_capacity = 200
+	}
+}
+
+Serve_the_country_reform = {
+	#稳定政府
+	icon = "Serve_the_country_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		seizing_land_no_rebels = yes	#没收领地不产生叛军（原版机制）
+	}
+	modifiers = {
+		years_of_nationalism = -5
+		stability_cost_modifier = -0.25
+	}
+}
+
+born_to_conquer_reform = {
+	#为战而生
+	icon = "born_to_conquer_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_born_to_conquer_reform_customs = yes	#战争红利 在战斗中占领并非自己拥有的超过20发展度的省份将会减少其1点税收和1点生产，获得20杜卡特并降低0.05的厌战，同时降低10点目标国家对自己的好感。（对一个省份在10年内仅能触发一次）
+	}
+	modifiers = {
+		stability_cost_to_declare_war = -1
+		province_warscore_cost = -0.1
+		overextension_impact_modifier = -0.33
+	}
+}
+
+enpowered_parliament_reform = {
+	#有限分权
+	icon = "enpowered_parliament_reform"
+	allow_normal_conversion = yes
+	trigger = {
+		has_parliament = yes
+	}
+	custom_attributes = {
+		enables_enpowered_parliament_reform_customs = yes		#辉煌时刻 通过议案时，随机提升一个有议席的省份3点发展度
+	}
+	modifiers = {
+		parliament_backing_chance = 0.1
+		num_of_parliament_issues = 2
+	}
+}
+
+enpowered_estate_reform = {
+	#地方代表
+	icon = "enpowered_estate_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_enpowered_estate_reform_customs = yes		#代表顾问 增加召开议事会的忠诚度，召开议事会会在一段时间内降低顾问花费
+	}
+	modifiers = {
+		min_autonomy_in_territories = -0.05
+		free_policy = 1
+		all_estate_loyalty_equilibrium = 0.05
+	}
+}
+
+nero_Social_reform = {
+	#社会救助
+	icon = "nero_Social_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = Nero
+	}
+	#custom_attributes = {
+	#	enables_oppression_human_customs = yes #机制：童女讴歌的荣华帝政 没有处于战争，没有叛乱存在时，获得大幅增益
+	#}
+	modifiers = {
+		min_autonomy_in_territories = -0.1
+		years_of_nationalism = -5
+	}
+}
+
+Elzia_Social_reform = {  #十级改革
+	#大家一起开心地游戏吧
+	icon = "Elzia_Social_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = ELZ
+	}
+	custom_attributes = {
+		enables_Elzia_Social_customs = yes		#机制：在满足条件的省份上可以招募新商人：商品为漫画、小说、碟片、手办；生产10点、拥有贸易建筑。
+	}
+	trigger = {
+		has_reform = Elzia_Army_reform
+	}
+	modifiers = {
+		global_trade_power = 0.1
+		trade_efficiency = 0.15
+		caravan_power = 0.15
+        trade_steering = 0.15
+	}
+}
+
+The_distribution_according_to_work_reform = {
+	#按劳分配
+	icon = "The_distribution_according_to_work_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = KDE
+	}
+	custom_attributes = {
+		enables_The_distribution_according_to_work_customs = yes		#机制：按劳分配 当每月获得的行政点大于10时，获得额外20%商品产出
+	}
+	modifiers = {
+		build_time = -0.2
+		build_cost = -0.2
+		global_unrest = -2
+	}
+}
+
+absolutely_nature = {
+	#绝对中立
+	icon = "absolutely_nature"
+	potential = {
+		tag = MTM
+	}
+	lock_level_when_selected = yes
+	modifiers = {
+		diplomatic_reputation = 2
+		local_development_cost = -0.2
+	}
+}
+
+walfare_country_reform = {
+	#福利国家
+	icon = "acg_gr"
+	allow_normal_conversion = no
+	potential = {
+		tag = CTL
+	}
+	modifiers = {
+		global_tax_modifier = -0.35
+		inflation_reduction = -0.15
+		yearly_corruption = -0.2
+		church_loyalty_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
+		burghers_loyalty_modifier = 0.1
+		global_unrest = -2
+		global_autonomy = -0.05
+		years_of_nationalism = -5
+		core_creation = -0.15
+	}
+}
+
+chino_9_reform = {
+	#我们的坦齐马特
+	icon = "chino_gr"
+	potential = {
+		OR = {
+			tag = CHN
+			tag = HCA
+			tag = TRZ
+			tag = UJC
+			tag = KSR
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		if = {
+			limit = {
+				has_country_flag = break_the_amir_vakif_flag
+			}
+			add_country_modifier = {
+				name = chino_9_reform_modifier
+				duration = -1
+			}
+		}
+	}
+	custom_attributes = {
+		enables_chino_9_customs = yes		#机制：坦齐马特革新：允许你使用改革点数降低瓦克夫，埃米尔以及官僚的影响力以终结埃米尔制度，若你当前已经终结了瓦克夫-埃米尔制度，则获得永久修正 成功的坦齐马特。
+	}
+	modifiers = {
+		yearly_absolutism = 2
+		max_absolutism = 25
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+ELN_government_reform_4 = {
+	#旅行者的国度
+	icon = "ELN_gr_5"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		tag = ELN
+	}
+	custom_attributes = {
+		enables_Elaina_gr_4_customs = yes		#机制：旅行中学习到的知识效果翻倍
+	}
+	modifiers = {
+		diplomats = 1
+		diplomatic_upkeep = 2
+		improve_relation_modifier = 0.4
+		ae_impact = -0.15
+	}
+}
+
+Ein_freies_Land_reform = {
+	icon = "tya_1_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = demokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		demokratisch_9_customs = yes		#机制：发展度超过40的省份获得额外修正
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+Die_Hauptstadt_der_Welt_reform = {
+	icon = "tya_2_gr"
+	potential = {
+		OR = {
+			tag = TYA
+			tag = TAS
+		}
+	}
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	effect = {
+		change_variable = {
+			which = autokratisch_influence
+			value = 1
+		}
+	}
+	custom_attributes = {
+		autokratisch_9_customs = yes		#机制：高君主能力将额外影响国家
+	}
+	ai = {
+		factor = 90
+	}
+}
+
+yureyuri_reform_9 = {
+	#劳逸结合的社会
+	icon = "yureyuri_gr_9"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = TKK
+			tag = AKR
+			tag = FNY
+			tag = YKC
+		}
+	}
+	modifiers = {
+		prestige = 1
+		global_unrest = -1
+		global_trade_goods_size_modifier = 0.1
+		production_efficiency = 0.15
+	}
+}
+
+
+muse_reform_9 = {
+	#第八号命令
+	potential = {
+		OR = {
+			tag = LLF
+			tag = HME
+		}
+		has_reform = muse_reform_1
+	}
+	icon = "muse9_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	custom_attributes = {
+		enables_muse_special_absolutism_customs = yes		#机制：偶像特色专制主义：可通过决议来用改革进度换点数
+	}
+	modifiers = {
+		yearly_absolutism = 1
+		province_warscore_cost = -0.15
+	}
+}
+
+
+#山海经社会政策
+#幼有所教 病有所医
+shj_reform_9 = {
+	potential = {
+		tag = SHJ
+	}
+	icon = "acg_universal_government_reform_1"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	modifiers = {
+    	global_tax_modifier = -0.25
+		global_unrest = -2
+		manpower_recovery_speed = 0.25
+		global_manpower_modifier = 0.25
+		years_of_nationalism = -5
+		all_estate_loyalty_equilibrium = 0.2
+		idea_cost = -0.1
+		technology_cost = -0.1
+	}
+}
+
+#十层：无
+
+Saber_government_reform_1 = {
+	#圆桌会议
+	icon = "Saber_gr"
+	potential = {
+		OR = {
+			tag = ATR
+			tag = DTR
+		}
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = Saber_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	custom_attributes = {
+		enables_round_table_customs = yes		#机制：圆桌会议 当一个议案通过时，+10陆军传统，+10正统性
+	}
+	modifiers = {
+		core_creation = -0.1
+		ae_impact = -0.1
+		leader_land_shock = 1
+	}
+	has_parliament = yes
+}
+# 二级 racial_policy: 种族政策
+
+Saber_government_reform_2 = {
+    # 理想乡     
+    # ″遥远的理想乡"别名阿瓦隆(Avalon)，是Fate系列作品中亚瑟王阿尔托莉雅·潘德拉贡所持有的誓约胜利之剑（Excalibur）的剑鞘，冠以妖精乡之名的剑鞘。遗失的第三件宝具。"阿瓦隆”(Avalon)是与圣剑Excalibur成对的“鞘”。持有者不会衰老，伤患会迅速治愈。阿瓦隆(Avalon)是亚瑟王传说的长眠之地，被冠以妖精乡之名。亚瑟王死后终能到达，其他王所梦见，却到不了的理想乡。（アーサー王が死後に辿り着くとされる、彼《か》の王が梦见た、はや辿り着けぬ理想郷）
+		icon = "Saber_gr"
+	potential = {
+		OR = {
+			tag = ATR
+			tag = DTR
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		global_monthly_devastation = -0.05
+		num_accepted_cultures = 1
+		all_estate_loyalty_equilibrium = 0.05
+	}
+}
+
+# 三层：Power_structure: 行政官僚倾向
+
+Saber_government_reform_3 = {
+    # 王与她的骑士  
+    # 不列颠的卡美洛之主阿尔托莉雅·潘德拉贡所统帅的骑士团体。隔海而来的法兰西骑士，受到湖之少女加护的兰斯洛特；妖妃摩根的孩子，北国奥克尼的继承者，获得太阳加护的高文；康沃特公的儿子，悲剧的王子，象征着浪漫时代的崔丝坦；倔强的帕西法尔；技巧者凯；忠义的贝狄威尔；热情的加荷里斯；温和的加雷斯；执行官阿格规文；单打独斗的帕拉梅德斯；沉默的莫德雷德；最温柔的骑士，唯一被圣杯选中的，天启的加拉哈德；圆桌首席，骑士王亚瑟顾问监督王佩里诺亚王二期；十一席鲍斯。总共十五人，就是全盛期的圆桌。
+		icon = "Saber_gr"
+	potential = {
+		OR = {
+			tag = ATR
+			tag = DTR
+		}
+	}
+	allow_normal_conversion = yes
+	custom_attributes = {
+		#启用圆桌骑士机制,没写
+        		
+	}
+	modifiers = {
+		ae_impact = -0.1
+		manpower_in_true_faith_provinces = 0.25
+	}
+}
+
+#四层：missionary_or_tolerate: 传教或容忍
+
+Saber_government_reform_4 = {
+    # 王的理想 
+    # 她为心爱的祖国呕心沥血，却依然没能改变命运，挽救将希望寄托给她的人民。而最让人伤心的，莫过于最终摧毁不列颠的，恰恰是她最信任的骑士兰斯洛特和她的侄女莫斯雷德。如此悲惨的命运，也难怪阿尔托莉雅会如此执着于改变历史。自己毕生奋斗的王国毁于自己最信任的同伴手里，这样的命运，我想没有人能坦然接受。
+		icon = "Saber_gr"
+	potential = {
+		OR = {
+			tag = ATR
+			tag = DTR
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		religious_unity = 0.1
+		tolerance_own = 2
+		tolerance_heathen = 1
+        tolerance_heretic = 1
+	}
+}
+
+#六层：Cultural_policy: 文化，信仰，国家
+
+Saber_government_reform_5 = {
+    # 骑士传统 
+    #谦卑(Humility)、荣誉(Honor)、牺牲(Sacrifice)、英勇(Valor)、怜悯(Compassion)、诚实(Honest)、公正(Justice)、灵性（Spirituality)
+		icon = "Saber_gr"
+	potential = {
+		OR = {
+			tag = ATR
+			tag = DTR
+		}
+	}
+	allow_normal_conversion = yes
+	custom_attributes = {
+		#启用月球文化机制,写成决议了
+        		
+	}
+	modifiers = {
+        army_tradition_decay = -0.005
+		discipline = 0.05
+	}
+}
+
+#七层：Tax_system: 经济事务
+
+Saber_government_reform_6 = {
+    # 饭桶与筷子 
+    #为了吃，阿尔托莉雅甚至曾经在偷偷的时候被梅林的反吃货陷阱给捕获。甚至梅林给阿尔托莉雅的信号弹魔术的咒文就是——「阿尔托莉雅！开饭啦！」。 作为吃货，阿尔托莉雅喜欢各式各样的料理，唯独不喜欢章鱼。厌恶粗制滥造的食物，对卫宫士郎的厨艺有着苛刻的要求但讨厌章鱼，如果食物水准稍有下降会引发阿尔托莉雅的不满。
+		icon = "Saber_gr"
+	potential = {
+		OR = {
+			tag = ATR
+			tag = DTR
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+        global_tax_modifier = 0.2
+		build_cost = -0.15
+		attrition = -1
+	}
+}
+
+#七层：Progressive_ideas: 进步思想
+
+Saber_government_reform_7 = {
+    # 王之剑锋所指 
+    #吾本以痛苦为殇，不知为何而怅惘，吾今宣誓于吾王，手持之剑捍卫她的荣光，吾以所受之伤作吾勋章
+		icon = "Saber_gr"
+	potential = {
+		OR = {
+			tag = ATR
+			tag = DTR
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		reform_progress_growth = 0.2
+		local_years_of_nationalism = -5
+		global_institution_spread = 0.5
+		
+	}
+}
+
+#八层：Military_policy: 军事政策
+
+Saber_government_reform_8 = {
+    # 吾等心之所向 
+    #宁愿王沉溺于梦乡，寻找王曾所幻想，吾已不在迷茫，誓为王建起不落的城邦，愿王能追求她的梦想，吾将吾此生献给吾王！
+		icon = "Saber_gr"
+	potential = {
+		OR = {
+			tag = ATR
+			tag = DTR
+		}
+	}
+	allow_normal_conversion = yes
+	custom_attributes = {
+		# 
+        		
+	}
+	modifiers = {
+		warscore_cost_vs_other_religion = -0.1
+		artillery_fire = 0.5
+		backrow_artillery_damage = 0.1
+	}
+}
+
+#九层：Social_planning: 社会计划
+
+Saber_government_reform_9 = {
+    # 吾王美如画 
+    #“试问，汝是我的master吗？” 在阴暗的仓库里，在一阵令人眼花缭乱的光芒散开之后，一位肌肤胜雪，有着一头披肩的金色秀发和一双碧绿色的眼睛的美少女同月光一起映入了少年的眼帘。
+		icon = "Saber_gr"
+	potential = {
+		OR = {
+			tag = ATR
+			tag = DTR
+		}
+	}
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_Elzia_Social_customs = yes		#机制：贸易建筑省份-5行政容量花费，生产建筑省份-5行政容量花费，税收建筑-5行政容量花费
+	}
+	modifiers = {
+        min_autonomy_in_territories = -0.1
+	}
+}
+
+
+#十一层：for_the_future: 社会计划
+
+gott_mit_uns_reform = {
+	#神佑帝君
+	icon = "gott_mit_uns_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_gott_mit_uns_customs = yes		#机制：天选帝君 若为信仰守护者，在与任意非国教的帝国级国家交战时额外获得10%士气和-0.1每月厌战，与信仰守护者交战时再额外获得5%士气和-0.05每月厌战。
+	}
+	modifiers = {
+		warscore_cost_vs_other_religion = -0.15
+	}
+}
+
+land_of_knowledge_reform = {
+	#知识之国
+	icon = "land_of_knowledge_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_land_of_knowledge_reform_customs = yes		#机制：理性主义 建立了大学的省份获得+0.5本地商品产出，若完成了革新理念，该加成翻倍，若完成了魔法理念，则魔术工房和法师塔也会触发该效果。
+	}
+	modifiers = {
+		global_trade_goods_size_modifier = 0.1
+		advisor_cost = -0.1
+	}
+}
+
+magic_storm_reform = {
+	#法力风暴
+	icon = "magic_storm_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		ruler_power_add = 1
+		magician_privilege_slots = 1
+		magic_power_government = 2
+		magic_speed_government = 2
+	}
+}
+
+magic_formulation_reform = {
+	#魔导科技
+	icon = "magic_formulation_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_magic_formulation_reform_customs = yes		#机制：通用与标准 使用仪式魔法的消耗减少为原来的一半
+	}
+	modifiers = {
+		pulse_mana_get_modifier = 10
+		magic_army_cost_decrease_modifier = 1
+	}
+}
+
+order_prevails_reform = {
+	#秩序井然
+	icon = "order_prevails_reform"
+	allow_normal_conversion = yes
+	custom_attributes = {
+		enables_order_prevails_reform_customs = yes		#机制：伟大的妥协 完成核心制造将会额外减少当地的分离主义。
+	}
+	modifiers = {
+		global_unrest = -3
+		stability_cost_modifier = -0.25
+	}
+}
+
+adjust_ship_lane_reform = {
+	#调整航线
+	icon = "adjust_ship_lane_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		administrative_efficiency = 0.025
+		free_policy = 1
+	}
+}
+
+Magical_naiye_government_reform = {
+	#奈叶一级改革
+	icon = "Magical_naiye1_gr"
+	potential = {
+		tag = NNH
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = Magical_girl_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	heir = yes
+	queen = no
+	maintain_dynasty = yes
+	heirs_can_be_generals = no
+	modifiers = {
+		development_cost = -0.05
+		mil_tech_cost_modifier = -0.05
+		production_efficiency = 0.1
+	}
+}
+
+Magical_naiye2_government_reform = {
+	#奈叶二级政府
+	icon = "Magical_naiye2_gr"
+	potential = {
+		tag = NNH
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		colonists = 1
+		native_uprising_chance = -0.5
+	}
+}
+
+Magical_naiye3_government_reform = {
+	#奈叶三级政府，天神爆裂
+	icon = "Magical_naiye3_gr"
+	potential = {
+		tag = NNH
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		ruler_power_add = 2
+		ruler_power_growth = 0.1
+	}
+}
+
+Magical_naiye4_government_reform = {
+	#奈叶四级政府，魔炮信仰
+	icon = "Magical_naiye4_gr"
+	potential = {
+		tag = NNH
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		global_missionary_strength = 0.02
+		manpower_in_true_faith_provinces = 0.1
+	}
+}
+
+Magical_naiye5_government_reform = {
+	#奈叶五级政府，魔炮文化
+	icon = "Magical_naiye5_gr"
+	potential = {
+		tag = NNH
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		culture_conversion_cost = -0.1
+		diplomats = 1
+	}
+}
+
+Magical_naiye6_government_reform = {
+	#奈叶六级政府，魔法改革
+	icon = "Magical_naiye6_gr"
+	potential = {
+		tag = NNH
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		pulse_mana_get_modifier = 3
+		years_of_nationalism = -5
+	}
+}
+
+Magical_naiye7_government_reform = {
+	#奈叶七级政府，魔导商业化
+	icon = "Magical_naiye7_gr"
+	potential = {
+		tag = NNH
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		merchants = 1
+		trade_efficiency = 0.1
+	}
+}
+
+Magical_naiye8_government_reform = {
+	#奈叶八级政府，魔导师军团
+	icon = "Magical_naiye8_gr"
+	potential = {
+		tag = NNH
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		defensiveness = 0.1
+		fire_damage_received = -0.05
+		infantry_power = 0.1
+	}
+}
+
+Magical_naiye9_government_reform = {
+	#奈叶九级政府，奈叶与后宫们的美好生活
+	icon = "Magical_naiye9_gr"
+	potential = {
+		tag = NNH
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		vassal_income = 0.5
+		liberty_desire_from_subject_development = -0.2
+		artillery_shock = 0.1
+	}
+}
+
+Elzia_Future_reform = {  #十一级改革
+	#艾尔奇亚治下世界
+	icon = "Elzia_Future_reform_gr"
+	allow_normal_conversion = yes
+	potential = {
+		tag = ELZ
+	}
+	custom_attributes = {
+		enables_Elzia_Future_customs = yes		#机制：成为霸权之后+25%行政容量、-15%枣核花费、-15%省份战争分数
+    }
+	trigger = {
+		has_reform = Elzia_Social_reform
+	}
+	modifiers = {
+		state_governing_cost = -0.3
+		administrative_efficiency = 0.05
+	}
+}

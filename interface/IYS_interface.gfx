@@ -1,0 +1,39 @@
+spriteTypes = {
+	spriteType = {	
+		name = "government_reform_half_demon"
+		texturefile = "gfx//interface//government_reform_icons//half_demon.dds"
+	}
+	spriteType = {
+		name = "IYS_event_picture"
+		texturefile = "gfx/event_pictures/IYS_event_picture.dds"
+		allwaystransparent = yes
+	}	
+	spriteType = {	
+		name = "government_reform_IYS_government1"
+		texturefile = "gfx//interface//government_reform_icons//IYS_government1.dds"
+	}
+	spriteType = {
+		name = "black_tetsuaiga"
+		texturefile = "gfx/interface/missions/black_tetsuaiga.dds"
+	}
+	spriteType = {
+		name = "Vajra_Blast_Stream"
+		texturefile = "gfx/interface/missions/Vajra_Blast_Stream.dds"
+	}	#tetsuaiga_count_button
+	spriteType = {
+		name = "IYS_mission_icon1"
+		texturefile = "gfx/interface/missions/IYS_mission_icon1.dds"
+	}
+	spriteType = {
+		name = "GFX_tetsuaiga_count_button"
+		texturefile = "gfx/interface/missions/tetsuaiga_count_button.dds"
+	}
+	spriteType = {
+		name = "IYS_privileges"
+		texturefile = "gfx/interface/privileges/IYS_privileges.dds"
+	}
+	spriteType = {
+		name = "congyunya_picture"
+		texturefile = "gfx/event_pictures/congyunya_picture.dds"
+	}
+}

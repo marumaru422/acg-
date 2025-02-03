@@ -1,0 +1,21 @@
+government = acg_monarchy
+add_government_reform = half_demon #半妖政府
+government_rank = 1
+technology_group = chinese
+religion = acg
+primary_culture = Inuyasha
+capital = 589	# 
+1444.11.11 = {
+	monarch = {
+		name = "Inuyasha"
+		dynasty = "IYS"
+		birth_date = 1420.1.1
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = kind_hearted_personality
+	add_ruler_personality = naive_personality
+	add_ruler_personality = Superdefense_personality
+}

@@ -1,0 +1,660 @@
+acg_cultures_europe = {	#二次元文化组（欧陆）
+	graphical_culture = acggfx
+	MisakaMikoto = {	#北德
+		primary = MSK
+	}
+	Indexculture = {	#北德
+		primary = INX
+	}
+	ShiraiKuroko = {	#北德
+		primary = SHI
+	}
+	Tanya = {	#北德
+		primary = TYA
+	}		
+	Rhodes_island = {	#地中海
+		primary = RDI
+	}	
+	Yoshino = {		#英吉利海峡
+		primary = YSN
+	}
+	Huihui = {	#伊比利亚
+		primary = HUH
+	}
+	Louise = {	#南德
+		primary = LIS
+	}	
+	ShokuhoMisaki = {	#北德
+		primary = SKM
+	}	
+	daidoujiTomoyo = {	#南德
+		primary = TMY
+	}	
+	Emilia = {	#南德
+		primary = EMT
+	}	
+	RyuguRena = {	#北德
+		primary = RRN
+	}		
+	KinomotoSakura = {	#南德
+		primary = SKR
+	}				
+	ChthollyNotaSeniorious = {	#北欧
+		primary = CTL
+	}
+	KatsuraHinagiku = {	#北德
+		primary = KTS
+	}	
+	Karyl = {	#北德
+		primary = KRU
+	}
+	Rikka = {	#北德
+		primary = RIK
+	}
+	DekomoriSanae = {	#北德
+		primary = DKM
+	}
+	NibutaniShinka = {	#南德
+		primary = SNK
+	}
+	jashinchan = {	#北德
+		primary = JSC
+	}
+	HanazonoYurine = {	#北德
+		primary = YRN
+	}
+	Elaina_cul = {	#南德
+		primary = ELN
+	}	
+	InterspeciesReviewers = { #异种族风俗娘
+    primary = CRM
+    }
+	Drstone_cul = { #石纪元
+   		primary = SKU
+	}
+	Inuyasha = { #犬夜叉
+		primary = ISY
+	}
+}
+
+acg_cultures = {#二次元文化组-亚洲
+	graphical_culture = acggfx
+	TokaiTeio = {	#蒙古
+		primary = TKT
+		country = { can_recruit_hussars = yes }
+	}
+	MejiroMcQueen = {	#蒙古
+		primary = MMQ
+		country = { can_recruit_hussars = yes }
+	}
+	KitasanBlack = {	#蒙古
+		primary = KTK
+		country = { can_recruit_hussars = yes }
+	}			
+	SatonoDiamond = {	#蒙古
+		primary = STD
+		country = { can_recruit_hussars = yes }
+	}
+	SpecialWeek = {	#蒙古
+		primary = SPW
+		country = { can_recruit_hussars = yes }
+	}
+	SilenceSuzuka = {	#蒙古
+		primary = SLS
+		country = { can_recruit_hussars = yes }
+	}
+	NishizumiMiho = {	#日本
+		primary = MIH
+	}
+	Katyusha_cul = {	#日本
+		primary = KQS
+	}		
+	kanade = {	#印度
+		primary = KDE
+	}		
+	murasame = {	#改动-日本
+		primary = MRM
+	}
+	mitsukasaayase = {	#东南亚
+		primary = MKM
+	}		
+	NanohaTakamachi = {	#西非
+		primary = NNH
+	}	
+	LieYongzhou = {		#东北
+		primary = LYZ
+	}
+	YukiMakoto = {		#日本
+		primary = YKM
+	}
+	NarukamiYuu = {		#日本
+		primary = NKY
+	}
+	AmamiyaRen = {		#日本
+		primary = AMR
+	}
+	KayamoriRuka = {		#日本
+		primary = KYR
+	}
+	OdaNobuna = {	#日本
+		province = { local_has_samurai = yes }
+		primary = ODN
+	}
+	SakaiJin = {	#日本
+		province = { local_has_samurai = yes }
+		primary = SKJ
+	}
+	YuukiYuuna = {	#日本
+		primary = YKY
+	}
+}
+
+Yggdrasil = {#安兹乌尔恭-大坟墓文化组
+	graphical_culture = acggfx
+	Nasalik = {
+		primary = NSL
+	}
+	AinzOoalGown = {
+		primary = AOG
+	}
+	Albedo = {
+		primary = ABD
+	}
+	Shalltear = {
+		primary = STR
+	}
+	Cocytus = {
+		primary = CCT
+	}
+	Demiurge = {
+		primary = DMU
+	}
+	SebasTian = {
+		primary = SEB
+	}
+	#Aura = {
+	#	primary = AUR
+	#}
+	Pleiades = {
+		primary = PLE
+	}
+}
+
+JianNiang = {#舰娘文化组
+	graphical_culture = acggfx
+	KantaiCollection = {
+		primary = JNC
+	}
+	WarshipGirls = {
+		primary = JNR
+	}
+	AzurLane = {
+		primary = JNB
+	}
+}
+
+MadokaMagica = {#魔法少女文化组
+	graphical_culture = acggfx
+	KanameMadoka = {
+		primary = MDK
+	}
+	AkemiHomura = {
+		primary = AKE
+	}
+	MikiSayaka = {
+		primary = SAY
+	}
+	TomoeMam = {
+		primary = TOM
+	}
+	SakuraKyouko = {
+		primary = KYO
+	}
+	MomoeNagisa = {
+		primary = MMN
+	}
+	YakumoMitama = {
+		primary = MTM
+	}
+	TamakiIroha = {
+		primary = IRH
+	}
+	SatomiTouka = {
+		primary = STM
+	}
+	HiiragiNemu = {
+		primary = HRG
+	}
+	AlinaGrey = {
+		primary = GRY
+	}
+	AzusaMifuyu = {
+		primary = MIF
+	}
+	NanamiYachiyo = {
+		primary = NNM
+	}
+	MitsukiFelicia = {
+		primary = FLC
+	}
+	FutabaSana = {
+		primary = FTB
+	}
+	YuiTsuruno = {
+		primary = TRN
+	}	
+	HiiragiNemu = {
+		primary = HRG
+	}	
+	AlinaGray = {
+		primary = GRY
+	}		
+	Signallightunion = {
+		primary = SLU
+	}
+}
+
+Idol = {#偶像文化组
+	graphical_culture = acggfx
+	Aqours = {
+		primary = AQO
+	}
+	Usforever = {
+		primary = MUS
+	}
+	Miku = {
+		primary = HTS
+	}
+	LuoTianYi = {
+		primary = LTY
+	}
+	YueZhengLing = {
+		primary = YZL
+	}
+	YueZhengLongya = {
+		primary = LSW
+	}
+	YanHe = {
+		primary = DCT
+	}
+	ZhiyuMoke = {
+		primary = XTC
+	}
+	Moqingxian = {
+		primary = YSZ
+	}
+	Nijisaki = {
+		primary = NJK
+	}
+	IdolMaster = {
+		primary = IMS
+	}
+	BangDream = {
+		primary = BDR
+	}
+	Starlight = {
+		primary = SL9
+		province = { local_has_carolean = yes }
+	}
+}
+
+FGO = {#月球文化组
+	graphical_culture = acggfx
+	Altria = {
+		primary = ATR
+	}
+	TohsakaRin = {
+		primary = RIN
+	}
+	Matthew = {
+		primary = MTE
+	}
+	Nero = {
+		primary = NER
+	}
+	Illyasviel = {
+		primary = ILY
+	}
+	Anastasia = {
+		primary = TSA
+	}
+	RyougiShiKi = {
+		primary = RSK
+	}
+	OkitaSouji = {
+		primary = OKT
+	}
+	OdaNobunaga = {
+		primary = ODA
+	}
+}
+
+DF_Project = {#东方文化组
+	graphical_culture = acggfx
+	Reimu = {
+		primary = HKR
+	}
+	Marisa = {
+		primary = MRS
+	}
+	Yukari = {
+		primary = YKR
+	}
+	Cirno = {
+		primary = QLN
+	}
+	Komeiji = {
+		primary = KMJ
+	}
+	Remilia = {
+		primary = RML
+	}
+	Sakuya = {
+		primary = SKY
+	}
+	Flandre = {
+		primary = FLD
+	}
+	Yuyuko = {
+		primary = YYK
+	}
+	Patchouli = {
+		primary = PCL
+	}
+	Sanae = {
+		primary = KTY
+	}
+	Kanako = {
+		primary = YSK
+	}
+	Suwako = {
+		primary = MRY
+	}
+	Hongmeiling = {
+		primary = HML
+	}
+	Youmu = {
+		primary = YOM
+	}
+	AliceMargatroid = {
+		primary = ALC
+	}
+	HouraisanKaguya = {
+		primary = KGY
+	}
+	NoMokou = {
+		primary = NMK
+	}
+	KazamiYuuka = {
+		primary = YUK
+	}
+	IbukiSuika = {
+		primary = IBK
+	}
+	HinanawiTenshi = {
+		primary = TES
+	}
+	ShikieikiYamaxanadu = {
+		primary = SJY
+	}
+	ShameimaruAya = {
+		primary = SMM
+	}
+	YagokoroEirin = {
+		primary = EIR
+	}
+	Reisen = {
+		primary = RES
+	}
+	OnozukaKomachi = {
+		primary = OKK
+	}
+	Hatanokokoro = {
+		primary = HNK
+	}
+	HiedanoAkyuu = {	#新增：阿求，下同
+		primary = HNA
+	}
+	KamishirasawaKeine = {
+		primary = KZK
+	}
+	IbarakiKasen = {
+		primary = IRK
+	}
+	HoshigumaYuugi = {
+		primary = HSY
+	}
+	WatatsukinoYorihime = {
+		primary = WNY
+	}
+	WatatsukinoToyohime = {
+		primary = WNT
+	}
+	KawashiroNitori = {
+		primary = KSN
+	}
+	HimekaidoHatate = {
+		primary = HKH
+	}
+}
+
+Manga_Time_Kirara = {#芳文社文化组
+	graphical_culture = acggfx
+	EbisuzawaKurumi = {
+		primary = EBS
+	}
+	Suzukazeaoba = {
+		primary = AOB
+	}
+	KafuuChino = {
+		primary = CHN
+	}
+	KujoKaren = {
+		primary = KRE
+	}
+	HirasawaYui = {
+		primary = YUI
+	}
+	Etoilia = {
+		primary = KRF
+	}
+	Yuno = {
+		primary = HDM
+	}
+	ShimaRin = {
+		primary = SMR
+	}
+	Shamiko = {
+		primary = SMK
+	}
+	NonoharaYuzuko = {
+		primary = NHY
+	}
+	Chaoschan = {	#新增
+		primary = MTK
+	}
+	KonohataMira = {
+		primary = KMR
+	}
+	IchiiTooru = {	
+		primary = ICT
+	}
+	HondaTamaki = {
+		primary = HDT
+	}
+	Chiya_cul = {
+		primary = CIY
+	}
+	OribeYasuna = {
+		primary = OYN
+	}
+	TakayamaHaruka = {
+		primary = HRK
+	}
+	SakuranomiyaMaika = {
+		primary = SKN
+	}
+	IchinoseHana = {
+		primary = INH
+	}
+	YamaguchiKisaragi = {
+		primary = YGK
+	}
+	MaryNightmare = {
+		primary = MRN
+	}
+	SekiyaNaru = {
+		primary = SEK
+	}
+	HanakoizumiAn = {
+		primary = HIA
+	}
+	OozoraHaruka = {
+		primary = OZH
+	}
+	HatoyaKohane = {
+		primary = HYK
+	}
+	NishikawaYoko = {
+		primary = NSY
+	}
+	HosonoHarumi = {
+		primary = HSH
+	}
+	MachikoRyou = {
+		primary = MCR
+	}
+	TakedaYomi = {
+		primary = TKY
+	}
+	SakuraIno = {
+		primary = SKI
+	}
+	MiniwaTsumiki = {
+		primary = MNT
+	}
+	GotouHitori = {
+		primary = BTR
+	}
+	MinagiKoharu = {
+		primary = MNK
+	}
+	KonohoshiUmika = {
+		primary = KHU
+	}
+}
+
+NoGameNoLife = {#游戏人生文化组
+	graphical_culture = acggfx
+	Shiro = {
+		primary = SIR
+	}
+	Sora = {
+		primary = SOR
+	}
+	Elzia_NoGameNoLife = {
+		primary = ELZ
+	}
+}
+
+ai_girl_group = {#机娘文化组
+	graphical_culture = acggfx
+	Schwi = {
+		primary = SHW
+	}
+	Hoshino_Yumemi = {
+		primary = YMI
+	}
+	Chii = {
+		primary = CII
+	}
+	Yaya = {
+		primary = YAY
+	}
+	Rilulu = {
+		primary = RLU
+	}
+	Ikaros_cul = {
+		primary = IKR
+	}
+	Atri_cul = {
+        primary = ATI
+    }
+}
+Gamindustri_group = {#超次元海王星文化组
+	graphical_culture = acggfx
+	Planeptune = {
+		primary = PLP
+	}
+	Lastation = {
+		primary = LAS
+	}
+	Lowee = {
+		primary = LW1
+	}
+	Leanbox = {
+		primary = LBX
+	}
+	Eden = {
+		primary = EDE
+	}
+	Tari = {
+		primary = REI
+	}
+	Heart_Dimension = {
+		primary = HDS
+	}
+}
+
+yureyuri = {#摇曳百合文化组
+	graphical_culture = acggfx
+	ToshinoKyoko = {
+		primary = TKK
+	}
+	FunamiYui = {
+		primary = FNY
+	}
+	AkazaAkari = {
+		primary = AKR
+	}
+	YoshikawaChinatsu = {
+		primary = YKC
+	}
+}
+
+BlueArchive = {#碧蓝档案文化组
+	graphical_culture = acggfx
+	Abydos = {
+		primary = ABY
+	}
+	Millennium = {
+		primary = MLN
+	}
+	Arius = {
+		primary = ARU
+	}
+	Trinity = {
+		primary = TRG
+	}
+	Shanhaijing = {
+		primary = SHJ
+	}
+	Hyakkiyako = {
+		primary = HKY
+	}
+	Schale = {
+		primary = SCL
+	}
+	SRT_culture = {
+		primary = SRT
+	}
+	Valkyrie = {
+		primary = VKR
+	}
+	Gehenna = {
+		primary = GHN
+	}
+	RedWinter = {
+		primary = RWF
+	}
+}
